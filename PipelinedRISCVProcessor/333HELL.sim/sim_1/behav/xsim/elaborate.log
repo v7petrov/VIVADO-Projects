@@ -1,0 +1,13 @@
+Vivado Simulator v2022.1
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2022.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot otter_tb_behav xil_defaultlib.otter_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 2 for port 'PC_SOURCE' [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv:100]
+WARNING: [VRFC 10-3091] actual bit length 14 differs from formal bit length 32 for port 'MEM_ADDR1' [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv:409]
+WARNING: [VRFC 10-3823] variable 'de_ex_inst' might have multiple concurrent drivers [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv:351]
+WARNING: [VRFC 10-3823] variable 'de_ex_inst' might have multiple concurrent drivers [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv:352]
+WARNING: [VRFC 10-3823] variable 'de_ex_inst' might have multiple concurrent drivers [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv:353]
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel

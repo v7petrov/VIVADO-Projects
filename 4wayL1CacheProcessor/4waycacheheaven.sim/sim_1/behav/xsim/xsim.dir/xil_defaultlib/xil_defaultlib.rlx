@@ -1,0 +1,25 @@
+0.7
+2020.2
+Apr 18 2022
+16:05:34
+C:/Users/USER/Downloads/sendtovictor/direct_mapped/direct_mapped.srcs/sim_1/new/otter_tb.sv,1717787852,systemVerilog,,,,otter_tb,,uvm,,,,,,
+C:/Users/USER/Downloads/sendtovictor/direct_mapped/direct_mapped.srcs/sources_1/new/DMcache.sv,1717805718,systemVerilog,,C:/Users/USER/Downloads/sendtovictor/direct_mapped/direct_mapped.srcs/sources_1/new/DMcacheFSM.sv,,CacheDM,,uvm,,,,,,
+C:/Users/USER/Downloads/sendtovictor/direct_mapped/direct_mapped.srcs/sources_1/new/DMcacheFSM.sv,1717793866,systemVerilog,,C:/Users/USER/Downloads/sendtovictor/direct_mapped/direct_mapped.srcs/sources_1/new/Imem.sv,,CacheFSM,,uvm,,,,,,
+C:/Users/USER/Downloads/sendtovictor/direct_mapped/direct_mapped.srcs/sources_1/new/Imem.sv,1717787852,systemVerilog,,C:/Users/USER/VIVADOProjects/4waycacheheaven/4waycacheheaven.srcs/sources_1/new/Muxes.sv,,imem,,uvm,,,,,,
+C:/Users/USER/VIVADOProjects/4waycacheheaven/4waycacheheaven.sim/sim_1/behav/xsim/glbl.v,1649976174,verilog,,,,glbl,,uvm,,,,,,
+C:/Users/USER/VIVADOProjects/4waycacheheaven/4waycacheheaven.srcs/sources_1/new/CSR.sv,1717790173,systemVerilog,,C:/Users/USER/VIVADOProjects/4waycacheheaven/4waycacheheaven.srcs/sources_1/new/CU_FSM.sv,,CSR,,uvm,,,,,,
+C:/Users/USER/VIVADOProjects/4waycacheheaven/4waycacheheaven.srcs/sources_1/new/CU_FSM.sv,1718069639,systemVerilog,,C:/Users/USER/VIVADOProjects/4waycacheheaven/4waycacheheaven.srcs/sources_1/new/CU_OTTER_DC.sv,,OTTER_CU_FSM,,uvm,,,,,,
+C:/Users/USER/VIVADOProjects/4waycacheheaven/4waycacheheaven.srcs/sources_1/new/CU_OTTER_DC.sv,1717790091,systemVerilog,,C:/Users/USER/VIVADOProjects/4waycacheheaven/4waycacheheaven.srcs/sources_1/new/Cache.sv,,OTTER_CU_Decoder,,uvm,,,,,,
+C:/Users/USER/VIVADOProjects/4waycacheheaven/4waycacheheaven.srcs/sources_1/new/Cache.sv,1718077097,systemVerilog,,C:/Users/USER/VIVADOProjects/4waycacheheaven/4waycacheheaven.srcs/sources_1/new/CacheFSM2.sv,,Cache,,uvm,,,,,,
+C:/Users/USER/VIVADOProjects/4waycacheheaven/4waycacheheaven.srcs/sources_1/new/CacheFSM2.sv,1718072875,systemVerilog,,C:/Users/USER/Downloads/sendtovictor/direct_mapped/direct_mapped.srcs/sources_1/new/DMcache.sv,,CacheFSM2,,uvm,,,,,,
+C:/Users/USER/VIVADOProjects/4waycacheheaven/4waycacheheaven.srcs/sources_1/new/Muxes.sv,1717789094,systemVerilog,,C:/Users/USER/VIVADOProjects/4waycacheheaven/4waycacheheaven.srcs/sources_1/new/OTTER_ALU.sv,,Mult2to1;Mult4to1;Mult4to1_255;Mult6to1;Mult8to1,,uvm,,,,,,
+C:/Users/USER/VIVADOProjects/4waycacheheaven/4waycacheheaven.srcs/sources_1/new/OTTER_ALU.sv,1717789187,systemVerilog,,C:/Users/USER/VIVADOProjects/4waycacheheaven/4waycacheheaven.srcs/sources_1/new/OTTER_MCU.sv,,OTTER_ALU,,uvm,,,,,,
+C:/Users/USER/VIVADOProjects/4waycacheheaven/4waycacheheaven.srcs/sources_1/new/OTTER_MCU.sv,1718078403,systemVerilog,,C:/Users/USER/VIVADOProjects/4waycacheheaven/4waycacheheaven.srcs/sources_1/new/OTTER_mem_byte.sv,,OTTER_MCU,,uvm,,,,,,
+C:/Users/USER/VIVADOProjects/4waycacheheaven/4waycacheheaven.srcs/sources_1/new/OTTER_mem_byte.sv,1717877694,systemVerilog,,C:/Users/USER/VIVADOProjects/4waycacheheaven/4waycacheheaven.srcs/sources_1/new/OTTER_registerFile.sv,,OTTER_mem_byte,,uvm,,,,,,
+C:/Users/USER/VIVADOProjects/4waycacheheaven/4waycacheheaven.srcs/sources_1/new/OTTER_registerFile.sv,1717789273,systemVerilog,,C:/Users/USER/VIVADOProjects/4waycacheheaven/4waycacheheaven.srcs/sources_1/new/ProgCount.sv,,OTTER_registerFile,,uvm,,,,,,
+C:/Users/USER/VIVADOProjects/4waycacheheaven/4waycacheheaven.srcs/sources_1/new/ProgCount.sv,1717788959,systemVerilog,,C:/Users/USER/VIVADOProjects/4waycacheheaven/4waycacheheaven.srcs/sources_1/new/programmer.sv,,ProgCount,,uvm,,,,,,
+C:/Users/USER/VIVADOProjects/4waycacheheaven/4waycacheheaven.srcs/sources_1/new/programmer.sv,1717788801,systemVerilog,,C:/Users/USER/VIVADOProjects/4waycacheheaven/4waycacheheaven.srcs/sources_1/new/ua_rx_word.sv,,programmer,,uvm,,,,,,
+C:/Users/USER/VIVADOProjects/4waycacheheaven/4waycacheheaven.srcs/sources_1/new/ua_rx_word.sv,1717790332,systemVerilog,,C:/Users/USER/VIVADOProjects/4waycacheheaven/4waycacheheaven.srcs/sources_1/new/ua_tx_word.sv,,uart_rx_word,,uvm,,,,,,
+C:/Users/USER/VIVADOProjects/4waycacheheaven/4waycacheheaven.srcs/sources_1/new/ua_tx_word.sv,1717790411,systemVerilog,,C:/Users/USER/VIVADOProjects/4waycacheheaven/4waycacheheaven.srcs/sources_1/new/uart_rx.sv,,uart_tx_word,,uvm,,,,,,
+C:/Users/USER/VIVADOProjects/4waycacheheaven/4waycacheheaven.srcs/sources_1/new/uart_rx.sv,1717790461,systemVerilog,,C:/Users/USER/VIVADOProjects/4waycacheheaven/4waycacheheaven.srcs/sources_1/new/uart_tx.sv,,uart_rx,,uvm,,,,,,
+C:/Users/USER/VIVADOProjects/4waycacheheaven/4waycacheheaven.srcs/sources_1/new/uart_tx.sv,1717790484,systemVerilog,,C:/Users/USER/Downloads/sendtovictor/direct_mapped/direct_mapped.srcs/sim_1/new/otter_tb.sv,,uart_tx,,uvm,,,,,,

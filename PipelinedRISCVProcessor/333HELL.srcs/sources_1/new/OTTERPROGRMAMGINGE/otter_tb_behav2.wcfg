@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="otter_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="\$unit_ALU_sv_3275770408 " />
+            <top_module name="glbl" />
+            <top_module name="otter_tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="128.370 ns"></ZoomStartTime>
+      <ZoomEndTime time="256.771 ns"></ZoomEndTime>
+      <Cursor1Time time="190.000 ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="114"></NameColumnWidth>
+      <ValueColumnWidth column_width="72"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="29" />
+   <wvobject fp_name="/otter_tb/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/otter_tb/my_otter/PC/PC_OUT" type="array">
+      <obj_property name="ElementShortName">PC_OUT[31:0]</obj_property>
+      <obj_property name="ObjectShortName">PC_OUT[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/otter_tb/my_otter/PC/PC_SOURCE" type="array">
+      <obj_property name="ElementShortName">PC_SOURCE[2:0]</obj_property>
+      <obj_property name="ObjectShortName">PC_SOURCE[2:0]</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider1079">
+      <obj_property name="label">Decode</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="/otter_tb/my_otter/de_inst.opcode" type="array">
+      <obj_property name="ElementShortName">.opcode[6:0]</obj_property>
+      <obj_property name="ObjectShortName">.opcode[6:0]</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider1082">
+      <obj_property name="label">Execute</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="/otter_tb/my_otter/de_ex_inst.opcode" type="array">
+      <obj_property name="ElementShortName">.opcode[6:0]</obj_property>
+      <obj_property name="ObjectShortName">.opcode[6:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/otter_tb/my_otter/ALU/SRC_A" type="array">
+      <obj_property name="ElementShortName">SRC_A[31:0]</obj_property>
+      <obj_property name="ObjectShortName">SRC_A[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/otter_tb/my_otter/ALU/SRC_B" type="array">
+      <obj_property name="ElementShortName">SRC_B[31:0]</obj_property>
+      <obj_property name="ObjectShortName">SRC_B[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/otter_tb/my_otter/ALU/RESULT" type="array">
+      <obj_property name="ElementShortName">RESULT[31:0]</obj_property>
+      <obj_property name="ObjectShortName">RESULT[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/otter_tb/my_otter/PC/PC_SOURCE" type="array">
+      <obj_property name="ElementShortName">PC_SOURCE[2:0]</obj_property>
+      <obj_property name="ObjectShortName">PC_SOURCE[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/otter_tb/my_otter/CCP/ForwardA" type="array">
+      <obj_property name="ElementShortName">ForwardA[1:0]</obj_property>
+      <obj_property name="ObjectShortName">ForwardA[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/otter_tb/my_otter/HazardMUXA/TWO" type="array">
+      <obj_property name="ElementShortName">TWO[31:0]</obj_property>
+      <obj_property name="ObjectShortName">TWO[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/otter_tb/my_otter/flush" type="logic">
+      <obj_property name="ElementShortName">flush</obj_property>
+      <obj_property name="ObjectShortName">flush</obj_property>
+   </wvobject>
+   <wvobject fp_name="/otter_tb/my_otter/flushed" type="logic">
+      <obj_property name="ElementShortName">flushed</obj_property>
+      <obj_property name="ObjectShortName">flushed</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider1080">
+      <obj_property name="label">Memory</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="BkColor">#00FFFF</obj_property>
+   </wvobject>
+   <wvobject fp_name="/otter_tb/my_otter/ex_mem_inst.opcode" type="array">
+      <obj_property name="ElementShortName">.opcode[6:0]</obj_property>
+      <obj_property name="ObjectShortName">.opcode[6:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/otter_tb/my_otter/ex_mem_aluRes" type="array">
+      <obj_property name="ElementShortName">ex_mem_aluRes[31:0]</obj_property>
+      <obj_property name="ObjectShortName">ex_mem_aluRes[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/otter_tb/my_otter/ex_mem_inst.regWrite" type="logic">
+      <obj_property name="ElementShortName">.regWrite</obj_property>
+      <obj_property name="ObjectShortName">.regWrite</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider1081">
+      <obj_property name="label">Writeback</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="/otter_tb/my_otter/mem_wb_inst.opcode" type="array">
+      <obj_property name="ElementShortName">.opcode[6:0]</obj_property>
+      <obj_property name="ObjectShortName">.opcode[6:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/otter_tb/my_otter/regfile/WA" type="array">
+      <obj_property name="ElementShortName">WA[4:0]</obj_property>
+      <obj_property name="ObjectShortName">WA[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/otter_tb/my_otter/regfile/WD" type="array">
+      <obj_property name="ElementShortName">WD[31:0]</obj_property>
+      <obj_property name="ObjectShortName">WD[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/otter_tb/my_otter/regfile/EN" type="logic">
+      <obj_property name="ElementShortName">EN</obj_property>
+      <obj_property name="ObjectShortName">EN</obj_property>
+   </wvobject>
+   <wvobject fp_name="/otter_tb/my_otter/regfile/ram[5]" type="array">
+      <obj_property name="ElementShortName">[5][31:0]</obj_property>
+      <obj_property name="ObjectShortName">[5][31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/otter_tb/my_otter/regfile/ram[7]" type="array">
+      <obj_property name="ElementShortName">[7][31:0]</obj_property>
+      <obj_property name="ObjectShortName">[7][31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/otter_tb/my_otter/regfile/ram[8]" type="array">
+      <obj_property name="ElementShortName">[8][31:0]</obj_property>
+      <obj_property name="ObjectShortName">[8][31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/otter_tb/my_otter/regfile/ram[9]" type="array">
+      <obj_property name="ElementShortName">[9][31:0]</obj_property>
+      <obj_property name="ObjectShortName">[9][31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/otter_tb/my_otter/regfile/ram[6]" type="array">
+      <obj_property name="ElementShortName">[6][31:0]</obj_property>
+      <obj_property name="ObjectShortName">[6][31:0]</obj_property>
+   </wvobject>
+</wave_config>

@@ -1,0 +1,995 @@
+
+*** Running vivado
+    with args -log OTTER_MCU.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source OTTER_MCU.tcl
+
+
+
+****** Vivado v2022.1 (64-bit)
+  **** SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+  **** IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+source OTTER_MCU.tcl -notrace
+Command: read_checkpoint -auto_incremental -incremental C:/Users/USER/VIVADOProjects/333HELL/333HELL.srcs/utils_1/imports/synth_1/OTTER_Wrapper.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/USER/VIVADOProjects/333HELL/333HELL.srcs/utils_1/imports/synth_1/OTTER_Wrapper.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top OTTER_MCU -part xc7a35ticpg236-1L
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35ti'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35ti'
+INFO: [Device 21-403] Loading part xc7a35ticpg236-1L
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 24872
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1284.523 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'OTTER_MCU' [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv:60]
+INFO: [Synth 8-6157] synthesizing module 'PC' [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/PC.sv:9]
+INFO: [Synth 8-6157] synthesizing module 'PC_MUX' [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/PC_MUX.sv:9]
+WARNING: [Synth 8-151] case item 3'b100 is unreachable [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/PC_MUX.sv:31]
+WARNING: [Synth 8-151] case item 3'b101 is unreachable [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/PC_MUX.sv:33]
+WARNING: [Synth 8-151] case item 3'b110 is unreachable [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/PC_MUX.sv:35]
+WARNING: [Synth 8-151] case item 3'b111 is unreachable [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/PC_MUX.sv:37]
+INFO: [Synth 8-226] default block is never used [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/PC_MUX.sv:22]
+INFO: [Synth 8-6155] done synthesizing module 'PC_MUX' (0#1) [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/PC_MUX.sv:9]
+INFO: [Synth 8-6157] synthesizing module 'PC_REG' [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/PC_REG.sv:9]
+INFO: [Synth 8-6155] done synthesizing module 'PC_REG' (0#1) [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/PC_REG.sv:9]
+INFO: [Synth 8-6155] done synthesizing module 'PC' (0#1) [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/PC.sv:9]
+WARNING: [Synth 8-689] width (3) of port connection 'PC_SOURCE' does not match port width (2) of module 'PC' [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv:100]
+INFO: [Synth 8-6157] synthesizing module 'ForwardMarch' [C:/Users/USER/VIVADOProjects/OTTERPROGRMAMGINGE/OTTERPROGRMAMGINGE.srcs/sources_1/new/Forward.sv:22]
+INFO: [Synth 8-6155] done synthesizing module 'ForwardMarch' (0#1) [C:/Users/USER/VIVADOProjects/OTTERPROGRMAMGINGE/OTTERPROGRMAMGINGE.srcs/sources_1/new/Forward.sv:22]
+INFO: [Synth 8-6157] synthesizing module 'CU_DCDR' [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/CU_DCDR.sv:9]
+INFO: [Synth 8-226] default block is never used [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/CU_DCDR.sv:104]
+INFO: [Synth 8-6155] done synthesizing module 'CU_DCDR' (0#1) [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/CU_DCDR.sv:9]
+INFO: [Synth 8-6157] synthesizing module 'ImmediateGenerator' [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/ImmediateGenerator.sv:9]
+INFO: [Synth 8-6155] done synthesizing module 'ImmediateGenerator' (0#1) [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/ImmediateGenerator.sv:9]
+INFO: [Synth 8-6157] synthesizing module 'REG_FILE' [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/REG_FILE.sv:10]
+INFO: [Synth 8-6155] done synthesizing module 'REG_FILE' (0#1) [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/REG_FILE.sv:10]
+INFO: [Synth 8-6157] synthesizing module 'ALU' [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/ALU.sv:9]
+INFO: [Synth 8-6155] done synthesizing module 'ALU' (0#1) [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/ALU.sv:9]
+INFO: [Synth 8-6157] synthesizing module 'BCG' [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/BCG.sv:10]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/BCG.sv:30]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/BCG.sv:27]
+INFO: [Synth 8-6155] done synthesizing module 'BCG' (0#1) [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/BCG.sv:10]
+WARNING: [Synth 8-7071] port 'branch' of module 'BCG' is unconnected for instance 'BCG' [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv:338]
+WARNING: [Synth 8-7023] instance 'BCG' of module 'BCG' has 6 connections declared, but only 5 given [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv:338]
+INFO: [Synth 8-6157] synthesizing module 'BAG' [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/BAG.sv:9]
+INFO: [Synth 8-6155] done synthesizing module 'BAG' (0#1) [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/BAG.sv:9]
+INFO: [Synth 8-6157] synthesizing module 'TwoMux' [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/TwoMux.sv:9]
+INFO: [Synth 8-6155] done synthesizing module 'TwoMux' (0#1) [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/TwoMux.sv:9]
+INFO: [Synth 8-6157] synthesizing module 'FourMux' [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/FourMux.sv:9]
+INFO: [Synth 8-226] default block is never used [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/FourMux.sv:21]
+INFO: [Synth 8-6155] done synthesizing module 'FourMux' (0#1) [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/FourMux.sv:9]
+INFO: [Synth 8-6157] synthesizing module 'OTTER_mem_dualport' [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/otter_memory_v1_07.sv:24]
+INFO: [Synth 8-3876] $readmem data file 'otter_memory.mem' is read successfully [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/otter_memory_v1_07.sv:55]
+INFO: [Synth 8-6155] done synthesizing module 'OTTER_mem_dualport' (0#1) [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/otter_memory_v1_07.sv:24]
+WARNING: [Synth 8-7071] port 'ERR' of module 'OTTER_mem_dualport' is unconnected for instance 'Memdual' [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv:404]
+WARNING: [Synth 8-7023] instance 'Memdual' of module 'OTTER_mem_dualport' has 12 connections declared, but only 11 given [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv:404]
+INFO: [Synth 8-6155] done synthesizing module 'OTTER_MCU' (0#1) [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv:60]
+WARNING: [Synth 8-6014] Unused sequential element de_ex_inst_reg[pc] was removed.  [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv:95]
+WARNING: [Synth 8-6014] Unused sequential element ex_mem_inst_reg[opcode] was removed.  [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv:215]
+WARNING: [Synth 8-6014] Unused sequential element ex_mem_inst_reg[rs1_addr] was removed.  [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv:215]
+WARNING: [Synth 8-6014] Unused sequential element ex_mem_inst_reg[rs2_addr] was removed.  [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv:215]
+WARNING: [Synth 8-6014] Unused sequential element ex_mem_inst_reg[rs1_used] was removed.  [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv:215]
+WARNING: [Synth 8-6014] Unused sequential element ex_mem_inst_reg[rs2_used] was removed.  [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv:215]
+WARNING: [Synth 8-6014] Unused sequential element ex_mem_inst_reg[alu_fun] was removed.  [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv:215]
+WARNING: [Synth 8-6014] Unused sequential element ex_mem_inst_reg[mem_type] was removed.  [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv:215]
+WARNING: [Synth 8-6014] Unused sequential element ex_mem_inst_reg[pc] was removed.  [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv:215]
+WARNING: [Synth 8-6014] Unused sequential element ex_mem_inst_reg[jalr] was removed.  [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv:215]
+WARNING: [Synth 8-6014] Unused sequential element ex_mem_inst_reg[branch] was removed.  [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv:215]
+WARNING: [Synth 8-6014] Unused sequential element ex_mem_inst_reg[jump] was removed.  [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv:215]
+WARNING: [Synth 8-6014] Unused sequential element ex_mem_inst_reg[U_immed] was removed.  [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv:215]
+WARNING: [Synth 8-6014] Unused sequential element ex_mem_inst_reg[I_immed] was removed.  [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv:215]
+WARNING: [Synth 8-6014] Unused sequential element ex_mem_inst_reg[S_immed] was removed.  [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv:215]
+WARNING: [Synth 8-6014] Unused sequential element ex_mem_inst_reg[J_type] was removed.  [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv:215]
+WARNING: [Synth 8-6014] Unused sequential element ex_mem_inst_reg[B_type] was removed.  [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv:215]
+WARNING: [Synth 8-6014] Unused sequential element ex_mem_inst_reg[pc_sel] was removed.  [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv:215]
+WARNING: [Synth 8-6014] Unused sequential element ex_mem_inst_reg[rs1] was removed.  [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv:215]
+WARNING: [Synth 8-6014] Unused sequential element mem_wb_inst_reg[opcode] was removed.  [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv:216]
+WARNING: [Synth 8-6014] Unused sequential element mem_wb_inst_reg[rs1_addr] was removed.  [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv:216]
+WARNING: [Synth 8-6014] Unused sequential element mem_wb_inst_reg[rs2_addr] was removed.  [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv:216]
+WARNING: [Synth 8-6014] Unused sequential element mem_wb_inst_reg[rs1_used] was removed.  [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv:216]
+WARNING: [Synth 8-6014] Unused sequential element mem_wb_inst_reg[rs2_used] was removed.  [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv:216]
+WARNING: [Synth 8-6014] Unused sequential element mem_wb_inst_reg[alu_fun] was removed.  [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv:216]
+WARNING: [Synth 8-6014] Unused sequential element mem_wb_inst_reg[memWrite] was removed.  [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv:216]
+WARNING: [Synth 8-6014] Unused sequential element mem_wb_inst_reg[memRead2] was removed.  [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv:216]
+WARNING: [Synth 8-6014] Unused sequential element mem_wb_inst_reg[mem_type] was removed.  [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv:216]
+WARNING: [Synth 8-6014] Unused sequential element mem_wb_inst_reg[pc] was removed.  [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv:216]
+WARNING: [Synth 8-6014] Unused sequential element mem_wb_inst_reg[jalr] was removed.  [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv:216]
+WARNING: [Synth 8-6014] Unused sequential element mem_wb_inst_reg[branch] was removed.  [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv:216]
+WARNING: [Synth 8-6014] Unused sequential element mem_wb_inst_reg[jump] was removed.  [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv:216]
+WARNING: [Synth 8-6014] Unused sequential element mem_wb_inst_reg[U_immed] was removed.  [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv:216]
+WARNING: [Synth 8-6014] Unused sequential element mem_wb_inst_reg[I_immed] was removed.  [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv:216]
+WARNING: [Synth 8-6014] Unused sequential element mem_wb_inst_reg[S_immed] was removed.  [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv:216]
+WARNING: [Synth 8-6014] Unused sequential element mem_wb_inst_reg[J_type] was removed.  [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv:216]
+WARNING: [Synth 8-6014] Unused sequential element mem_wb_inst_reg[B_type] was removed.  [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv:216]
+WARNING: [Synth 8-6014] Unused sequential element mem_wb_inst_reg[pc_sel] was removed.  [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv:216]
+WARNING: [Synth 8-6014] Unused sequential element mem_wb_inst_reg[rs1] was removed.  [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv:216]
+WARNING: [Synth 8-3848] Net br_eq in module/entity OTTER_MCU does not have driver. [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv:78]
+WARNING: [Synth 8-3848] Net br_lt in module/entity OTTER_MCU does not have driver. [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv:78]
+WARNING: [Synth 8-3848] Net br_ltu in module/entity OTTER_MCU does not have driver. [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv:78]
+WARNING: [Synth 8-3848] Net de_inst[jalr] in module/entity OTTER_MCU does not have driver. [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv:114]
+WARNING: [Synth 8-3848] Net de_inst[branch] in module/entity OTTER_MCU does not have driver. [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv:114]
+WARNING: [Synth 8-3848] Net de_inst[jump] in module/entity OTTER_MCU does not have driver. [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv:114]
+WARNING: [Synth 8-7129] Port BR_EQ in module CU_DCDR is either unconnected or has no load
+WARNING: [Synth 8-7129] Port BR_LT in module CU_DCDR is either unconnected or has no load
+WARNING: [Synth 8-7129] Port BR_LTU in module CU_DCDR is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MTVEC[31] in module PC_MUX is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MTVEC[30] in module PC_MUX is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MTVEC[29] in module PC_MUX is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MTVEC[28] in module PC_MUX is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MTVEC[27] in module PC_MUX is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MTVEC[26] in module PC_MUX is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MTVEC[25] in module PC_MUX is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MTVEC[24] in module PC_MUX is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MTVEC[23] in module PC_MUX is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MTVEC[22] in module PC_MUX is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MTVEC[21] in module PC_MUX is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MTVEC[20] in module PC_MUX is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MTVEC[19] in module PC_MUX is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MTVEC[18] in module PC_MUX is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MTVEC[17] in module PC_MUX is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MTVEC[16] in module PC_MUX is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MTVEC[15] in module PC_MUX is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MTVEC[14] in module PC_MUX is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MTVEC[13] in module PC_MUX is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MTVEC[12] in module PC_MUX is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MTVEC[11] in module PC_MUX is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MTVEC[10] in module PC_MUX is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MTVEC[9] in module PC_MUX is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MTVEC[8] in module PC_MUX is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MTVEC[7] in module PC_MUX is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MTVEC[6] in module PC_MUX is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MTVEC[5] in module PC_MUX is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MTVEC[4] in module PC_MUX is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MTVEC[3] in module PC_MUX is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MTVEC[2] in module PC_MUX is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MTVEC[1] in module PC_MUX is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MTVEC[0] in module PC_MUX is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MEPC[31] in module PC_MUX is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MEPC[30] in module PC_MUX is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MEPC[29] in module PC_MUX is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MEPC[28] in module PC_MUX is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MEPC[27] in module PC_MUX is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MEPC[26] in module PC_MUX is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MEPC[25] in module PC_MUX is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MEPC[24] in module PC_MUX is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MEPC[23] in module PC_MUX is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MEPC[22] in module PC_MUX is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MEPC[21] in module PC_MUX is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MEPC[20] in module PC_MUX is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MEPC[19] in module PC_MUX is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MEPC[18] in module PC_MUX is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MEPC[17] in module PC_MUX is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MEPC[16] in module PC_MUX is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MEPC[15] in module PC_MUX is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MEPC[14] in module PC_MUX is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MEPC[13] in module PC_MUX is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MEPC[12] in module PC_MUX is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MEPC[11] in module PC_MUX is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MEPC[10] in module PC_MUX is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MEPC[9] in module PC_MUX is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MEPC[8] in module PC_MUX is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MEPC[7] in module PC_MUX is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MEPC[6] in module PC_MUX is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MEPC[5] in module PC_MUX is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MEPC[4] in module PC_MUX is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MEPC[3] in module PC_MUX is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MEPC[2] in module PC_MUX is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MEPC[1] in module PC_MUX is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MEPC[0] in module PC_MUX is either unconnected or has no load
+WARNING: [Synth 8-7129] Port INTR in module OTTER_MCU is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1284.523 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1284.523 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1284.523 ; gain = 0.000
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.040 . Memory (MB): peak = 1284.523 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/Basys3_Master.xdc]
+WARNING: [Vivado 12-584] No ports matched 'SWITCHES[0]'. [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/Basys3_Master.xdc:12]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/Basys3_Master.xdc:12]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SWITCHES[0]'. [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/Basys3_Master.xdc:13]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/Basys3_Master.xdc:13]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SWITCHES[1]'. [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/Basys3_Master.xdc:14]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/Basys3_Master.xdc:14]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SWITCHES[1]'. [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/Basys3_Master.xdc:15]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/Basys3_Master.xdc:15]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SWITCHES[2]'. [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/Basys3_Master.xdc:16]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/Basys3_Master.xdc:16]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SWITCHES[2]'. [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/Basys3_Master.xdc:17]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/Basys3_Master.xdc:17]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SWITCHES[3]'. [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/Basys3_Master.xdc:18]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/Basys3_Master.xdc:18]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SWITCHES[3]'. [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/Basys3_Master.xdc:19]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/Basys3_Master.xdc:19]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SWITCHES[4]'. [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/Basys3_Master.xdc:20]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/Basys3_Master.xdc:20]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SWITCHES[4]'. [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/Basys3_Master.xdc:21]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/Basys3_Master.xdc:21]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SWITCHES[5]'. [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/Basys3_Master.xdc:22]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/Basys3_Master.xdc:22]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SWITCHES[5]'. [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/Basys3_Master.xdc:23]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/Basys3_Master.xdc:23]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SWITCHES[6]'. [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/Basys3_Master.xdc:24]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/Basys3_Master.xdc:24]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SWITCHES[6]'. [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/Basys3_Master.xdc:25]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/Basys3_Master.xdc:25]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SWITCHES[7]'. [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/Basys3_Master.xdc:26]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/Basys3_Master.xdc:26]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SWITCHES[7]'. [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/Basys3_Master.xdc:27]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/Basys3_Master.xdc:27]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SWITCHES[8]'. [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/Basys3_Master.xdc:28]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/Basys3_Master.xdc:28]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SWITCHES[8]'. [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/Basys3_Master.xdc:29]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/Basys3_Master.xdc:29]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SWITCHES[9]'. [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/Basys3_Master.xdc:30]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/Basys3_Master.xdc:30]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SWITCHES[9]'. [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/Basys3_Master.xdc:31]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/Basys3_Master.xdc:31]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SWITCHES[10]'. [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/Basys3_Master.xdc:32]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/Basys3_Master.xdc:32]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SWITCHES[10]'. [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/Basys3_Master.xdc:33]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/Basys3_Master.xdc:33]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SWITCHES[11]'. [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/Basys3_Master.xdc:34]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/Basys3_Master.xdc:34]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SWITCHES[11]'. [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/Basys3_Master.xdc:35]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/Basys3_Master.xdc:35]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SWITCHES[12]'. [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/Basys3_Master.xdc:36]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/Basys3_Master.xdc:36]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SWITCHES[12]'. [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/Basys3_Master.xdc:37]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/Basys3_Master.xdc:37]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SWITCHES[13]'. [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/Basys3_Master.xdc:38]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/Basys3_Master.xdc:38]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SWITCHES[13]'. [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/Basys3_Master.xdc:39]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/Basys3_Master.xdc:39]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SWITCHES[14]'. [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/Basys3_Master.xdc:40]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/Basys3_Master.xdc:40]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SWITCHES[14]'. [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/Basys3_Master.xdc:41]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/Basys3_Master.xdc:41]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SWITCHES[15]'. [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/Basys3_Master.xdc:42]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/Basys3_Master.xdc:42]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SWITCHES[15]'. [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/Basys3_Master.xdc:43]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/Basys3_Master.xdc:43]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LEDS[0]'. [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/Basys3_Master.xdc:47]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/Basys3_Master.xdc:47]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LEDS[0]'. [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/Basys3_Master.xdc:48]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/Basys3_Master.xdc:48]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LEDS[1]'. [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/Basys3_Master.xdc:49]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/Basys3_Master.xdc:49]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LEDS[1]'. [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/Basys3_Master.xdc:50]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/Basys3_Master.xdc:50]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LEDS[2]'. [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/Basys3_Master.xdc:51]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/Basys3_Master.xdc:51]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LEDS[2]'. [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/Basys3_Master.xdc:52]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/Basys3_Master.xdc:52]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LEDS[3]'. [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/Basys3_Master.xdc:53]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/Basys3_Master.xdc:53]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LEDS[3]'. [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/Basys3_Master.xdc:54]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/Basys3_Master.xdc:54]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LEDS[4]'. [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/Basys3_Master.xdc:55]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/Basys3_Master.xdc:55]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LEDS[4]'. [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/Basys3_Master.xdc:56]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/Basys3_Master.xdc:56]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LEDS[5]'. [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/Basys3_Master.xdc:57]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/Basys3_Master.xdc:57]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LEDS[5]'. [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/Basys3_Master.xdc:58]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/Basys3_Master.xdc:58]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LEDS[6]'. [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/Basys3_Master.xdc:59]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/Basys3_Master.xdc:59]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LEDS[6]'. [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/Basys3_Master.xdc:60]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/Basys3_Master.xdc:60]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LEDS[7]'. [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/Basys3_Master.xdc:61]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/Basys3_Master.xdc:61]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LEDS[7]'. [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/Basys3_Master.xdc:62]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/Basys3_Master.xdc:62]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LEDS[8]'. [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/Basys3_Master.xdc:63]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/Basys3_Master.xdc:63]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LEDS[8]'. [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/Basys3_Master.xdc:64]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/Basys3_Master.xdc:64]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LEDS[9]'. [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/Basys3_Master.xdc:65]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/Basys3_Master.xdc:65]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LEDS[9]'. [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/Basys3_Master.xdc:66]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/Basys3_Master.xdc:66]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LEDS[10]'. [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/Basys3_Master.xdc:67]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/Basys3_Master.xdc:67]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LEDS[10]'. [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/Basys3_Master.xdc:68]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/Basys3_Master.xdc:68]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LEDS[11]'. [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/Basys3_Master.xdc:69]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/Basys3_Master.xdc:69]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LEDS[11]'. [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/Basys3_Master.xdc:70]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/Basys3_Master.xdc:70]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LEDS[12]'. [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/Basys3_Master.xdc:71]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/Basys3_Master.xdc:71]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LEDS[12]'. [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/Basys3_Master.xdc:72]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/Basys3_Master.xdc:72]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LEDS[13]'. [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/Basys3_Master.xdc:73]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/Basys3_Master.xdc:73]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LEDS[13]'. [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/Basys3_Master.xdc:74]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/Basys3_Master.xdc:74]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LEDS[14]'. [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/Basys3_Master.xdc:75]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/Basys3_Master.xdc:75]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LEDS[14]'. [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/Basys3_Master.xdc:76]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/Basys3_Master.xdc:76]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LEDS[15]'. [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/Basys3_Master.xdc:77]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/Basys3_Master.xdc:77]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LEDS[15]'. [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/Basys3_Master.xdc:78]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/Basys3_Master.xdc:78]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'CATHODES[6]'. [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/Basys3_Master.xdc:82]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/Basys3_Master.xdc:82]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'CATHODES[6]'. [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/Basys3_Master.xdc:83]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/Basys3_Master.xdc:83]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'CATHODES[5]'. [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/Basys3_Master.xdc:84]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/Basys3_Master.xdc:84]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'CATHODES[5]'. [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/Basys3_Master.xdc:85]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/Basys3_Master.xdc:85]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'CATHODES[4]'. [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/Basys3_Master.xdc:86]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/Basys3_Master.xdc:86]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'CATHODES[4]'. [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/Basys3_Master.xdc:87]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/Basys3_Master.xdc:87]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'CATHODES[3]'. [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/Basys3_Master.xdc:88]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/Basys3_Master.xdc:88]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'CATHODES[3]'. [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/Basys3_Master.xdc:89]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/Basys3_Master.xdc:89]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'CATHODES[2]'. [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/Basys3_Master.xdc:90]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/Basys3_Master.xdc:90]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'CATHODES[2]'. [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/Basys3_Master.xdc:91]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/Basys3_Master.xdc:91]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'CATHODES[1]'. [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/Basys3_Master.xdc:92]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/Basys3_Master.xdc:92]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'CATHODES[1]'. [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/Basys3_Master.xdc:93]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/Basys3_Master.xdc:93]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'CATHODES[0]'. [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/Basys3_Master.xdc:94]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/Basys3_Master.xdc:94]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'CATHODES[0]'. [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/Basys3_Master.xdc:95]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/Basys3_Master.xdc:95]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'CATHODES[7]'. [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/Basys3_Master.xdc:97]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/Basys3_Master.xdc:97]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'CATHODES[7]'. [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/Basys3_Master.xdc:98]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/Basys3_Master.xdc:98]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ANODES[0]'. [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/Basys3_Master.xdc:100]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/Basys3_Master.xdc:100]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ANODES[0]'. [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/Basys3_Master.xdc:101]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/Basys3_Master.xdc:101]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ANODES[1]'. [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/Basys3_Master.xdc:102]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/Basys3_Master.xdc:102]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ANODES[1]'. [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/Basys3_Master.xdc:103]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/Basys3_Master.xdc:103]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ANODES[2]'. [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/Basys3_Master.xdc:104]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/Basys3_Master.xdc:104]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ANODES[2]'. [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/Basys3_Master.xdc:105]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/Basys3_Master.xdc:105]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ANODES[3]'. [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/Basys3_Master.xdc:106]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/Basys3_Master.xdc:106]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ANODES[3]'. [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/Basys3_Master.xdc:107]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/Basys3_Master.xdc:107]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'BTNC'. [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/Basys3_Master.xdc:111]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/Basys3_Master.xdc:111]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'BTNC'. [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/Basys3_Master.xdc:112]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/Basys3_Master.xdc:112]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/Basys3_Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/Basys3_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/OTTER_MCU_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/OTTER_MCU_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1328.707 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1328.707 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 1328.707 ; gain = 44.184
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35ticpg236-1L
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 1328.707 ; gain = 44.184
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 1328.707 ; gain = 44.184
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Preparing Guide Design
+---------------------------------------------------------------------------------
+CRITICAL WARNING: [Synth 8-6895] The reference checkpoint C:/Users/USER/VIVADOProjects/333HELL/333HELL.srcs/utils_1/imports/synth_1/OTTER_Wrapper.dcp is not suitable for use with incremental synthesis for this design. Please regenerate the checkpoint for this design with -incremental_synth switch in the same Vivado session that synth_design has been run. Synthesis will continue with the default flow
+---------------------------------------------------------------------------------
+Finished Doing Graph Differ : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1328.707 ; gain = 44.184
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Preparing Guide Design : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1328.707 ; gain = 44.184
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1328.707 ; gain = 44.184
+---------------------------------------------------------------------------------
+
+
+Incremental Synthesis Report Summary:
+
+1. Incremental synthesis run: no
+
+   Reason for not running incremental synthesis : 
+
+
+INFO: [Synth 8-7130] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 5     
+	   3 Input   32 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 24    
+	                7 Bit    Registers := 1     
+	                5 Bit    Registers := 5     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 2     
+	                2 Bit    Registers := 4     
+	                1 Bit    Registers := 16    
++---RAMs : 
+	             512K Bit	(16384 X 32 bit)          RAMs := 1     
+	             1024 Bit	(32 X 32 bit)          RAMs := 1     
++---Muxes : 
+	   4 Input   32 Bit        Muxes := 5     
+	   2 Input   32 Bit        Muxes := 2     
+	   9 Input    4 Bit        Muxes := 2     
+	   2 Input    2 Bit        Muxes := 6     
+	   4 Input    2 Bit        Muxes := 1     
+	   9 Input    2 Bit        Muxes := 3     
+	   9 Input    1 Bit        Muxes := 4     
+	   2 Input    1 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-7129] Port MTVEC[31] in module PC is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MTVEC[30] in module PC is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MTVEC[29] in module PC is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MTVEC[28] in module PC is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MTVEC[27] in module PC is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MTVEC[26] in module PC is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MTVEC[25] in module PC is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MTVEC[24] in module PC is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MTVEC[23] in module PC is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MTVEC[22] in module PC is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MTVEC[21] in module PC is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MTVEC[20] in module PC is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MTVEC[19] in module PC is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MTVEC[18] in module PC is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MTVEC[17] in module PC is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MTVEC[16] in module PC is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MTVEC[15] in module PC is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MTVEC[14] in module PC is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MTVEC[13] in module PC is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MTVEC[12] in module PC is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MTVEC[11] in module PC is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MTVEC[10] in module PC is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MTVEC[9] in module PC is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MTVEC[8] in module PC is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MTVEC[7] in module PC is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MTVEC[6] in module PC is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MTVEC[5] in module PC is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MTVEC[4] in module PC is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MTVEC[3] in module PC is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MTVEC[2] in module PC is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MTVEC[1] in module PC is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MTVEC[0] in module PC is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'de_ex_inst_reg[jalr][31]/Q' [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv:95]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv:95]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv:95]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'de_ex_inst_reg[jalr][30]/Q' [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv:95]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv:95]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv:95]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'de_ex_inst_reg[jalr][29]/Q' [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv:95]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv:95]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv:95]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'de_ex_inst_reg[jalr][28]/Q' [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv:95]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv:95]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv:95]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'de_ex_inst_reg[jalr][27]/Q' [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv:95]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv:95]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv:95]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'de_ex_inst_reg[jalr][26]/Q' [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv:95]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv:95]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv:95]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'de_ex_inst_reg[jalr][25]/Q' [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv:95]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv:95]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv:95]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'de_ex_inst_reg[jalr][24]/Q' [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv:95]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv:95]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv:95]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'de_ex_inst_reg[jalr][23]/Q' [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv:95]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv:95]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv:95]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'de_ex_inst_reg[jalr][22]/Q' [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv:95]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv:95]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv:95]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'de_ex_inst_reg[jalr][21]/Q' [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv:95]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv:95]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv:95]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'de_ex_inst_reg[jalr][20]/Q' [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv:95]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv:95]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv:95]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'de_ex_inst_reg[jalr][19]/Q' [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv:95]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv:95]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv:95]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'de_ex_inst_reg[jalr][18]/Q' [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv:95]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv:95]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv:95]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'de_ex_inst_reg[jalr][17]/Q' [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv:95]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv:95]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv:95]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'de_ex_inst_reg[jalr][16]/Q' [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv:95]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv:95]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv:95]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'de_ex_inst_reg[jalr][15]/Q' [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv:95]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv:95]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv:95]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'de_ex_inst_reg[jalr][14]/Q' [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv:95]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv:95]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv:95]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'de_ex_inst_reg[jalr][13]/Q' [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv:95]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv:95]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv:95]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'de_ex_inst_reg[jalr][12]/Q' [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv:95]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv:95]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv:95]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'de_ex_inst_reg[jalr][11]/Q' [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv:95]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv:95]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv:95]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'de_ex_inst_reg[jalr][10]/Q' [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv:95]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv:95]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv:95]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'de_ex_inst_reg[jalr][9]/Q' [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv:95]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv:95]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv:95]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'de_ex_inst_reg[jalr][8]/Q' [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv:95]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv:95]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv:95]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'de_ex_inst_reg[jalr][7]/Q' [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv:95]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv:95]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv:95]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'de_ex_inst_reg[jalr][6]/Q' [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv:95]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv:95]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv:95]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'de_ex_inst_reg[jalr][5]/Q' [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv:95]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv:95]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv:95]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'de_ex_inst_reg[jalr][4]/Q' [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv:95]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv:95]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv:95]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'de_ex_inst_reg[jalr][3]/Q' [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv:95]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv:95]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv:95]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'de_ex_inst_reg[jalr][2]/Q' [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv:95]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv:95]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv:95]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'de_ex_inst_reg[jalr][1]/Q' [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv:95]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv:95]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv:95]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'de_ex_inst_reg[jalr][0]/Q' [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv:95]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv:95]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv:95]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'de_ex_inst_reg[branch][31]/Q' [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv:95]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv:95]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv:95]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'de_ex_inst_reg[branch][30]/Q' [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv:95]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv:95]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv:95]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'de_ex_inst_reg[branch][29]/Q' [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv:95]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv:95]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv:95]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'de_ex_inst_reg[branch][28]/Q' [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv:95]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv:95]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv:95]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'de_ex_inst_reg[branch][27]/Q' [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv:95]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv:95]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv:95]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'de_ex_inst_reg[branch][26]/Q' [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv:95]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv:95]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv:95]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'de_ex_inst_reg[branch][25]/Q' [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv:95]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv:95]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv:95]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'de_ex_inst_reg[branch][24]/Q' [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv:95]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv:95]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv:95]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'de_ex_inst_reg[branch][23]/Q' [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv:95]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv:95]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv:95]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'de_ex_inst_reg[branch][22]/Q' [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv:95]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv:95]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv:95]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'de_ex_inst_reg[branch][21]/Q' [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv:95]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv:95]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv:95]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'de_ex_inst_reg[branch][20]/Q' [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv:95]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv:95]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv:95]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'de_ex_inst_reg[branch][19]/Q' [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv:95]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv:95]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv:95]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'de_ex_inst_reg[branch][18]/Q' [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv:95]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv:95]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv:95]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'de_ex_inst_reg[branch][17]/Q' [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv:95]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv:95]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv:95]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'de_ex_inst_reg[branch][16]/Q' [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv:95]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv:95]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv:95]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'de_ex_inst_reg[branch][15]/Q' [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv:95]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv:95]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv:95]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'de_ex_inst_reg[branch][14]/Q' [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv:95]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv:95]
+INFO: [Common 17-14] Message 'Synth 8-6859' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv:95]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv:95]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv:95]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv:95]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv:95]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv:95]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv:95]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv:95]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv:95]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv:95]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv:95]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv:95]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv:95]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv:95]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv:95]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv:95]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv:95]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv:95]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv:95]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv:95]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv:95]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv:95]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv:95]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv:95]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv:95]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv:95]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv:95]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv:95]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv:95]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv:95]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv:95]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv:95]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv:95]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv:95]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv:95]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv:95]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv:95]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv:95]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv:95]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv:95]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv:95]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv:95]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv:95]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv:95]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv:95]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv:95]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/USER/Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv:95]
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:54 ; elapsed = 00:00:56 . Memory (MB): peak = 1328.707 ; gain = 44.184
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Preliminary Mapping Report (see note below)
++------------+--------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name | RTL Object         | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++------------+--------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|OTTER_MCU   | Memdual/memory_reg | 16 K x 32(READ_FIRST)  | W | R | 16 K x 32(WRITE_FIRST) |   | R | Port A and B     | 0      | 16     | 
++------------+--------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+
+Distributed RAM: Preliminary Mapping Report (see note below)
++------------+-----------------+-----------+----------------------+--------------+
+|Module Name | RTL Object      | Inference | Size (Depth x Width) | Primitives   | 
++------------+-----------------+-----------+----------------------+--------------+
+|OTTER_MCU   | regfile/ram_reg | Implied   | 32 x 32              | RAM32M x 12  | 
++------------+-----------------+-----------+----------------------+--------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:00 ; elapsed = 00:01:02 . Memory (MB): peak = 1328.707 ; gain = 44.184
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:02:25 ; elapsed = 00:02:27 . Memory (MB): peak = 1443.457 ; gain = 158.934
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Final Mapping Report
++------------+--------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name | RTL Object         | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++------------+--------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|OTTER_MCU   | Memdual/memory_reg | 16 K x 32(READ_FIRST)  | W | R | 16 K x 32(WRITE_FIRST) |   | R | Port A and B     | 0      | 16     | 
++------------+--------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+
+Distributed RAM: Final Mapping Report
++------------+-----------------+-----------+----------------------+--------------+
+|Module Name | RTL Object      | Inference | Size (Depth x Width) | Primitives   | 
++------------+-----------------+-----------+----------------------+--------------+
+|OTTER_MCU   | regfile/ram_reg | Implied   | 32 x 32              | RAM32M x 12  | 
++------------+-----------------+-----------+----------------------+--------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7052] The timing for the instance Memdual/memory_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance Memdual/memory_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance Memdual/memory_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance Memdual/memory_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance Memdual/memory_reg_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance Memdual/memory_reg_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance Memdual/memory_reg_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance Memdual/memory_reg_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance Memdual/memory_reg_4 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance Memdual/memory_reg_4 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance Memdual/memory_reg_5 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance Memdual/memory_reg_5 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance Memdual/memory_reg_6 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance Memdual/memory_reg_6 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance Memdual/memory_reg_7 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance Memdual/memory_reg_7 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance Memdual/memory_reg_8 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance Memdual/memory_reg_8 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance Memdual/memory_reg_9 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance Memdual/memory_reg_9 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance Memdual/memory_reg_10 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance Memdual/memory_reg_10 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance Memdual/memory_reg_11 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance Memdual/memory_reg_11 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance Memdual/memory_reg_12 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance Memdual/memory_reg_12 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance Memdual/memory_reg_13 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance Memdual/memory_reg_14 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance Memdual/memory_reg_15 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance Memdual/memory_reg_15 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:02:26 ; elapsed = 00:02:28 . Memory (MB): peak = 1444.492 ; gain = 159.969
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:02:31 ; elapsed = 00:02:33 . Memory (MB): peak = 1444.492 ; gain = 159.969
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:02:31 ; elapsed = 00:02:33 . Memory (MB): peak = 1444.492 ; gain = 159.969
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:02:31 ; elapsed = 00:02:33 . Memory (MB): peak = 1444.492 ; gain = 159.969
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:02:31 ; elapsed = 00:02:33 . Memory (MB): peak = 1444.492 ; gain = 159.969
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:02:31 ; elapsed = 00:02:33 . Memory (MB): peak = 1444.492 ; gain = 159.969
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:02:31 ; elapsed = 00:02:33 . Memory (MB): peak = 1444.492 ; gain = 159.969
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |BUFG     |     1|
+|2     |CARRY4   |    43|
+|3     |LUT1     |    15|
+|4     |LUT2     |    77|
+|5     |LUT3     |    45|
+|6     |LUT4     |   202|
+|7     |LUT5     |   144|
+|8     |LUT6     |   475|
+|9     |RAM32M   |    10|
+|10    |RAM32X1D |     4|
+|11    |RAMB36E1 |    16|
+|27    |FDRE     |   535|
+|28    |IBUF     |    34|
+|29    |OBUF     |    65|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:02:31 ; elapsed = 00:02:33 . Memory (MB): peak = 1444.492 ; gain = 159.969
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 289 critical warnings and 66 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:02:22 ; elapsed = 00:02:31 . Memory (MB): peak = 1444.492 ; gain = 115.785
+Synthesis Optimization Complete : Time (s): cpu = 00:02:31 ; elapsed = 00:02:33 . Memory (MB): peak = 1444.492 ; gain = 159.969
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.033 . Memory (MB): peak = 1456.395 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 73 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 1 inverter(s) to 14 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1460.062 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 14 instances were transformed.
+  RAM32M => RAM32M (inverted pins: WCLK) (RAMD32(x6), RAMS32(x2)): 10 instances
+  RAM32X1D => RAM32X1D (inverted pins: WCLK) (RAMD32(x2)): 4 instances
+
+Synth Design complete, checksum: 6f8df828
+INFO: [Common 17-83] Releasing license: Synthesis
+84 Infos, 245 Warnings, 287 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:02:36 ; elapsed = 00:02:39 . Memory (MB): peak = 1460.062 ; gain = 175.539
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+INFO: [Common 17-1381] The checkpoint 'C:/Users/USER/VIVADOProjects/333HELL/333HELL.runs/synth_1/OTTER_MCU.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file OTTER_MCU_utilization_synth.rpt -pb OTTER_MCU_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed May 29 15:21:59 2024...

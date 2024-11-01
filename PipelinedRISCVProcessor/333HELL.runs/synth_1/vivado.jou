@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Wed May 29 15:19:13 2024
+# Process ID: 19996
+# Current directory: C:/Users/USER/VIVADOProjects/333HELL/333HELL.runs/synth_1
+# Command line: vivado.exe -log OTTER_MCU.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source OTTER_MCU.tcl
+# Log file: C:/Users/USER/VIVADOProjects/333HELL/333HELL.runs/synth_1/OTTER_MCU.vds
+# Journal file: C:/Users/USER/VIVADOProjects/333HELL/333HELL.runs/synth_1\vivado.jou
+# Running On: DESKTOP-RJ15DL8, OS: Windows, CPU Frequency: 2400 MHz, CPU Physical cores: 4, Host memory: 17009 MB
+#-----------------------------------------------------------
+source OTTER_MCU.tcl -notrace

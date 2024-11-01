@@ -1,0 +1,2736 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Wed Oct 30 17:35:31 2024
+# Process ID: 516
+# Current directory: C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.runs/synth_1
+# Command line: vivado.exe -log PUFFD1DD4.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source PUFFD1DD4.tcl
+# Log file: C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.runs/synth_1/PUFFD1DD4.vds
+# Journal file: C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.runs/synth_1\vivado.jou
+# Running On: DESKTOP-RJ15DL8, OS: Windows, CPU Frequency: 2400 MHz, CPU Physical cores: 4, Host memory: 17009 MB
+#-----------------------------------------------------------
+source PUFFD1DD4.tcl -notrace
+create_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 1284.445 ; gain = 0.000
+Command: read_checkpoint -auto_incremental -incremental C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/utils_1/imports/synth_1/PUFFD1DD4.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/utils_1/imports/synth_1/PUFFD1DD4.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top PUFFD1DD4 -part xc7a35ticpg236-1L
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35ti'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35ti'
+INFO: [Device 21-403] Loading part xc7a35ticpg236-1L
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 18012
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 1284.445 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'PUFFD1DD4' [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/PUFFD1DD4.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'Ring_Oscillator2' [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/Ring_Oscillator2.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'slicer' [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/slicer.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'SpecialLUT' [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/SpecialLUT.sv:22]
+INFO: [Synth 8-6155] done synthesizing module 'SpecialLUT' (0#1) [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/SpecialLUT.sv:22]
+INFO: [Synth 8-6155] done synthesizing module 'slicer' (0#1) [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/slicer.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'SubMarine' [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/Submarine.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'LUT' [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/LUT.sv:22]
+INFO: [Synth 8-6155] done synthesizing module 'LUT' (0#1) [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/LUT.sv:22]
+INFO: [Synth 8-6155] done synthesizing module 'SubMarine' (0#1) [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/Submarine.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'Ring_Oscillator2' (0#1) [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/Ring_Oscillator2.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'Mult9to1' [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/RO_mux.sv:1]
+INFO: [Synth 8-6155] done synthesizing module 'Mult9to1' (0#1) [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/RO_mux.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'counter' [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/Counter.sv:1]
+INFO: [Synth 8-6155] done synthesizing module 'counter' (0#1) [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/Counter.sv:1]
+WARNING: [Synth 8-689] width (4) of port connection 'DOUT' does not match port width (32) of module 'counter' [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/PUFFD1DD4.sv:73]
+INFO: [Synth 8-6157] synthesizing module 'counter__parameterized0' [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/Counter.sv:1]
+	Parameter n bound to: 25 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'counter__parameterized0' (0#1) [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/Counter.sv:1]
+WARNING: [Synth 8-7071] port 'LD' of module 'counter' is unconnected for instance 'STD_cntr' [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/PUFFD1DD4.sv:77]
+WARNING: [Synth 8-7071] port 'DOUT' of module 'counter' is unconnected for instance 'STD_cntr' [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/PUFFD1DD4.sv:77]
+WARNING: [Synth 8-7023] instance 'STD_cntr' of module 'counter' has 7 connections declared, but only 5 given [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/PUFFD1DD4.sv:77]
+INFO: [Synth 8-6157] synthesizing module 'Register' [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/Register.sv:1]
+INFO: [Synth 8-6155] done synthesizing module 'Register' (0#1) [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/Register.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'Comparator' [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/Comparator.sv:1]
+INFO: [Synth 8-6155] done synthesizing module 'Comparator' (0#1) [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/Comparator.sv:1]
+WARNING: [Synth 8-7071] port 'eq' of module 'Comparator' is unconnected for instance 'ResponseBit' [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/PUFFD1DD4.sv:80]
+WARNING: [Synth 8-7071] port 'lt' of module 'Comparator' is unconnected for instance 'ResponseBit' [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/PUFFD1DD4.sv:80]
+WARNING: [Synth 8-7023] instance 'ResponseBit' of module 'Comparator' has 5 connections declared, but only 3 given [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/PUFFD1DD4.sv:80]
+INFO: [Synth 8-6157] synthesizing module 'PUF_FSM' [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/PUF_FSM.sv:22]
+INFO: [Synth 8-6155] done synthesizing module 'PUF_FSM' (0#1) [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/PUF_FSM.sv:22]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/PUFFD1DD4.sv:84]
+INFO: [Synth 8-638] synthesizing module 'sha128_simple' [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/sha128_simple.vhd:38]
+INFO: [Synth 8-3491] module 'sha256' declared at 'C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/sha256.vhd:15' bound to instance 'sha256_comp' of component 'sha256' [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/sha128_simple.vhd:66]
+INFO: [Synth 8-638] synthesizing module 'sha256' [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/sha256.vhd:37]
+INFO: [Synth 8-256] done synthesizing module 'sha256' (0#1) [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/sha256.vhd:37]
+INFO: [Synth 8-256] done synthesizing module 'sha128_simple' (0#1) [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/sha128_simple.vhd:38]
+INFO: [Synth 8-638] synthesizing module 'sseg_des' [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/sseg_des.vhd:54]
+INFO: [Synth 8-3491] module 'clk_div' declared at 'C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/sseg_des.vhd:138' bound to instance 'my_clk' of component 'clk_div' [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/sseg_des.vhd:67]
+INFO: [Synth 8-638] synthesizing module 'clk_div' [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/sseg_des.vhd:143]
+INFO: [Synth 8-256] done synthesizing module 'clk_div' (0#1) [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/sseg_des.vhd:143]
+INFO: [Synth 8-226] default block is never used [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/sseg_des.vhd:83]
+WARNING: [Synth 8-614] signal 'VALID' is read in the process but is not in the sensitivity list [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/sseg_des.vhd:80]
+INFO: [Synth 8-226] default block is never used [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/sseg_des.vhd:117]
+INFO: [Synth 8-256] done synthesizing module 'sseg_des' (0#1) [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/sseg_des.vhd:54]
+WARNING: [Synth 8-689] width (8) of port connection 'SEGMENTS' does not match port width (7) of module 'sseg_des' [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/PUFFD1DD4.sv:127]
+INFO: [Synth 8-6155] done synthesizing module 'PUFFD1DD4' (0#1) [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/PUFFD1DD4.sv:23]
+WARNING: [Synth 8-87] always_comb on 'GO_taken_reg' did not result in combinational logic [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/PUF_FSM.sv:65]
+WARNING: [Synth 8-87] always_comb on 'RO_en_reg' did not result in combinational logic [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/PUFFD1DD4.sv:62]
+WARNING: [Synth 8-3917] design PUFFD1DD4 has port CATHODES[7] driven by constant 0
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 1284.445 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 1284.445 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 1284.445 ; gain = 0.000
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.058 . Memory (MB): peak = 1284.445 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/constrs_1/new/Bussy_constraints.xdc]
+WARNING: [Vivado 12-507] No nets matched 'nuclear/out'. [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/constrs_1/new/Bussy_constraints.xdc:21]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/constrs_1/new/Bussy_constraints.xdc:21]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'challenge[7]'. [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/constrs_1/new/Bussy_constraints.xdc:33]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/constrs_1/new/Bussy_constraints.xdc:33]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'challenge[7]'. [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/constrs_1/new/Bussy_constraints.xdc:34]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/constrs_1/new/Bussy_constraints.xdc:34]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'challenge[6]'. [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/constrs_1/new/Bussy_constraints.xdc:35]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/constrs_1/new/Bussy_constraints.xdc:35]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'challenge[6]'. [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/constrs_1/new/Bussy_constraints.xdc:36]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/constrs_1/new/Bussy_constraints.xdc:36]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/constrs_1/new/Bussy_constraints.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/constrs_1/new/Bussy_constraints.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/PUFFD1DD4_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/PUFFD1DD4_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1326.500 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.027 . Memory (MB): peak = 1326.500 ; gain = 0.000
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 1326.500 ; gain = 42.055
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35ticpg236-1L
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 1326.500 ; gain = 42.055
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 1326.500 ; gain = 42.055
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'PS_reg' in module 'PUF_FSM'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'sha256'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                            00001 | 00000000000000000000000000000000
+                   RO_go |                            00010 | 00000000000000000000000000000001
+                RO_store |                            00100 | 00000000000000000000000000000010
+                 RO_load |                            01000 | 00000000000000000000000000000011
+                RO_clear |                            10000 | 00000000000000000000000000000100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'PS_reg' using encoding 'one-hot' in module 'PUF_FSM'
+WARNING: [Synth 8-327] inferring latch for variable 'GO_taken_reg' [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/PUF_FSM.sv:65]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                             0001 |                               00
+                 prepare |                             0010 |                               01
+                    busy |                             0100 |                               10
+                   final |                             1000 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'sha256'
+WARNING: [Synth 8-327] inferring latch for variable 'RO_en_reg' [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/PUFFD1DD4.sv:62]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:24 ; elapsed = 00:00:27 . Memory (MB): peak = 1326.500 ; gain = 42.055
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 10    
+	   4 Input   32 Bit       Adders := 1     
+	   5 Input   32 Bit       Adders := 1     
+	   3 Input   32 Bit       Adders := 1     
+	   2 Input    6 Bit       Adders := 1     
+	   2 Input    2 Bit       Adders := 1     
++---XORs : 
+	   3 Input     32 Bit         XORs := 5     
+	   2 Input     32 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 82    
+	               16 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                6 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 2     
+	   4 Input   32 Bit        Muxes := 16    
+	   3 Input   32 Bit        Muxes := 1     
+	   2 Input   16 Bit        Muxes := 2     
+	   9 Input    8 Bit        Muxes := 1     
+	  16 Input    7 Bit        Muxes := 1     
+	   2 Input    7 Bit        Muxes := 1     
+	   4 Input    6 Bit        Muxes := 1     
+	   5 Input    5 Bit        Muxes := 1     
+	   2 Input    5 Bit        Muxes := 3     
+	   2 Input    4 Bit        Muxes := 1     
+	   5 Input    4 Bit        Muxes := 1     
+	   4 Input    4 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 152   
+	   5 Input    1 Bit        Muxes := 3     
+	   4 Input    1 Bit        Muxes := 68    
+	  10 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-3917] design PUFFD1DD4 has port CATHODES[7] driven by constant 0
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:37 ; elapsed = 00:00:40 . Memory (MB): peak = 1326.500 ; gain = 42.055
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+ROM: Preliminary Mapping Report
++------------+--------------+---------------+----------------+
+|Module Name | RTL Object   | Depth x Width | Implemented As | 
++------------+--------------+---------------+----------------+
+|sha256      | constants[0] | 64x32         | LUT            | 
+|sha256      | constants[0] | 64x32         | LUT            | 
++------------+--------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:44 ; elapsed = 00:00:47 . Memory (MB): peak = 1326.500 ; gain = 42.055
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+      : VRO1/yellow/out_inferred/p_0_in
+      : VRO1/yellow/mid2_inferred__0/out
+      : VRO1/yellow/mid2_inferred__0/in0
+      : VRO1/yellow/mid2_inferred/out
+      : VRO1/yellow/mid2_inferred/in0
+      : VRO1/yellow/subLUT2/out
+      : VRO1/yellow/subLUT2/out_inferred/out
+      : VRO1/yellow/subLUT2/out_inferred/p_1_in
+      : VRO1/yellow/subLUT2/internal1_inferred__0/out
+      : VRO1/yellow/subLUT2/internal1_inferred__0/in0
+      : VRO1/yellow/subLUT2/internal1_inferred/out
+      : VRO1/yellow/subLUT2/internal1_inferred/in0
+      : VRO1/yellow/subLUT2/internal1_reg0_inferred/internal1_reg0
+      : VRO1/yellow/subLUT2/internal1_reg0_inferred/i1
+      : VRO1/yellow/subLUT2/i1
+      : VRO1/yellow/i1
+      : VRO1/mid11_inferred__0/out
+      : VRO1/mid11_inferred__0/in0
+      : VRO1/mid11_inferred/out
+      : VRO1/mid11_inferred/in0
+      : VRO1/nuclear/out
+      : VRO1/nuclear/out_inferred/outlatch
+      : VRO1/nuclear/out_inferred/p_0_in
+      : VRO1/nuclear/mid2_inferred__0/out
+      : VRO1/nuclear/mid2_inferred__0/in0
+      : VRO1/nuclear/mid2_inferred/out
+      : VRO1/nuclear/mid2_inferred/in0
+      : VRO1/nuclear/subLUT2/out
+      : VRO1/nuclear/subLUT2/out_inferred/out
+      : VRO1/nuclear/subLUT2/out_inferred/p_1_in
+      : VRO1/nuclear/subLUT2/internal1_inferred__0/out
+      : VRO1/nuclear/subLUT2/internal1_inferred__0/in0
+      : VRO1/nuclear/subLUT2/internal1_inferred/out
+      : VRO1/nuclear/subLUT2/internal1_inferred/in0
+      : VRO1/nuclear/subLUT2/internal1_reg0_inferred/internal1_reg0
+      : VRO1/nuclear/subLUT2/internal1_reg0_inferred/i1
+      : VRO1/nuclear/subLUT2/i1
+      : VRO1/nuclear/i1
+      : VRO1/mid01_inferred__0/out
+      : VRO1/mid01_inferred__0/in0
+      : VRO1/mid01_inferred/out
+      : VRO1/mid01_inferred/in0
+      : VRO1/skibidi/out
+      : VRO1/skibidi/out_inferred/outlatch
+      : VRO1/skibidi/out_inferred/p_0_in
+      : VRO1/skibidi/mid2_inferred__0/out
+      : VRO1/skibidi/mid2_inferred__0/in0
+      : VRO1/skibidi/mid2_inferred/out
+      : VRO1/skibidi/mid2_inferred/in0
+      : VRO1/skibidi/subspLUT2/out
+      : VRO1/skibidi/subspLUT2/i_0/out
+      : VRO1/skibidi/subspLUT2/i_0/p_0_in
+      : VRO1/skibidi/subspLUT2/mid_inferred__0/out
+      : VRO1/skibidi/subspLUT2/mid_inferred__0/in0
+      : VRO1/skibidi/subspLUT2/mid_inferred/out
+      : VRO1/skibidi/subspLUT2/mid_inferred/in0
+      : VRO1/skibidi/subspLUT2/mid_inferred__1/mid
+      : VRO1/skibidi/subspLUT2/mid_inferred__1/p_1_in
+      : VRO1/skibidi/subspLUT2/internal1_inferred__0/out
+      : VRO1/skibidi/subspLUT2/internal1_inferred__0/in0
+      : VRO1/skibidi/subspLUT2/internal1_inferred/out
+      : VRO1/skibidi/subspLUT2/internal1_inferred/in0
+      : VRO1/skibidi/subspLUT2/internal1_reg0_inferred/internal1_reg0
+      : VRO1/skibidi/subspLUT2/internal1_reg0_inferred/i1
+      : VRO1/skibidi/subspLUT2/i1
+      : VRO1/skibidi/i1
+      : VRO1/temp_inferred__0/out
+      : VRO1/temp_inferred__0/in0
+      : VRO1/temp_inferred/out
+      : VRO1/temp_inferred/in0
+      : VRO1/in00_inferred/in00
+      : VRO1/in00_inferred/out
+      : VRO1/mid21_inferred__0/out
+      : VRO1/mid21_inferred__0/in0
+      : VRO1/mid21_inferred/out
+      : VRO1/mid21_inferred/in0
+      : VRO1/yellow/out
+      : VRO1/yellow/out_inferred/outlatch
+      : VRO8/yellow/out_inferred/p_0_in
+      : VRO8/yellow/mid2_inferred__0/out
+      : VRO8/yellow/mid2_inferred__0/in0
+      : VRO8/yellow/mid2_inferred/out
+      : VRO8/yellow/mid2_inferred/in0
+      : VRO8/yellow/subLUT2/out
+      : VRO8/yellow/subLUT2/out_inferred/out
+      : VRO8/yellow/subLUT2/out_inferred/p_1_in
+      : VRO8/yellow/subLUT2/internal1_inferred__0/out
+      : VRO8/yellow/subLUT2/internal1_inferred__0/in0
+      : VRO8/yellow/subLUT2/internal1_inferred/out
+      : VRO8/yellow/subLUT2/internal1_inferred/in0
+      : VRO8/yellow/subLUT2/internal1_reg0_inferred/internal1_reg0
+      : VRO8/yellow/subLUT2/internal1_reg0_inferred/i1
+      : VRO8/yellow/subLUT2/i1
+      : VRO8/yellow/i1
+      : VRO8/mid11_inferred__0/out
+      : VRO8/mid11_inferred__0/in0
+      : VRO8/mid11_inferred/out
+      : VRO8/mid11_inferred/in0
+      : VRO8/nuclear/out
+      : VRO8/nuclear/out_inferred/outlatch
+      : VRO8/nuclear/out_inferred/p_0_in
+      : VRO8/nuclear/mid2_inferred__0/out
+      : VRO8/nuclear/mid2_inferred__0/in0
+      : VRO8/nuclear/mid2_inferred/out
+      : VRO8/nuclear/mid2_inferred/in0
+      : VRO8/nuclear/subLUT2/out
+      : VRO8/nuclear/subLUT2/out_inferred/out
+      : VRO8/nuclear/subLUT2/out_inferred/p_1_in
+      : VRO8/nuclear/subLUT2/internal1_inferred__0/out
+      : VRO8/nuclear/subLUT2/internal1_inferred__0/in0
+      : VRO8/nuclear/subLUT2/internal1_inferred/out
+      : VRO8/nuclear/subLUT2/internal1_inferred/in0
+      : VRO8/nuclear/subLUT2/internal1_reg0_inferred/internal1_reg0
+      : VRO8/nuclear/subLUT2/internal1_reg0_inferred/i1
+      : VRO8/nuclear/subLUT2/i1
+      : VRO8/nuclear/i1
+      : VRO8/mid01_inferred__0/out
+      : VRO8/mid01_inferred__0/in0
+      : VRO8/mid01_inferred/out
+      : VRO8/mid01_inferred/in0
+      : VRO8/skibidi/out
+      : VRO8/skibidi/out_inferred/outlatch
+      : VRO8/skibidi/out_inferred/p_0_in
+      : VRO8/skibidi/mid2_inferred__0/out
+      : VRO8/skibidi/mid2_inferred__0/in0
+      : VRO8/skibidi/mid2_inferred/out
+      : VRO8/skibidi/mid2_inferred/in0
+      : VRO8/skibidi/subspLUT2/out
+      : VRO8/skibidi/subspLUT2/i_0/out
+      : VRO8/skibidi/subspLUT2/i_0/p_0_in
+      : VRO8/skibidi/subspLUT2/mid_inferred__0/out
+      : VRO8/skibidi/subspLUT2/mid_inferred__0/in0
+      : VRO8/skibidi/subspLUT2/mid_inferred/out
+      : VRO8/skibidi/subspLUT2/mid_inferred/in0
+      : VRO8/skibidi/subspLUT2/mid_inferred__1/mid
+      : VRO8/skibidi/subspLUT2/mid_inferred__1/p_1_in
+      : VRO8/skibidi/subspLUT2/internal1_inferred__0/out
+      : VRO8/skibidi/subspLUT2/internal1_inferred__0/in0
+      : VRO8/skibidi/subspLUT2/internal1_inferred/out
+      : VRO8/skibidi/subspLUT2/internal1_inferred/in0
+      : VRO8/skibidi/subspLUT2/internal1_reg0_inferred/internal1_reg0
+      : VRO8/skibidi/subspLUT2/internal1_reg0_inferred/i1
+      : VRO8/skibidi/subspLUT2/i1
+      : VRO8/skibidi/i1
+      : VRO8/temp_inferred__0/out
+      : VRO8/temp_inferred__0/in0
+      : VRO8/temp_inferred/out
+      : VRO8/temp_inferred/in0
+      : VRO8/in00_inferred/in00
+      : VRO8/in00_inferred/out
+      : VRO8/mid21_inferred__0/out
+      : VRO8/mid21_inferred__0/in0
+      : VRO8/mid21_inferred/out
+      : VRO8/mid21_inferred/in0
+      : VRO8/yellow/out
+      : VRO8/yellow/out_inferred/outlatch
+      : VRO7/yellow/out_inferred/p_0_in
+      : VRO7/yellow/mid2_inferred__0/out
+      : VRO7/yellow/mid2_inferred__0/in0
+      : VRO7/yellow/mid2_inferred/out
+      : VRO7/yellow/mid2_inferred/in0
+      : VRO7/yellow/subLUT2/out
+      : VRO7/yellow/subLUT2/out_inferred/out
+      : VRO7/yellow/subLUT2/out_inferred/p_1_in
+      : VRO7/yellow/subLUT2/internal1_inferred__0/out
+      : VRO7/yellow/subLUT2/internal1_inferred__0/in0
+      : VRO7/yellow/subLUT2/internal1_inferred/out
+      : VRO7/yellow/subLUT2/internal1_inferred/in0
+      : VRO7/yellow/subLUT2/internal1_reg0_inferred/internal1_reg0
+      : VRO7/yellow/subLUT2/internal1_reg0_inferred/i1
+      : VRO7/yellow/subLUT2/i1
+      : VRO7/yellow/i1
+      : VRO7/mid11_inferred__0/out
+      : VRO7/mid11_inferred__0/in0
+      : VRO7/mid11_inferred/out
+      : VRO7/mid11_inferred/in0
+      : VRO7/nuclear/out
+      : VRO7/nuclear/out_inferred/outlatch
+      : VRO7/nuclear/out_inferred/p_0_in
+      : VRO7/nuclear/mid2_inferred__0/out
+      : VRO7/nuclear/mid2_inferred__0/in0
+      : VRO7/nuclear/mid2_inferred/out
+      : VRO7/nuclear/mid2_inferred/in0
+      : VRO7/nuclear/subLUT2/out
+      : VRO7/nuclear/subLUT2/out_inferred/out
+      : VRO7/nuclear/subLUT2/out_inferred/p_1_in
+      : VRO7/nuclear/subLUT2/internal1_inferred__0/out
+      : VRO7/nuclear/subLUT2/internal1_inferred__0/in0
+      : VRO7/nuclear/subLUT2/internal1_inferred/out
+      : VRO7/nuclear/subLUT2/internal1_inferred/in0
+      : VRO7/nuclear/subLUT2/internal1_reg0_inferred/internal1_reg0
+      : VRO7/nuclear/subLUT2/internal1_reg0_inferred/i1
+      : VRO7/nuclear/subLUT2/i1
+      : VRO7/nuclear/i1
+      : VRO7/mid01_inferred__0/out
+      : VRO7/mid01_inferred__0/in0
+      : VRO7/mid01_inferred/out
+      : VRO7/mid01_inferred/in0
+      : VRO7/skibidi/out
+      : VRO7/skibidi/out_inferred/outlatch
+      : VRO7/skibidi/out_inferred/p_0_in
+      : VRO7/skibidi/mid2_inferred__0/out
+      : VRO7/skibidi/mid2_inferred__0/in0
+      : VRO7/skibidi/mid2_inferred/out
+      : VRO7/skibidi/mid2_inferred/in0
+      : VRO7/skibidi/subspLUT2/out
+      : VRO7/skibidi/subspLUT2/i_0/out
+      : VRO7/skibidi/subspLUT2/i_0/p_0_in
+      : VRO7/skibidi/subspLUT2/mid_inferred__0/out
+      : VRO7/skibidi/subspLUT2/mid_inferred__0/in0
+      : VRO7/skibidi/subspLUT2/mid_inferred/out
+      : VRO7/skibidi/subspLUT2/mid_inferred/in0
+      : VRO7/skibidi/subspLUT2/mid_inferred__1/mid
+      : VRO7/skibidi/subspLUT2/mid_inferred__1/p_1_in
+      : VRO7/skibidi/subspLUT2/internal1_inferred__0/out
+      : VRO7/skibidi/subspLUT2/internal1_inferred__0/in0
+      : VRO7/skibidi/subspLUT2/internal1_inferred/out
+      : VRO7/skibidi/subspLUT2/internal1_inferred/in0
+      : VRO7/skibidi/subspLUT2/internal1_reg0_inferred/internal1_reg0
+      : VRO7/skibidi/subspLUT2/internal1_reg0_inferred/i1
+      : VRO7/skibidi/subspLUT2/i1
+      : VRO7/skibidi/i1
+      : VRO7/temp_inferred__0/out
+      : VRO7/temp_inferred__0/in0
+      : VRO7/temp_inferred/out
+      : VRO7/temp_inferred/in0
+      : VRO7/in00_inferred/in00
+      : VRO7/in00_inferred/out
+      : VRO7/mid21_inferred__0/out
+      : VRO7/mid21_inferred__0/in0
+      : VRO7/mid21_inferred/out
+      : VRO7/mid21_inferred/in0
+      : VRO7/yellow/out
+      : VRO7/yellow/out_inferred/outlatch
+      : VRO6/yellow/out_inferred/p_0_in
+      : VRO6/yellow/mid2_inferred__0/out
+      : VRO6/yellow/mid2_inferred__0/in0
+      : VRO6/yellow/mid2_inferred/out
+      : VRO6/yellow/mid2_inferred/in0
+      : VRO6/yellow/subLUT2/out
+      : VRO6/yellow/subLUT2/out_inferred/out
+      : VRO6/yellow/subLUT2/out_inferred/p_1_in
+      : VRO6/yellow/subLUT2/internal1_inferred__0/out
+      : VRO6/yellow/subLUT2/internal1_inferred__0/in0
+      : VRO6/yellow/subLUT2/internal1_inferred/out
+      : VRO6/yellow/subLUT2/internal1_inferred/in0
+      : VRO6/yellow/subLUT2/internal1_reg0_inferred/internal1_reg0
+      : VRO6/yellow/subLUT2/internal1_reg0_inferred/i1
+      : VRO6/yellow/subLUT2/i1
+      : VRO6/yellow/i1
+      : VRO6/mid11_inferred__0/out
+      : VRO6/mid11_inferred__0/in0
+      : VRO6/mid11_inferred/out
+      : VRO6/mid11_inferred/in0
+      : VRO6/nuclear/out
+      : VRO6/nuclear/out_inferred/outlatch
+      : VRO6/nuclear/out_inferred/p_0_in
+      : VRO6/nuclear/mid2_inferred__0/out
+      : VRO6/nuclear/mid2_inferred__0/in0
+      : VRO6/nuclear/mid2_inferred/out
+      : VRO6/nuclear/mid2_inferred/in0
+      : VRO6/nuclear/subLUT2/out
+      : VRO6/nuclear/subLUT2/out_inferred/out
+      : VRO6/nuclear/subLUT2/out_inferred/p_1_in
+      : VRO6/nuclear/subLUT2/internal1_inferred__0/out
+      : VRO6/nuclear/subLUT2/internal1_inferred__0/in0
+      : VRO6/nuclear/subLUT2/internal1_inferred/out
+      : VRO6/nuclear/subLUT2/internal1_inferred/in0
+      : VRO6/nuclear/subLUT2/internal1_reg0_inferred/internal1_reg0
+      : VRO6/nuclear/subLUT2/internal1_reg0_inferred/i1
+      : VRO6/nuclear/subLUT2/i1
+      : VRO6/nuclear/i1
+      : VRO6/mid01_inferred__0/out
+      : VRO6/mid01_inferred__0/in0
+      : VRO6/mid01_inferred/out
+      : VRO6/mid01_inferred/in0
+      : VRO6/skibidi/out
+      : VRO6/skibidi/out_inferred/outlatch
+      : VRO6/skibidi/out_inferred/p_0_in
+      : VRO6/skibidi/mid2_inferred__0/out
+      : VRO6/skibidi/mid2_inferred__0/in0
+      : VRO6/skibidi/mid2_inferred/out
+      : VRO6/skibidi/mid2_inferred/in0
+      : VRO6/skibidi/subspLUT2/out
+      : VRO6/skibidi/subspLUT2/i_0/out
+      : VRO6/skibidi/subspLUT2/i_0/p_0_in
+      : VRO6/skibidi/subspLUT2/mid_inferred__0/out
+      : VRO6/skibidi/subspLUT2/mid_inferred__0/in0
+      : VRO6/skibidi/subspLUT2/mid_inferred/out
+      : VRO6/skibidi/subspLUT2/mid_inferred/in0
+      : VRO6/skibidi/subspLUT2/mid_inferred__1/mid
+      : VRO6/skibidi/subspLUT2/mid_inferred__1/p_1_in
+      : VRO6/skibidi/subspLUT2/internal1_inferred__0/out
+      : VRO6/skibidi/subspLUT2/internal1_inferred__0/in0
+      : VRO6/skibidi/subspLUT2/internal1_inferred/out
+      : VRO6/skibidi/subspLUT2/internal1_inferred/in0
+      : VRO6/skibidi/subspLUT2/internal1_reg0_inferred/internal1_reg0
+      : VRO6/skibidi/subspLUT2/internal1_reg0_inferred/i1
+      : VRO6/skibidi/subspLUT2/i1
+      : VRO6/skibidi/i1
+      : VRO6/temp_inferred__0/out
+      : VRO6/temp_inferred__0/in0
+      : VRO6/temp_inferred/out
+      : VRO6/temp_inferred/in0
+      : VRO6/in00_inferred/in00
+      : VRO6/in00_inferred/out
+      : VRO6/mid21_inferred__0/out
+      : VRO6/mid21_inferred__0/in0
+      : VRO6/mid21_inferred/out
+      : VRO6/mid21_inferred/in0
+      : VRO6/yellow/out
+      : VRO6/yellow/out_inferred/outlatch
+      : VRO5/yellow/out_inferred/p_0_in
+      : VRO5/yellow/mid2_inferred__0/out
+      : VRO5/yellow/mid2_inferred__0/in0
+      : VRO5/yellow/mid2_inferred/out
+      : VRO5/yellow/mid2_inferred/in0
+      : VRO5/yellow/subLUT2/out
+      : VRO5/yellow/subLUT2/out_inferred/out
+      : VRO5/yellow/subLUT2/out_inferred/p_1_in
+      : VRO5/yellow/subLUT2/internal1_inferred__0/out
+      : VRO5/yellow/subLUT2/internal1_inferred__0/in0
+      : VRO5/yellow/subLUT2/internal1_inferred/out
+      : VRO5/yellow/subLUT2/internal1_inferred/in0
+      : VRO5/yellow/subLUT2/internal1_reg0_inferred/internal1_reg0
+      : VRO5/yellow/subLUT2/internal1_reg0_inferred/i1
+      : VRO5/yellow/subLUT2/i1
+      : VRO5/yellow/i1
+      : VRO5/mid11_inferred__0/out
+      : VRO5/mid11_inferred__0/in0
+      : VRO5/mid11_inferred/out
+      : VRO5/mid11_inferred/in0
+      : VRO5/nuclear/out
+      : VRO5/nuclear/out_inferred/outlatch
+      : VRO5/nuclear/out_inferred/p_0_in
+      : VRO5/nuclear/mid2_inferred__0/out
+      : VRO5/nuclear/mid2_inferred__0/in0
+      : VRO5/nuclear/mid2_inferred/out
+      : VRO5/nuclear/mid2_inferred/in0
+      : VRO5/nuclear/subLUT2/out
+      : VRO5/nuclear/subLUT2/out_inferred/out
+      : VRO5/nuclear/subLUT2/out_inferred/p_1_in
+      : VRO5/nuclear/subLUT2/internal1_inferred__0/out
+      : VRO5/nuclear/subLUT2/internal1_inferred__0/in0
+      : VRO5/nuclear/subLUT2/internal1_inferred/out
+      : VRO5/nuclear/subLUT2/internal1_inferred/in0
+      : VRO5/nuclear/subLUT2/internal1_reg0_inferred/internal1_reg0
+      : VRO5/nuclear/subLUT2/internal1_reg0_inferred/i1
+      : VRO5/nuclear/subLUT2/i1
+      : VRO5/nuclear/i1
+      : VRO5/mid01_inferred__0/out
+      : VRO5/mid01_inferred__0/in0
+      : VRO5/mid01_inferred/out
+      : VRO5/mid01_inferred/in0
+      : VRO5/skibidi/out
+      : VRO5/skibidi/out_inferred/outlatch
+      : VRO5/skibidi/out_inferred/p_0_in
+      : VRO5/skibidi/mid2_inferred__0/out
+      : VRO5/skibidi/mid2_inferred__0/in0
+      : VRO5/skibidi/mid2_inferred/out
+      : VRO5/skibidi/mid2_inferred/in0
+      : VRO5/skibidi/subspLUT2/out
+      : VRO5/skibidi/subspLUT2/i_0/out
+      : VRO5/skibidi/subspLUT2/i_0/p_0_in
+      : VRO5/skibidi/subspLUT2/mid_inferred__0/out
+      : VRO5/skibidi/subspLUT2/mid_inferred__0/in0
+      : VRO5/skibidi/subspLUT2/mid_inferred/out
+      : VRO5/skibidi/subspLUT2/mid_inferred/in0
+      : VRO5/skibidi/subspLUT2/mid_inferred__1/mid
+      : VRO5/skibidi/subspLUT2/mid_inferred__1/p_1_in
+      : VRO5/skibidi/subspLUT2/internal1_inferred__0/out
+      : VRO5/skibidi/subspLUT2/internal1_inferred__0/in0
+      : VRO5/skibidi/subspLUT2/internal1_inferred/out
+      : VRO5/skibidi/subspLUT2/internal1_inferred/in0
+      : VRO5/skibidi/subspLUT2/internal1_reg0_inferred/internal1_reg0
+      : VRO5/skibidi/subspLUT2/internal1_reg0_inferred/i1
+      : VRO5/skibidi/subspLUT2/i1
+      : VRO5/skibidi/i1
+      : VRO5/temp_inferred__0/out
+      : VRO5/temp_inferred__0/in0
+      : VRO5/temp_inferred/out
+      : VRO5/temp_inferred/in0
+      : VRO5/in00_inferred/in00
+      : VRO5/in00_inferred/out
+      : VRO5/mid21_inferred__0/out
+      : VRO5/mid21_inferred__0/in0
+      : VRO5/mid21_inferred/out
+      : VRO5/mid21_inferred/in0
+      : VRO5/yellow/out
+      : VRO5/yellow/out_inferred/outlatch
+      : VRO4/yellow/out_inferred/p_0_in
+      : VRO4/yellow/mid2_inferred__0/out
+      : VRO4/yellow/mid2_inferred__0/in0
+      : VRO4/yellow/mid2_inferred/out
+      : VRO4/yellow/mid2_inferred/in0
+      : VRO4/yellow/subLUT2/out
+      : VRO4/yellow/subLUT2/out_inferred/out
+      : VRO4/yellow/subLUT2/out_inferred/p_1_in
+      : VRO4/yellow/subLUT2/internal1_inferred__0/out
+      : VRO4/yellow/subLUT2/internal1_inferred__0/in0
+      : VRO4/yellow/subLUT2/internal1_inferred/out
+      : VRO4/yellow/subLUT2/internal1_inferred/in0
+      : VRO4/yellow/subLUT2/internal1_reg0_inferred/internal1_reg0
+      : VRO4/yellow/subLUT2/internal1_reg0_inferred/i1
+      : VRO4/yellow/subLUT2/i1
+      : VRO4/yellow/i1
+      : VRO4/mid11_inferred__0/out
+      : VRO4/mid11_inferred__0/in0
+      : VRO4/mid11_inferred/out
+      : VRO4/mid11_inferred/in0
+      : VRO4/nuclear/out
+      : VRO4/nuclear/out_inferred/outlatch
+      : VRO4/nuclear/out_inferred/p_0_in
+      : VRO4/nuclear/mid2_inferred__0/out
+      : VRO4/nuclear/mid2_inferred__0/in0
+      : VRO4/nuclear/mid2_inferred/out
+      : VRO4/nuclear/mid2_inferred/in0
+      : VRO4/nuclear/subLUT2/out
+      : VRO4/nuclear/subLUT2/out_inferred/out
+      : VRO4/nuclear/subLUT2/out_inferred/p_1_in
+      : VRO4/nuclear/subLUT2/internal1_inferred__0/out
+      : VRO4/nuclear/subLUT2/internal1_inferred__0/in0
+      : VRO4/nuclear/subLUT2/internal1_inferred/out
+      : VRO4/nuclear/subLUT2/internal1_inferred/in0
+      : VRO4/nuclear/subLUT2/internal1_reg0_inferred/internal1_reg0
+      : VRO4/nuclear/subLUT2/internal1_reg0_inferred/i1
+      : VRO4/nuclear/subLUT2/i1
+      : VRO4/nuclear/i1
+      : VRO4/mid01_inferred__0/out
+      : VRO4/mid01_inferred__0/in0
+      : VRO4/mid01_inferred/out
+      : VRO4/mid01_inferred/in0
+      : VRO4/skibidi/out
+      : VRO4/skibidi/out_inferred/outlatch
+      : VRO4/skibidi/out_inferred/p_0_in
+      : VRO4/skibidi/mid2_inferred__0/out
+      : VRO4/skibidi/mid2_inferred__0/in0
+      : VRO4/skibidi/mid2_inferred/out
+      : VRO4/skibidi/mid2_inferred/in0
+      : VRO4/skibidi/subspLUT2/out
+      : VRO4/skibidi/subspLUT2/i_0/out
+      : VRO4/skibidi/subspLUT2/i_0/p_0_in
+      : VRO4/skibidi/subspLUT2/mid_inferred__0/out
+      : VRO4/skibidi/subspLUT2/mid_inferred__0/in0
+      : VRO4/skibidi/subspLUT2/mid_inferred/out
+      : VRO4/skibidi/subspLUT2/mid_inferred/in0
+      : VRO4/skibidi/subspLUT2/mid_inferred__1/mid
+      : VRO4/skibidi/subspLUT2/mid_inferred__1/p_1_in
+      : VRO4/skibidi/subspLUT2/internal1_inferred__0/out
+      : VRO4/skibidi/subspLUT2/internal1_inferred__0/in0
+      : VRO4/skibidi/subspLUT2/internal1_inferred/out
+      : VRO4/skibidi/subspLUT2/internal1_inferred/in0
+      : VRO4/skibidi/subspLUT2/internal1_reg0_inferred/internal1_reg0
+      : VRO4/skibidi/subspLUT2/internal1_reg0_inferred/i1
+      : VRO4/skibidi/subspLUT2/i1
+      : VRO4/skibidi/i1
+      : VRO4/temp_inferred__0/out
+      : VRO4/temp_inferred__0/in0
+      : VRO4/temp_inferred/out
+      : VRO4/temp_inferred/in0
+      : VRO4/in00_inferred/in00
+      : VRO4/in00_inferred/out
+      : VRO4/mid21_inferred__0/out
+      : VRO4/mid21_inferred__0/in0
+      : VRO4/mid21_inferred/out
+      : VRO4/mid21_inferred/in0
+      : VRO4/yellow/out
+      : VRO4/yellow/out_inferred/outlatch
+      : VRO3/yellow/out_inferred/p_0_in
+      : VRO3/yellow/mid2_inferred__0/out
+      : VRO3/yellow/mid2_inferred__0/in0
+      : VRO3/yellow/mid2_inferred/out
+      : VRO3/yellow/mid2_inferred/in0
+      : VRO3/yellow/subLUT2/out
+      : VRO3/yellow/subLUT2/out_inferred/out
+      : VRO3/yellow/subLUT2/out_inferred/p_1_in
+      : VRO3/yellow/subLUT2/internal1_inferred__0/out
+      : VRO3/yellow/subLUT2/internal1_inferred__0/in0
+      : VRO3/yellow/subLUT2/internal1_inferred/out
+      : VRO3/yellow/subLUT2/internal1_inferred/in0
+      : VRO3/yellow/subLUT2/internal1_reg0_inferred/internal1_reg0
+      : VRO3/yellow/subLUT2/internal1_reg0_inferred/i1
+      : VRO3/yellow/subLUT2/i1
+      : VRO3/yellow/i1
+      : VRO3/mid11_inferred__0/out
+      : VRO3/mid11_inferred__0/in0
+      : VRO3/mid11_inferred/out
+      : VRO3/mid11_inferred/in0
+      : VRO3/nuclear/out
+      : VRO3/nuclear/out_inferred/outlatch
+      : VRO3/nuclear/out_inferred/p_0_in
+      : VRO3/nuclear/mid2_inferred__0/out
+      : VRO3/nuclear/mid2_inferred__0/in0
+      : VRO3/nuclear/mid2_inferred/out
+      : VRO3/nuclear/mid2_inferred/in0
+      : VRO3/nuclear/subLUT2/out
+      : VRO3/nuclear/subLUT2/out_inferred/out
+      : VRO3/nuclear/subLUT2/out_inferred/p_1_in
+      : VRO3/nuclear/subLUT2/internal1_inferred__0/out
+      : VRO3/nuclear/subLUT2/internal1_inferred__0/in0
+      : VRO3/nuclear/subLUT2/internal1_inferred/out
+      : VRO3/nuclear/subLUT2/internal1_inferred/in0
+      : VRO3/nuclear/subLUT2/internal1_reg0_inferred/internal1_reg0
+      : VRO3/nuclear/subLUT2/internal1_reg0_inferred/i1
+      : VRO3/nuclear/subLUT2/i1
+      : VRO3/nuclear/i1
+      : VRO3/mid01_inferred__0/out
+      : VRO3/mid01_inferred__0/in0
+      : VRO3/mid01_inferred/out
+      : VRO3/mid01_inferred/in0
+      : VRO3/skibidi/out
+      : VRO3/skibidi/out_inferred/outlatch
+      : VRO3/skibidi/out_inferred/p_0_in
+      : VRO3/skibidi/mid2_inferred__0/out
+      : VRO3/skibidi/mid2_inferred__0/in0
+      : VRO3/skibidi/mid2_inferred/out
+      : VRO3/skibidi/mid2_inferred/in0
+      : VRO3/skibidi/subspLUT2/out
+      : VRO3/skibidi/subspLUT2/i_0/out
+      : VRO3/skibidi/subspLUT2/i_0/p_0_in
+      : VRO3/skibidi/subspLUT2/mid_inferred__0/out
+      : VRO3/skibidi/subspLUT2/mid_inferred__0/in0
+      : VRO3/skibidi/subspLUT2/mid_inferred/out
+      : VRO3/skibidi/subspLUT2/mid_inferred/in0
+      : VRO3/skibidi/subspLUT2/mid_inferred__1/mid
+      : VRO3/skibidi/subspLUT2/mid_inferred__1/p_1_in
+      : VRO3/skibidi/subspLUT2/internal1_inferred__0/out
+      : VRO3/skibidi/subspLUT2/internal1_inferred__0/in0
+      : VRO3/skibidi/subspLUT2/internal1_inferred/out
+      : VRO3/skibidi/subspLUT2/internal1_inferred/in0
+      : VRO3/skibidi/subspLUT2/internal1_reg0_inferred/internal1_reg0
+      : VRO3/skibidi/subspLUT2/internal1_reg0_inferred/i1
+      : VRO3/skibidi/subspLUT2/i1
+      : VRO3/skibidi/i1
+      : VRO3/temp_inferred__0/out
+      : VRO3/temp_inferred__0/in0
+      : VRO3/temp_inferred/out
+      : VRO3/temp_inferred/in0
+      : VRO3/in00_inferred/in00
+      : VRO3/in00_inferred/out
+      : VRO3/mid21_inferred__0/out
+      : VRO3/mid21_inferred__0/in0
+      : VRO3/mid21_inferred/out
+      : VRO3/mid21_inferred/in0
+      : VRO3/yellow/out
+      : VRO3/yellow/out_inferred/outlatch
+      : VRO2/yellow/out_inferred/p_0_in
+      : VRO2/yellow/mid2_inferred__0/out
+      : VRO2/yellow/mid2_inferred__0/in0
+      : VRO2/yellow/mid2_inferred/out
+      : VRO2/yellow/mid2_inferred/in0
+      : VRO2/yellow/subLUT2/out
+      : VRO2/yellow/subLUT2/out_inferred/out
+      : VRO2/yellow/subLUT2/out_inferred/p_1_in
+      : VRO2/yellow/subLUT2/internal1_inferred__0/out
+      : VRO2/yellow/subLUT2/internal1_inferred__0/in0
+      : VRO2/yellow/subLUT2/internal1_inferred/out
+      : VRO2/yellow/subLUT2/internal1_inferred/in0
+      : VRO2/yellow/subLUT2/internal1_reg0_inferred/internal1_reg0
+      : VRO2/yellow/subLUT2/internal1_reg0_inferred/i1
+      : VRO2/yellow/subLUT2/i1
+      : VRO2/yellow/i1
+      : VRO2/mid11_inferred__0/out
+      : VRO2/mid11_inferred__0/in0
+      : VRO2/mid11_inferred/out
+      : VRO2/mid11_inferred/in0
+      : VRO2/nuclear/out
+      : VRO2/nuclear/out_inferred/outlatch
+      : VRO2/nuclear/out_inferred/p_0_in
+      : VRO2/nuclear/mid2_inferred__0/out
+      : VRO2/nuclear/mid2_inferred__0/in0
+      : VRO2/nuclear/mid2_inferred/out
+      : VRO2/nuclear/mid2_inferred/in0
+      : VRO2/nuclear/subLUT2/out
+      : VRO2/nuclear/subLUT2/out_inferred/out
+      : VRO2/nuclear/subLUT2/out_inferred/p_1_in
+      : VRO2/nuclear/subLUT2/internal1_inferred__0/out
+      : VRO2/nuclear/subLUT2/internal1_inferred__0/in0
+      : VRO2/nuclear/subLUT2/internal1_inferred/out
+      : VRO2/nuclear/subLUT2/internal1_inferred/in0
+      : VRO2/nuclear/subLUT2/internal1_reg0_inferred/internal1_reg0
+      : VRO2/nuclear/subLUT2/internal1_reg0_inferred/i1
+      : VRO2/nuclear/subLUT2/i1
+      : VRO2/nuclear/i1
+      : VRO2/mid01_inferred__0/out
+      : VRO2/mid01_inferred__0/in0
+      : VRO2/mid01_inferred/out
+      : VRO2/mid01_inferred/in0
+      : VRO2/skibidi/out
+      : VRO2/skibidi/out_inferred/outlatch
+      : VRO2/skibidi/out_inferred/p_0_in
+      : VRO2/skibidi/mid2_inferred__0/out
+      : VRO2/skibidi/mid2_inferred__0/in0
+      : VRO2/skibidi/mid2_inferred/out
+      : VRO2/skibidi/mid2_inferred/in0
+      : VRO2/skibidi/subspLUT2/out
+      : VRO2/skibidi/subspLUT2/i_0/out
+      : VRO2/skibidi/subspLUT2/i_0/p_0_in
+      : VRO2/skibidi/subspLUT2/mid_inferred__0/out
+      : VRO2/skibidi/subspLUT2/mid_inferred__0/in0
+      : VRO2/skibidi/subspLUT2/mid_inferred/out
+      : VRO2/skibidi/subspLUT2/mid_inferred/in0
+      : VRO2/skibidi/subspLUT2/mid_inferred__1/mid
+      : VRO2/skibidi/subspLUT2/mid_inferred__1/p_1_in
+      : VRO2/skibidi/subspLUT2/internal1_inferred__0/out
+      : VRO2/skibidi/subspLUT2/internal1_inferred__0/in0
+      : VRO2/skibidi/subspLUT2/internal1_inferred/out
+      : VRO2/skibidi/subspLUT2/internal1_inferred/in0
+      : VRO2/skibidi/subspLUT2/internal1_reg0_inferred/internal1_reg0
+      : VRO2/skibidi/subspLUT2/internal1_reg0_inferred/i1
+      : VRO2/skibidi/subspLUT2/i1
+      : VRO2/skibidi/i1
+      : VRO2/temp_inferred__0/out
+      : VRO2/temp_inferred__0/in0
+      : VRO2/temp_inferred/out
+      : VRO2/temp_inferred/in0
+      : VRO2/in00_inferred/in00
+      : VRO2/in00_inferred/out
+      : VRO2/mid21_inferred__0/out
+      : VRO2/mid21_inferred__0/in0
+      : VRO2/mid21_inferred/out
+      : VRO2/mid21_inferred/in0
+      : VRO2/yellow/out
+      : VRO2/yellow/out_inferred/outlatch
+      : VRO0/yellow/out_inferred/p_0_in
+      : VRO0/yellow/mid2_inferred__0/out
+      : VRO0/yellow/mid2_inferred__0/in0
+      : VRO0/yellow/mid2_inferred/out
+      : VRO0/yellow/mid2_inferred/in0
+      : VRO0/yellow/subLUT2/out
+      : VRO0/yellow/subLUT2/out_inferred/out
+      : VRO0/yellow/subLUT2/out_inferred/p_1_in
+      : VRO0/yellow/subLUT2/internal1_inferred__0/out
+      : VRO0/yellow/subLUT2/internal1_inferred__0/in0
+      : VRO0/yellow/subLUT2/internal1_inferred/out
+      : VRO0/yellow/subLUT2/internal1_inferred/in0
+      : VRO0/yellow/subLUT2/internal1_reg0_inferred/internal1_reg0
+      : VRO0/yellow/subLUT2/internal1_reg0_inferred/i1
+      : VRO0/yellow/subLUT2/i1
+      : VRO0/yellow/i1
+      : VRO0/mid11_inferred__0/out
+      : VRO0/mid11_inferred__0/in0
+      : VRO0/mid11_inferred/out
+      : VRO0/mid11_inferred/in0
+      : VRO0/nuclear/out
+      : VRO0/nuclear/out_inferred/outlatch
+      : VRO0/nuclear/out_inferred/p_0_in
+      : VRO0/nuclear/mid2_inferred__0/out
+      : VRO0/nuclear/mid2_inferred__0/in0
+      : VRO0/nuclear/mid2_inferred/out
+      : VRO0/nuclear/mid2_inferred/in0
+      : VRO0/nuclear/subLUT2/out
+      : VRO0/nuclear/subLUT2/out_inferred/out
+      : VRO0/nuclear/subLUT2/out_inferred/p_1_in
+      : VRO0/nuclear/subLUT2/internal1_inferred__0/out
+      : VRO0/nuclear/subLUT2/internal1_inferred__0/in0
+      : VRO0/nuclear/subLUT2/internal1_inferred/out
+      : VRO0/nuclear/subLUT2/internal1_inferred/in0
+      : VRO0/nuclear/subLUT2/internal1_reg0_inferred/internal1_reg0
+      : VRO0/nuclear/subLUT2/internal1_reg0_inferred/i1
+      : VRO0/nuclear/subLUT2/i1
+      : VRO0/nuclear/i1
+      : VRO0/mid01_inferred__0/out
+      : VRO0/mid01_inferred__0/in0
+      : VRO0/mid01_inferred/out
+      : VRO0/mid01_inferred/in0
+      : VRO0/skibidi/out
+      : VRO0/skibidi/out_inferred/outlatch
+      : VRO0/skibidi/out_inferred/p_0_in
+      : VRO0/skibidi/mid2_inferred__0/out
+      : VRO0/skibidi/mid2_inferred__0/in0
+      : VRO0/skibidi/mid2_inferred/out
+      : VRO0/skibidi/mid2_inferred/in0
+      : VRO0/skibidi/subspLUT2/out
+      : VRO0/skibidi/subspLUT2/i_0/out
+      : VRO0/skibidi/subspLUT2/i_0/p_0_in
+      : VRO0/skibidi/subspLUT2/mid_inferred__0/out
+      : VRO0/skibidi/subspLUT2/mid_inferred__0/in0
+      : VRO0/skibidi/subspLUT2/mid_inferred/out
+      : VRO0/skibidi/subspLUT2/mid_inferred/in0
+      : VRO0/skibidi/subspLUT2/mid_inferred__1/mid
+      : VRO0/skibidi/subspLUT2/mid_inferred__1/p_1_in
+      : VRO0/skibidi/subspLUT2/internal1_inferred__0/out
+      : VRO0/skibidi/subspLUT2/internal1_inferred__0/in0
+      : VRO0/skibidi/subspLUT2/internal1_inferred/out
+      : VRO0/skibidi/subspLUT2/internal1_inferred/in0
+      : VRO0/skibidi/subspLUT2/internal1_reg0_inferred/internal1_reg0
+      : VRO0/skibidi/subspLUT2/internal1_reg0_inferred/i1
+      : VRO0/skibidi/subspLUT2/i1
+      : VRO0/skibidi/i1
+      : VRO0/temp_inferred__0/out
+      : VRO0/temp_inferred__0/in0
+      : VRO0/temp_inferred/out
+      : VRO0/temp_inferred/in0
+      : VRO0/in00_inferred/in00
+      : VRO0/in00_inferred/out
+      : VRO0/mid21_inferred__0/out
+      : VRO0/mid21_inferred__0/in0
+      : VRO0/mid21_inferred/out
+      : VRO0/mid21_inferred/in0
+      : VRO0/yellow/out
+      : VRO0/yellow/out_inferred/outlatch
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:53 ; elapsed = 00:00:56 . Memory (MB): peak = 1459.137 ; gain = 174.691
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+Found timing loop:
+     0: VRO0/skibidi/subspLUT1/i_3/O (LUT3)
+      [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/SpecialLUT.sv:38]
+     1: VRO0/skibidi/subspLUT1/i_3/I2 (LUT3)
+      : VRO0/skibidi/subspLUT1/internal2_inferred__0/out
+      : VRO0/skibidi/subspLUT1/internal2_inferred__0/in0
+      : VRO0/skibidi/subspLUT1/internal2_inferred/out
+      : VRO0/skibidi/subspLUT1/internal2_inferred/in0
+     2: VRO0/skibidi/subspLUT1/i_0/O (LUT1)
+      [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/SpecialLUT.sv:37]
+     3: VRO0/skibidi/subspLUT1/i_0/I0 (LUT1)
+      : VRO0/skibidi/subspLUT1/i2
+      : VRO0/skibidi/i2
+      : VRO0/mid22_inferred__0/out
+      : VRO0/mid22_inferred__0/in0
+      : VRO0/mid22_inferred/out
+      : VRO0/mid22_inferred/in0
+      : VRO0/yellow/outlatch
+     4: VRO0/yellow/out_inferredi_2/O (LUT2)
+      [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/Submarine.sv:39]
+     5: VRO0/yellow/out_inferredi_2/I1 (LUT2)
+     6: VRO0/yellow/out_inferredi_0/O (LUT2)
+      [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/Submarine.sv:39]
+     7: VRO0/yellow/out_inferredi_0/I1 (LUT2)
+      : VRO0/yellow/mid1_inferred__0/out
+      : VRO0/yellow/mid1_inferred__0/in0
+      : VRO0/yellow/mid1_inferred/out
+      : VRO0/yellow/mid1_inferred/in0
+      : VRO0/yellow/subLUT1/out
+     8: VRO0/yellow/subLUT1/i_2/O (LUT3)
+      [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/LUT.sv:36]
+     9: VRO0/yellow/subLUT1/i_2/I2 (LUT3)
+      : VRO0/yellow/subLUT1/internal2_inferred__0/out
+      : VRO0/yellow/subLUT1/internal2_inferred__0/in0
+      : VRO0/yellow/subLUT1/internal2_inferred/out
+      : VRO0/yellow/subLUT1/internal2_inferred/in0
+    10: VRO0/yellow/subLUT1/i_0/O (LUT1)
+      [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/LUT.sv:35]
+    11: VRO0/yellow/subLUT1/i_0/I0 (LUT1)
+      : VRO0/yellow/subLUT1/i2
+      : VRO0/yellow/i2
+      : VRO0/mid12_inferred__0/out
+      : VRO0/mid12_inferred__0/in0
+      : VRO0/mid12_inferred/out
+      : VRO0/mid12_inferred/in0
+      : VRO0/nuclear/outlatch
+    12: VRO0/nuclear/i_0/O (LUT3)
+      [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/Submarine.sv:39]
+    13: VRO0/nuclear/i_0/I1 (LUT3)
+      : VRO0/nuclear/mid1_inferred__0/out
+      : VRO0/nuclear/mid1_inferred__0/in0
+      : VRO0/nuclear/mid1_inferred/out
+      : VRO0/nuclear/mid1_inferred/in0
+      : VRO0/nuclear/subLUT1/out
+    14: VRO0/nuclear/subLUT1/i_2/O (LUT3)
+      [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/LUT.sv:36]
+    15: VRO0/nuclear/subLUT1/i_2/I2 (LUT3)
+      : VRO0/nuclear/subLUT1/internal2_inferred__0/out
+      : VRO0/nuclear/subLUT1/internal2_inferred__0/in0
+      : VRO0/nuclear/subLUT1/internal2_inferred/out
+      : VRO0/nuclear/subLUT1/internal2_inferred/in0
+    16: VRO0/nuclear/subLUT1/i_0/O (LUT1)
+      [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/LUT.sv:35]
+    17: VRO0/nuclear/subLUT1/i_0/I0 (LUT1)
+      : VRO0/nuclear/subLUT1/i2
+      : VRO0/nuclear/i2
+      : VRO0/mid02_inferred__0/out
+      : VRO0/mid02_inferred__0/in0
+      : VRO0/mid02_inferred/out
+      : VRO0/mid02_inferred/in0
+      : VRO0/skibidi/outlatch
+    18: VRO0/skibidi/i_0/O (LUT3)
+      [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/slicer.sv:39]
+    19: VRO0/skibidi/i_0/I1 (LUT3)
+      : VRO0/skibidi/mid1_inferred__0/out
+      : VRO0/skibidi/mid1_inferred__0/in0
+      : VRO0/skibidi/mid1_inferred/out
+      : VRO0/skibidi/mid1_inferred/in0
+      : VRO0/skibidi/subspLUT1/out
+    20: VRO0/skibidi/subspLUT1/i_2/O (LUT2)
+      [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/SpecialLUT.sv:22]
+    21: VRO0/skibidi/subspLUT1/i_2/I1 (LUT2)
+      : VRO0/skibidi/subspLUT1/mid_inferred__0/out
+      : VRO0/skibidi/subspLUT1/mid_inferred__0/in0
+      : VRO0/skibidi/subspLUT1/mid_inferred/out
+      : VRO0/skibidi/subspLUT1/mid_inferred/in0
+    22: VRO0/skibidi/subspLUT1/i_3/O (LUT3)
+      [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/SpecialLUT.sv:38]
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/LUT.sv:22]
+Inferred a: "set_disable_timing -from I2 -to O VRO0/skibidi/subspLUT1/i_3"
+Found timing loop:
+     0: VRO0/yellow/out_inferredi_2/O (LUT2)
+      [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/Submarine.sv:39]
+     1: VRO0/yellow/out_inferredi_2/I1 (LUT2)
+     2: VRO0/yellow/out_inferredi_0/O (LUT2)
+      [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/Submarine.sv:39]
+     3: VRO0/yellow/out_inferredi_0/I1 (LUT2)
+      : VRO0/yellow/mid1_inferred__0/out
+      : VRO0/yellow/mid1_inferred__0/in0
+      : VRO0/yellow/mid1_inferred/out
+      : VRO0/yellow/mid1_inferred/in0
+      : VRO0/yellow/subLUT1/out
+     4: VRO0/yellow/subLUT1/i_2/O (LUT3)
+      [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/LUT.sv:36]
+     5: VRO0/yellow/subLUT1/i_2/I2 (LUT3)
+      : VRO0/yellow/subLUT1/internal2_inferred__0/out
+      : VRO0/yellow/subLUT1/internal2_inferred__0/in0
+      : VRO0/yellow/subLUT1/internal2_inferred/out
+      : VRO0/yellow/subLUT1/internal2_inferred/in0
+     6: VRO0/yellow/subLUT1/i_0/O (LUT1)
+      [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/LUT.sv:35]
+     7: VRO0/yellow/subLUT1/i_0/I0 (LUT1)
+      : VRO0/yellow/subLUT1/i2
+      : VRO0/yellow/i2
+      : VRO0/mid12_inferred__0/out
+      : VRO0/mid12_inferred__0/in0
+      : VRO0/mid12_inferred/out
+      : VRO0/mid12_inferred/in0
+      : VRO0/nuclear/outlatch
+     8: VRO0/nuclear/i_0/O (LUT3)
+      [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/Submarine.sv:39]
+     9: VRO0/nuclear/i_0/I1 (LUT3)
+      : VRO0/nuclear/mid1_inferred__0/out
+      : VRO0/nuclear/mid1_inferred__0/in0
+      : VRO0/nuclear/mid1_inferred/out
+      : VRO0/nuclear/mid1_inferred/in0
+      : VRO0/nuclear/subLUT1/out
+    10: VRO0/nuclear/subLUT1/i_2/O (LUT3)
+      [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/LUT.sv:36]
+    11: VRO0/nuclear/subLUT1/i_2/I2 (LUT3)
+      : VRO0/nuclear/subLUT1/internal2_inferred__0/out
+      : VRO0/nuclear/subLUT1/internal2_inferred__0/in0
+      : VRO0/nuclear/subLUT1/internal2_inferred/out
+      : VRO0/nuclear/subLUT1/internal2_inferred/in0
+    12: VRO0/nuclear/subLUT1/i_0/O (LUT1)
+      [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/LUT.sv:35]
+    13: VRO0/nuclear/subLUT1/i_0/I0 (LUT1)
+      : VRO0/nuclear/subLUT1/i2
+      : VRO0/nuclear/i2
+      : VRO0/mid02_inferred__0/out
+      : VRO0/mid02_inferred__0/in0
+      : VRO0/mid02_inferred/out
+      : VRO0/mid02_inferred/in0
+      : VRO0/skibidi/outlatch
+    14: VRO0/skibidi/i_0/O (LUT3)
+      [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/slicer.sv:39]
+    15: VRO0/skibidi/i_0/I0 (LUT3)
+      : VRO0/skibidi/mid2_inferred__0/out
+      : VRO0/skibidi/mid2_inferred__0/in0
+      : VRO0/skibidi/mid2_inferred/out
+      : VRO0/skibidi/mid2_inferred/in0
+      : VRO0/skibidi/subspLUT2/out
+    16: VRO0/skibidi/subspLUT2/i_2/O (LUT2)
+      [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/SpecialLUT.sv:22]
+    17: VRO0/skibidi/subspLUT2/i_2/I1 (LUT2)
+      : VRO0/skibidi/subspLUT2/mid_inferred__0/out
+      : VRO0/skibidi/subspLUT2/mid_inferred__0/in0
+      : VRO0/skibidi/subspLUT2/mid_inferred/out
+      : VRO0/skibidi/subspLUT2/mid_inferred/in0
+    18: VRO0/skibidi/subspLUT2/i_3/O (LUT3)
+      [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/SpecialLUT.sv:38]
+    19: VRO0/skibidi/subspLUT2/i_3/I2 (LUT3)
+      : VRO0/skibidi/subspLUT2/internal2_inferred__0/out
+      : VRO0/skibidi/subspLUT2/internal2_inferred__0/in0
+      : VRO0/skibidi/subspLUT2/internal2_inferred/out
+      : VRO0/skibidi/subspLUT2/internal2_inferred/in0
+    20: VRO0/skibidi/subspLUT2/i_0/O (LUT1)
+      [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/SpecialLUT.sv:37]
+    21: VRO0/skibidi/subspLUT2/i_0/I0 (LUT1)
+      : VRO0/skibidi/subspLUT2/i2
+      : VRO0/skibidi/i2
+      : VRO0/mid22_inferred__0/out
+      : VRO0/mid22_inferred__0/in0
+      : VRO0/mid22_inferred/out
+      : VRO0/mid22_inferred/in0
+      : VRO0/yellow/outlatch
+    22: VRO0/yellow/out_inferredi_2/O (LUT2)
+      [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/Submarine.sv:39]
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/LUT.sv:22]
+Inferred a: "set_disable_timing -from I1 -to O VRO0/yellow/out_inferredi_2"
+Found timing loop:
+     0: VRO0/yellow/out_inferredi_2/O (LUT2)
+      [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/Submarine.sv:39]
+     1: VRO0/yellow/out_inferredi_2/O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/Submarine.sv:23]
+Found timing loop:
+     0: VRO1/skibidi/subspLUT1/i_3/O (LUT3)
+      [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/SpecialLUT.sv:38]
+     1: VRO1/skibidi/subspLUT1/i_3/I2 (LUT3)
+      : VRO1/skibidi/subspLUT1/internal2_inferred__0/out
+      : VRO1/skibidi/subspLUT1/internal2_inferred__0/in0
+      : VRO1/skibidi/subspLUT1/internal2_inferred/out
+      : VRO1/skibidi/subspLUT1/internal2_inferred/in0
+     2: VRO1/skibidi/subspLUT1/i_0/O (LUT1)
+      [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/SpecialLUT.sv:37]
+     3: VRO1/skibidi/subspLUT1/i_0/I0 (LUT1)
+      : VRO1/skibidi/subspLUT1/i2
+      : VRO1/skibidi/i2
+      : VRO1/mid22_inferred__0/out
+      : VRO1/mid22_inferred__0/in0
+      : VRO1/mid22_inferred/out
+      : VRO1/mid22_inferred/in0
+      : VRO1/yellow/outlatch
+     4: VRO1/yellow/out_inferredi_2/O (LUT2)
+      [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/Submarine.sv:39]
+     5: VRO1/yellow/out_inferredi_2/I1 (LUT2)
+     6: VRO1/yellow/out_inferredi_0/O (LUT2)
+      [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/Submarine.sv:39]
+     7: VRO1/yellow/out_inferredi_0/I1 (LUT2)
+      : VRO1/yellow/mid1_inferred__0/out
+      : VRO1/yellow/mid1_inferred__0/in0
+      : VRO1/yellow/mid1_inferred/out
+      : VRO1/yellow/mid1_inferred/in0
+      : VRO1/yellow/subLUT1/out
+     8: VRO1/yellow/subLUT1/i_2/O (LUT3)
+      [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/LUT.sv:36]
+     9: VRO1/yellow/subLUT1/i_2/I2 (LUT3)
+      : VRO1/yellow/subLUT1/internal2_inferred__0/out
+      : VRO1/yellow/subLUT1/internal2_inferred__0/in0
+      : VRO1/yellow/subLUT1/internal2_inferred/out
+      : VRO1/yellow/subLUT1/internal2_inferred/in0
+    10: VRO1/yellow/subLUT1/i_0/O (LUT1)
+      [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/LUT.sv:35]
+    11: VRO1/yellow/subLUT1/i_0/I0 (LUT1)
+      : VRO1/yellow/subLUT1/i2
+      : VRO1/yellow/i2
+      : VRO1/mid12_inferred__0/out
+      : VRO1/mid12_inferred__0/in0
+      : VRO1/mid12_inferred/out
+      : VRO1/mid12_inferred/in0
+      : VRO1/nuclear/outlatch
+    12: VRO1/nuclear/i_0/O (LUT3)
+      [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/Submarine.sv:39]
+    13: VRO1/nuclear/i_0/I1 (LUT3)
+      : VRO1/nuclear/mid1_inferred__0/out
+      : VRO1/nuclear/mid1_inferred__0/in0
+      : VRO1/nuclear/mid1_inferred/out
+      : VRO1/nuclear/mid1_inferred/in0
+      : VRO1/nuclear/subLUT1/out
+    14: VRO1/nuclear/subLUT1/i_2/O (LUT3)
+      [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/LUT.sv:36]
+    15: VRO1/nuclear/subLUT1/i_2/I2 (LUT3)
+      : VRO1/nuclear/subLUT1/internal2_inferred__0/out
+      : VRO1/nuclear/subLUT1/internal2_inferred__0/in0
+      : VRO1/nuclear/subLUT1/internal2_inferred/out
+      : VRO1/nuclear/subLUT1/internal2_inferred/in0
+    16: VRO1/nuclear/subLUT1/i_0/O (LUT1)
+      [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/LUT.sv:35]
+    17: VRO1/nuclear/subLUT1/i_0/I0 (LUT1)
+      : VRO1/nuclear/subLUT1/i2
+      : VRO1/nuclear/i2
+      : VRO1/mid02_inferred__0/out
+      : VRO1/mid02_inferred__0/in0
+      : VRO1/mid02_inferred/out
+      : VRO1/mid02_inferred/in0
+      : VRO1/skibidi/outlatch
+    18: VRO1/skibidi/i_0/O (LUT3)
+      [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/slicer.sv:39]
+    19: VRO1/skibidi/i_0/I1 (LUT3)
+      : VRO1/skibidi/mid1_inferred__0/out
+      : VRO1/skibidi/mid1_inferred__0/in0
+      : VRO1/skibidi/mid1_inferred/out
+      : VRO1/skibidi/mid1_inferred/in0
+      : VRO1/skibidi/subspLUT1/out
+    20: VRO1/skibidi/subspLUT1/i_2/O (LUT2)
+      [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/SpecialLUT.sv:22]
+    21: VRO1/skibidi/subspLUT1/i_2/I1 (LUT2)
+      : VRO1/skibidi/subspLUT1/mid_inferred__0/out
+      : VRO1/skibidi/subspLUT1/mid_inferred__0/in0
+      : VRO1/skibidi/subspLUT1/mid_inferred/out
+      : VRO1/skibidi/subspLUT1/mid_inferred/in0
+    22: VRO1/skibidi/subspLUT1/i_3/O (LUT3)
+      [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/SpecialLUT.sv:38]
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/LUT.sv:22]
+Inferred a: "set_disable_timing -from I2 -to O VRO1/skibidi/subspLUT1/i_3"
+Found timing loop:
+     0: VRO1/yellow/out_inferredi_2/O (LUT2)
+      [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/Submarine.sv:39]
+     1: VRO1/yellow/out_inferredi_2/I1 (LUT2)
+     2: VRO1/yellow/out_inferredi_0/O (LUT2)
+      [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/Submarine.sv:39]
+     3: VRO1/yellow/out_inferredi_0/I1 (LUT2)
+      : VRO1/yellow/mid1_inferred__0/out
+      : VRO1/yellow/mid1_inferred__0/in0
+      : VRO1/yellow/mid1_inferred/out
+      : VRO1/yellow/mid1_inferred/in0
+      : VRO1/yellow/subLUT1/out
+     4: VRO1/yellow/subLUT1/i_2/O (LUT3)
+      [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/LUT.sv:36]
+     5: VRO1/yellow/subLUT1/i_2/I2 (LUT3)
+      : VRO1/yellow/subLUT1/internal2_inferred__0/out
+      : VRO1/yellow/subLUT1/internal2_inferred__0/in0
+      : VRO1/yellow/subLUT1/internal2_inferred/out
+      : VRO1/yellow/subLUT1/internal2_inferred/in0
+     6: VRO1/yellow/subLUT1/i_0/O (LUT1)
+      [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/LUT.sv:35]
+     7: VRO1/yellow/subLUT1/i_0/I0 (LUT1)
+      : VRO1/yellow/subLUT1/i2
+      : VRO1/yellow/i2
+      : VRO1/mid12_inferred__0/out
+      : VRO1/mid12_inferred__0/in0
+      : VRO1/mid12_inferred/out
+      : VRO1/mid12_inferred/in0
+      : VRO1/nuclear/outlatch
+     8: VRO1/nuclear/i_0/O (LUT3)
+      [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/Submarine.sv:39]
+     9: VRO1/nuclear/i_0/I1 (LUT3)
+      : VRO1/nuclear/mid1_inferred__0/out
+      : VRO1/nuclear/mid1_inferred__0/in0
+      : VRO1/nuclear/mid1_inferred/out
+      : VRO1/nuclear/mid1_inferred/in0
+      : VRO1/nuclear/subLUT1/out
+    10: VRO1/nuclear/subLUT1/i_2/O (LUT3)
+      [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/LUT.sv:36]
+    11: VRO1/nuclear/subLUT1/i_2/I2 (LUT3)
+      : VRO1/nuclear/subLUT1/internal2_inferred__0/out
+      : VRO1/nuclear/subLUT1/internal2_inferred__0/in0
+      : VRO1/nuclear/subLUT1/internal2_inferred/out
+      : VRO1/nuclear/subLUT1/internal2_inferred/in0
+    12: VRO1/nuclear/subLUT1/i_0/O (LUT1)
+      [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/LUT.sv:35]
+    13: VRO1/nuclear/subLUT1/i_0/I0 (LUT1)
+      : VRO1/nuclear/subLUT1/i2
+      : VRO1/nuclear/i2
+      : VRO1/mid02_inferred__0/out
+      : VRO1/mid02_inferred__0/in0
+      : VRO1/mid02_inferred/out
+      : VRO1/mid02_inferred/in0
+      : VRO1/skibidi/outlatch
+    14: VRO1/skibidi/i_0/O (LUT3)
+      [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/slicer.sv:39]
+    15: VRO1/skibidi/i_0/I0 (LUT3)
+      : VRO1/skibidi/mid2_inferred__0/out
+      : VRO1/skibidi/mid2_inferred__0/in0
+      : VRO1/skibidi/mid2_inferred/out
+      : VRO1/skibidi/mid2_inferred/in0
+      : VRO1/skibidi/subspLUT2/out
+    16: VRO1/skibidi/subspLUT2/i_2/O (LUT2)
+      [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/SpecialLUT.sv:22]
+    17: VRO1/skibidi/subspLUT2/i_2/I1 (LUT2)
+      : VRO1/skibidi/subspLUT2/mid_inferred__0/out
+      : VRO1/skibidi/subspLUT2/mid_inferred__0/in0
+      : VRO1/skibidi/subspLUT2/mid_inferred/out
+      : VRO1/skibidi/subspLUT2/mid_inferred/in0
+    18: VRO1/skibidi/subspLUT2/i_3/O (LUT3)
+      [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/SpecialLUT.sv:38]
+    19: VRO1/skibidi/subspLUT2/i_3/I2 (LUT3)
+      : VRO1/skibidi/subspLUT2/internal2_inferred__0/out
+      : VRO1/skibidi/subspLUT2/internal2_inferred__0/in0
+      : VRO1/skibidi/subspLUT2/internal2_inferred/out
+      : VRO1/skibidi/subspLUT2/internal2_inferred/in0
+    20: VRO1/skibidi/subspLUT2/i_0/O (LUT1)
+      [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/SpecialLUT.sv:37]
+    21: VRO1/skibidi/subspLUT2/i_0/I0 (LUT1)
+      : VRO1/skibidi/subspLUT2/i2
+      : VRO1/skibidi/i2
+      : VRO1/mid22_inferred__0/out
+      : VRO1/mid22_inferred__0/in0
+      : VRO1/mid22_inferred/out
+      : VRO1/mid22_inferred/in0
+      : VRO1/yellow/outlatch
+    22: VRO1/yellow/out_inferredi_2/O (LUT2)
+      [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/Submarine.sv:39]
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/LUT.sv:22]
+Inferred a: "set_disable_timing -from I1 -to O VRO1/yellow/out_inferredi_2"
+Found timing loop:
+     0: VRO1/yellow/out_inferredi_2/O (LUT2)
+      [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/Submarine.sv:39]
+     1: VRO1/yellow/out_inferredi_2/O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/Submarine.sv:23]
+Found timing loop:
+     0: VRO2/skibidi/subspLUT1/i_3/O (LUT3)
+      [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/SpecialLUT.sv:38]
+     1: VRO2/skibidi/subspLUT1/i_3/I2 (LUT3)
+      : VRO2/skibidi/subspLUT1/internal2_inferred__0/out
+      : VRO2/skibidi/subspLUT1/internal2_inferred__0/in0
+      : VRO2/skibidi/subspLUT1/internal2_inferred/out
+      : VRO2/skibidi/subspLUT1/internal2_inferred/in0
+     2: VRO2/skibidi/subspLUT1/i_0/O (LUT1)
+      [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/SpecialLUT.sv:37]
+     3: VRO2/skibidi/subspLUT1/i_0/I0 (LUT1)
+      : VRO2/skibidi/subspLUT1/i2
+      : VRO2/skibidi/i2
+      : VRO2/mid22_inferred__0/out
+      : VRO2/mid22_inferred__0/in0
+      : VRO2/mid22_inferred/out
+      : VRO2/mid22_inferred/in0
+      : VRO2/yellow/outlatch
+     4: VRO2/yellow/out_inferredi_2/O (LUT2)
+      [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/Submarine.sv:39]
+     5: VRO2/yellow/out_inferredi_2/I1 (LUT2)
+     6: VRO2/yellow/out_inferredi_0/O (LUT2)
+      [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/Submarine.sv:39]
+     7: VRO2/yellow/out_inferredi_0/I1 (LUT2)
+      : VRO2/yellow/mid1_inferred__0/out
+      : VRO2/yellow/mid1_inferred__0/in0
+      : VRO2/yellow/mid1_inferred/out
+      : VRO2/yellow/mid1_inferred/in0
+      : VRO2/yellow/subLUT1/out
+     8: VRO2/yellow/subLUT1/i_2/O (LUT3)
+      [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/LUT.sv:36]
+     9: VRO2/yellow/subLUT1/i_2/I2 (LUT3)
+      : VRO2/yellow/subLUT1/internal2_inferred__0/out
+      : VRO2/yellow/subLUT1/internal2_inferred__0/in0
+      : VRO2/yellow/subLUT1/internal2_inferred/out
+      : VRO2/yellow/subLUT1/internal2_inferred/in0
+    10: VRO2/yellow/subLUT1/i_0/O (LUT1)
+      [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/LUT.sv:35]
+    11: VRO2/yellow/subLUT1/i_0/I0 (LUT1)
+      : VRO2/yellow/subLUT1/i2
+      : VRO2/yellow/i2
+      : VRO2/mid12_inferred__0/out
+      : VRO2/mid12_inferred__0/in0
+      : VRO2/mid12_inferred/out
+      : VRO2/mid12_inferred/in0
+      : VRO2/nuclear/outlatch
+    12: VRO2/nuclear/i_0/O (LUT3)
+      [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/Submarine.sv:39]
+    13: VRO2/nuclear/i_0/I1 (LUT3)
+      : VRO2/nuclear/mid1_inferred__0/out
+      : VRO2/nuclear/mid1_inferred__0/in0
+      : VRO2/nuclear/mid1_inferred/out
+      : VRO2/nuclear/mid1_inferred/in0
+      : VRO2/nuclear/subLUT1/out
+    14: VRO2/nuclear/subLUT1/i_2/O (LUT3)
+      [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/LUT.sv:36]
+    15: VRO2/nuclear/subLUT1/i_2/I2 (LUT3)
+      : VRO2/nuclear/subLUT1/internal2_inferred__0/out
+      : VRO2/nuclear/subLUT1/internal2_inferred__0/in0
+      : VRO2/nuclear/subLUT1/internal2_inferred/out
+      : VRO2/nuclear/subLUT1/internal2_inferred/in0
+    16: VRO2/nuclear/subLUT1/i_0/O (LUT1)
+      [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/LUT.sv:35]
+    17: VRO2/nuclear/subLUT1/i_0/I0 (LUT1)
+      : VRO2/nuclear/subLUT1/i2
+      : VRO2/nuclear/i2
+      : VRO2/mid02_inferred__0/out
+      : VRO2/mid02_inferred__0/in0
+      : VRO2/mid02_inferred/out
+      : VRO2/mid02_inferred/in0
+      : VRO2/skibidi/outlatch
+    18: VRO2/skibidi/i_0/O (LUT3)
+      [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/slicer.sv:39]
+    19: VRO2/skibidi/i_0/I1 (LUT3)
+      : VRO2/skibidi/mid1_inferred__0/out
+      : VRO2/skibidi/mid1_inferred__0/in0
+      : VRO2/skibidi/mid1_inferred/out
+      : VRO2/skibidi/mid1_inferred/in0
+      : VRO2/skibidi/subspLUT1/out
+    20: VRO2/skibidi/subspLUT1/i_2/O (LUT2)
+      [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/SpecialLUT.sv:22]
+    21: VRO2/skibidi/subspLUT1/i_2/I1 (LUT2)
+      : VRO2/skibidi/subspLUT1/mid_inferred__0/out
+      : VRO2/skibidi/subspLUT1/mid_inferred__0/in0
+      : VRO2/skibidi/subspLUT1/mid_inferred/out
+      : VRO2/skibidi/subspLUT1/mid_inferred/in0
+    22: VRO2/skibidi/subspLUT1/i_3/O (LUT3)
+      [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/SpecialLUT.sv:38]
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/LUT.sv:22]
+Inferred a: "set_disable_timing -from I2 -to O VRO2/skibidi/subspLUT1/i_3"
+Found timing loop:
+     0: VRO2/yellow/out_inferredi_2/O (LUT2)
+      [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/Submarine.sv:39]
+     1: VRO2/yellow/out_inferredi_2/I1 (LUT2)
+     2: VRO2/yellow/out_inferredi_0/O (LUT2)
+      [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/Submarine.sv:39]
+     3: VRO2/yellow/out_inferredi_0/I1 (LUT2)
+      : VRO2/yellow/mid1_inferred__0/out
+      : VRO2/yellow/mid1_inferred__0/in0
+      : VRO2/yellow/mid1_inferred/out
+      : VRO2/yellow/mid1_inferred/in0
+      : VRO2/yellow/subLUT1/out
+     4: VRO2/yellow/subLUT1/i_2/O (LUT3)
+      [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/LUT.sv:36]
+     5: VRO2/yellow/subLUT1/i_2/I2 (LUT3)
+      : VRO2/yellow/subLUT1/internal2_inferred__0/out
+      : VRO2/yellow/subLUT1/internal2_inferred__0/in0
+      : VRO2/yellow/subLUT1/internal2_inferred/out
+      : VRO2/yellow/subLUT1/internal2_inferred/in0
+     6: VRO2/yellow/subLUT1/i_0/O (LUT1)
+      [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/LUT.sv:35]
+     7: VRO2/yellow/subLUT1/i_0/I0 (LUT1)
+      : VRO2/yellow/subLUT1/i2
+      : VRO2/yellow/i2
+      : VRO2/mid12_inferred__0/out
+      : VRO2/mid12_inferred__0/in0
+      : VRO2/mid12_inferred/out
+      : VRO2/mid12_inferred/in0
+      : VRO2/nuclear/outlatch
+     8: VRO2/nuclear/i_0/O (LUT3)
+      [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/Submarine.sv:39]
+     9: VRO2/nuclear/i_0/I1 (LUT3)
+      : VRO2/nuclear/mid1_inferred__0/out
+      : VRO2/nuclear/mid1_inferred__0/in0
+      : VRO2/nuclear/mid1_inferred/out
+      : VRO2/nuclear/mid1_inferred/in0
+      : VRO2/nuclear/subLUT1/out
+    10: VRO2/nuclear/subLUT1/i_2/O (LUT3)
+      [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/LUT.sv:36]
+    11: VRO2/nuclear/subLUT1/i_2/I2 (LUT3)
+      : VRO2/nuclear/subLUT1/internal2_inferred__0/out
+      : VRO2/nuclear/subLUT1/internal2_inferred__0/in0
+      : VRO2/nuclear/subLUT1/internal2_inferred/out
+      : VRO2/nuclear/subLUT1/internal2_inferred/in0
+    12: VRO2/nuclear/subLUT1/i_0/O (LUT1)
+      [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/LUT.sv:35]
+    13: VRO2/nuclear/subLUT1/i_0/I0 (LUT1)
+      : VRO2/nuclear/subLUT1/i2
+      : VRO2/nuclear/i2
+      : VRO2/mid02_inferred__0/out
+      : VRO2/mid02_inferred__0/in0
+      : VRO2/mid02_inferred/out
+      : VRO2/mid02_inferred/in0
+      : VRO2/skibidi/outlatch
+    14: VRO2/skibidi/i_0/O (LUT3)
+      [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/slicer.sv:39]
+    15: VRO2/skibidi/i_0/I0 (LUT3)
+      : VRO2/skibidi/mid2_inferred__0/out
+      : VRO2/skibidi/mid2_inferred__0/in0
+      : VRO2/skibidi/mid2_inferred/out
+      : VRO2/skibidi/mid2_inferred/in0
+      : VRO2/skibidi/subspLUT2/out
+    16: VRO2/skibidi/subspLUT2/i_2/O (LUT2)
+      [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/SpecialLUT.sv:22]
+    17: VRO2/skibidi/subspLUT2/i_2/I1 (LUT2)
+      : VRO2/skibidi/subspLUT2/mid_inferred__0/out
+      : VRO2/skibidi/subspLUT2/mid_inferred__0/in0
+      : VRO2/skibidi/subspLUT2/mid_inferred/out
+      : VRO2/skibidi/subspLUT2/mid_inferred/in0
+    18: VRO2/skibidi/subspLUT2/i_3/O (LUT3)
+      [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/SpecialLUT.sv:38]
+    19: VRO2/skibidi/subspLUT2/i_3/I2 (LUT3)
+      : VRO2/skibidi/subspLUT2/internal2_inferred__0/out
+      : VRO2/skibidi/subspLUT2/internal2_inferred__0/in0
+      : VRO2/skibidi/subspLUT2/internal2_inferred/out
+      : VRO2/skibidi/subspLUT2/internal2_inferred/in0
+    20: VRO2/skibidi/subspLUT2/i_0/O (LUT1)
+      [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/SpecialLUT.sv:37]
+    21: VRO2/skibidi/subspLUT2/i_0/I0 (LUT1)
+      : VRO2/skibidi/subspLUT2/i2
+      : VRO2/skibidi/i2
+      : VRO2/mid22_inferred__0/out
+      : VRO2/mid22_inferred__0/in0
+      : VRO2/mid22_inferred/out
+      : VRO2/mid22_inferred/in0
+      : VRO2/yellow/outlatch
+    22: VRO2/yellow/out_inferredi_2/O (LUT2)
+      [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/Submarine.sv:39]
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/LUT.sv:22]
+Inferred a: "set_disable_timing -from I1 -to O VRO2/yellow/out_inferredi_2"
+Found timing loop:
+     0: VRO2/yellow/out_inferredi_2/O (LUT2)
+      [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/Submarine.sv:39]
+     1: VRO2/yellow/out_inferredi_2/O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/Submarine.sv:23]
+Found timing loop:
+     0: VRO3/skibidi/subspLUT1/i_3/O (LUT3)
+      [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/SpecialLUT.sv:38]
+     1: VRO3/skibidi/subspLUT1/i_3/I2 (LUT3)
+      : VRO3/skibidi/subspLUT1/internal2_inferred__0/out
+      : VRO3/skibidi/subspLUT1/internal2_inferred__0/in0
+      : VRO3/skibidi/subspLUT1/internal2_inferred/out
+      : VRO3/skibidi/subspLUT1/internal2_inferred/in0
+     2: VRO3/skibidi/subspLUT1/i_0/O (LUT1)
+      [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/SpecialLUT.sv:37]
+     3: VRO3/skibidi/subspLUT1/i_0/I0 (LUT1)
+      : VRO3/skibidi/subspLUT1/i2
+      : VRO3/skibidi/i2
+      : VRO3/mid22_inferred__0/out
+      : VRO3/mid22_inferred__0/in0
+      : VRO3/mid22_inferred/out
+      : VRO3/mid22_inferred/in0
+      : VRO3/yellow/outlatch
+     4: VRO3/yellow/out_inferredi_2/O (LUT2)
+      [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/Submarine.sv:39]
+     5: VRO3/yellow/out_inferredi_2/I1 (LUT2)
+     6: VRO3/yellow/out_inferredi_0/O (LUT2)
+      [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/Submarine.sv:39]
+     7: VRO3/yellow/out_inferredi_0/I1 (LUT2)
+      : VRO3/yellow/mid1_inferred__0/out
+      : VRO3/yellow/mid1_inferred__0/in0
+      : VRO3/yellow/mid1_inferred/out
+      : VRO3/yellow/mid1_inferred/in0
+      : VRO3/yellow/subLUT1/out
+     8: VRO3/yellow/subLUT1/i_2/O (LUT3)
+      [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/LUT.sv:36]
+     9: VRO3/yellow/subLUT1/i_2/I2 (LUT3)
+      : VRO3/yellow/subLUT1/internal2_inferred__0/out
+      : VRO3/yellow/subLUT1/internal2_inferred__0/in0
+      : VRO3/yellow/subLUT1/internal2_inferred/out
+      : VRO3/yellow/subLUT1/internal2_inferred/in0
+    10: VRO3/yellow/subLUT1/i_0/O (LUT1)
+      [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/LUT.sv:35]
+    11: VRO3/yellow/subLUT1/i_0/I0 (LUT1)
+      : VRO3/yellow/subLUT1/i2
+      : VRO3/yellow/i2
+      : VRO3/mid12_inferred__0/out
+      : VRO3/mid12_inferred__0/in0
+      : VRO3/mid12_inferred/out
+      : VRO3/mid12_inferred/in0
+      : VRO3/nuclear/outlatch
+    12: VRO3/nuclear/i_0/O (LUT3)
+      [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/Submarine.sv:39]
+    13: VRO3/nuclear/i_0/I1 (LUT3)
+      : VRO3/nuclear/mid1_inferred__0/out
+      : VRO3/nuclear/mid1_inferred__0/in0
+      : VRO3/nuclear/mid1_inferred/out
+      : VRO3/nuclear/mid1_inferred/in0
+      : VRO3/nuclear/subLUT1/out
+    14: VRO3/nuclear/subLUT1/i_2/O (LUT3)
+      [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/LUT.sv:36]
+    15: VRO3/nuclear/subLUT1/i_2/I2 (LUT3)
+      : VRO3/nuclear/subLUT1/internal2_inferred__0/out
+      : VRO3/nuclear/subLUT1/internal2_inferred__0/in0
+      : VRO3/nuclear/subLUT1/internal2_inferred/out
+      : VRO3/nuclear/subLUT1/internal2_inferred/in0
+    16: VRO3/nuclear/subLUT1/i_0/O (LUT1)
+      [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/LUT.sv:35]
+    17: VRO3/nuclear/subLUT1/i_0/I0 (LUT1)
+      : VRO3/nuclear/subLUT1/i2
+      : VRO3/nuclear/i2
+      : VRO3/mid02_inferred__0/out
+      : VRO3/mid02_inferred__0/in0
+      : VRO3/mid02_inferred/out
+      : VRO3/mid02_inferred/in0
+      : VRO3/skibidi/outlatch
+    18: VRO3/skibidi/i_0/O (LUT3)
+      [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/slicer.sv:39]
+    19: VRO3/skibidi/i_0/I1 (LUT3)
+      : VRO3/skibidi/mid1_inferred__0/out
+      : VRO3/skibidi/mid1_inferred__0/in0
+      : VRO3/skibidi/mid1_inferred/out
+      : VRO3/skibidi/mid1_inferred/in0
+      : VRO3/skibidi/subspLUT1/out
+    20: VRO3/skibidi/subspLUT1/i_2/O (LUT2)
+      [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/SpecialLUT.sv:22]
+    21: VRO3/skibidi/subspLUT1/i_2/I1 (LUT2)
+      : VRO3/skibidi/subspLUT1/mid_inferred__0/out
+      : VRO3/skibidi/subspLUT1/mid_inferred__0/in0
+      : VRO3/skibidi/subspLUT1/mid_inferred/out
+      : VRO3/skibidi/subspLUT1/mid_inferred/in0
+    22: VRO3/skibidi/subspLUT1/i_3/O (LUT3)
+      [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/SpecialLUT.sv:38]
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/LUT.sv:22]
+Inferred a: "set_disable_timing -from I2 -to O VRO3/skibidi/subspLUT1/i_3"
+Found timing loop:
+     0: VRO3/yellow/out_inferredi_2/O (LUT2)
+      [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/Submarine.sv:39]
+     1: VRO3/yellow/out_inferredi_2/I1 (LUT2)
+     2: VRO3/yellow/out_inferredi_0/O (LUT2)
+      [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/Submarine.sv:39]
+     3: VRO3/yellow/out_inferredi_0/I1 (LUT2)
+      : VRO3/yellow/mid1_inferred__0/out
+      : VRO3/yellow/mid1_inferred__0/in0
+      : VRO3/yellow/mid1_inferred/out
+      : VRO3/yellow/mid1_inferred/in0
+      : VRO3/yellow/subLUT1/out
+     4: VRO3/yellow/subLUT1/i_2/O (LUT3)
+      [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/LUT.sv:36]
+     5: VRO3/yellow/subLUT1/i_2/I2 (LUT3)
+      : VRO3/yellow/subLUT1/internal2_inferred__0/out
+      : VRO3/yellow/subLUT1/internal2_inferred__0/in0
+      : VRO3/yellow/subLUT1/internal2_inferred/out
+      : VRO3/yellow/subLUT1/internal2_inferred/in0
+     6: VRO3/yellow/subLUT1/i_0/O (LUT1)
+      [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/LUT.sv:35]
+     7: VRO3/yellow/subLUT1/i_0/I0 (LUT1)
+      : VRO3/yellow/subLUT1/i2
+      : VRO3/yellow/i2
+      : VRO3/mid12_inferred__0/out
+      : VRO3/mid12_inferred__0/in0
+      : VRO3/mid12_inferred/out
+      : VRO3/mid12_inferred/in0
+      : VRO3/nuclear/outlatch
+     8: VRO3/nuclear/i_0/O (LUT3)
+      [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/Submarine.sv:39]
+     9: VRO3/nuclear/i_0/I1 (LUT3)
+      : VRO3/nuclear/mid1_inferred__0/out
+      : VRO3/nuclear/mid1_inferred__0/in0
+      : VRO3/nuclear/mid1_inferred/out
+      : VRO3/nuclear/mid1_inferred/in0
+      : VRO3/nuclear/subLUT1/out
+    10: VRO3/nuclear/subLUT1/i_2/O (LUT3)
+      [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/LUT.sv:36]
+    11: VRO3/nuclear/subLUT1/i_2/I2 (LUT3)
+      : VRO3/nuclear/subLUT1/internal2_inferred__0/out
+      : VRO3/nuclear/subLUT1/internal2_inferred__0/in0
+      : VRO3/nuclear/subLUT1/internal2_inferred/out
+      : VRO3/nuclear/subLUT1/internal2_inferred/in0
+    12: VRO3/nuclear/subLUT1/i_0/O (LUT1)
+      [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/LUT.sv:35]
+    13: VRO3/nuclear/subLUT1/i_0/I0 (LUT1)
+      : VRO3/nuclear/subLUT1/i2
+      : VRO3/nuclear/i2
+      : VRO3/mid02_inferred__0/out
+      : VRO3/mid02_inferred__0/in0
+      : VRO3/mid02_inferred/out
+      : VRO3/mid02_inferred/in0
+      : VRO3/skibidi/outlatch
+    14: VRO3/skibidi/i_0/O (LUT3)
+      [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/slicer.sv:39]
+    15: VRO3/skibidi/i_0/I0 (LUT3)
+      : VRO3/skibidi/mid2_inferred__0/out
+      : VRO3/skibidi/mid2_inferred__0/in0
+      : VRO3/skibidi/mid2_inferred/out
+      : VRO3/skibidi/mid2_inferred/in0
+      : VRO3/skibidi/subspLUT2/out
+    16: VRO3/skibidi/subspLUT2/i_2/O (LUT2)
+      [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/SpecialLUT.sv:22]
+    17: VRO3/skibidi/subspLUT2/i_2/I1 (LUT2)
+      : VRO3/skibidi/subspLUT2/mid_inferred__0/out
+      : VRO3/skibidi/subspLUT2/mid_inferred__0/in0
+      : VRO3/skibidi/subspLUT2/mid_inferred/out
+      : VRO3/skibidi/subspLUT2/mid_inferred/in0
+    18: VRO3/skibidi/subspLUT2/i_3/O (LUT3)
+      [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/SpecialLUT.sv:38]
+    19: VRO3/skibidi/subspLUT2/i_3/I2 (LUT3)
+      : VRO3/skibidi/subspLUT2/internal2_inferred__0/out
+      : VRO3/skibidi/subspLUT2/internal2_inferred__0/in0
+      : VRO3/skibidi/subspLUT2/internal2_inferred/out
+      : VRO3/skibidi/subspLUT2/internal2_inferred/in0
+    20: VRO3/skibidi/subspLUT2/i_0/O (LUT1)
+      [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/SpecialLUT.sv:37]
+    21: VRO3/skibidi/subspLUT2/i_0/I0 (LUT1)
+      : VRO3/skibidi/subspLUT2/i2
+      : VRO3/skibidi/i2
+      : VRO3/mid22_inferred__0/out
+      : VRO3/mid22_inferred__0/in0
+      : VRO3/mid22_inferred/out
+      : VRO3/mid22_inferred/in0
+      : VRO3/yellow/outlatch
+    22: VRO3/yellow/out_inferredi_2/O (LUT2)
+      [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/Submarine.sv:39]
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/LUT.sv:22]
+Inferred a: "set_disable_timing -from I1 -to O VRO3/yellow/out_inferredi_2"
+Found timing loop:
+     0: VRO3/yellow/out_inferredi_2/O (LUT2)
+      [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/Submarine.sv:39]
+     1: VRO3/yellow/out_inferredi_2/O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/Submarine.sv:23]
+Found timing loop:
+     0: VRO4/skibidi/subspLUT1/i_3/O (LUT3)
+      [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/SpecialLUT.sv:38]
+     1: VRO4/skibidi/subspLUT1/i_3/I2 (LUT3)
+      : VRO4/skibidi/subspLUT1/internal2_inferred__0/out
+      : VRO4/skibidi/subspLUT1/internal2_inferred__0/in0
+      : VRO4/skibidi/subspLUT1/internal2_inferred/out
+      : VRO4/skibidi/subspLUT1/internal2_inferred/in0
+     2: VRO4/skibidi/subspLUT1/i_0/O (LUT1)
+      [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/SpecialLUT.sv:37]
+     3: VRO4/skibidi/subspLUT1/i_0/I0 (LUT1)
+      : VRO4/skibidi/subspLUT1/i2
+      : VRO4/skibidi/i2
+      : VRO4/mid22_inferred__0/out
+      : VRO4/mid22_inferred__0/in0
+      : VRO4/mid22_inferred/out
+      : VRO4/mid22_inferred/in0
+      : VRO4/yellow/outlatch
+     4: VRO4/yellow/out_inferredi_2/O (LUT2)
+      [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/Submarine.sv:39]
+     5: VRO4/yellow/out_inferredi_2/I1 (LUT2)
+     6: VRO4/yellow/out_inferredi_0/O (LUT2)
+      [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/Submarine.sv:39]
+     7: VRO4/yellow/out_inferredi_0/I1 (LUT2)
+      : VRO4/yellow/mid1_inferred__0/out
+      : VRO4/yellow/mid1_inferred__0/in0
+      : VRO4/yellow/mid1_inferred/out
+      : VRO4/yellow/mid1_inferred/in0
+      : VRO4/yellow/subLUT1/out
+     8: VRO4/yellow/subLUT1/i_2/O (LUT3)
+      [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/LUT.sv:36]
+     9: VRO4/yellow/subLUT1/i_2/I2 (LUT3)
+      : VRO4/yellow/subLUT1/internal2_inferred__0/out
+      : VRO4/yellow/subLUT1/internal2_inferred__0/in0
+      : VRO4/yellow/subLUT1/internal2_inferred/out
+      : VRO4/yellow/subLUT1/internal2_inferred/in0
+    10: VRO4/yellow/subLUT1/i_0/O (LUT1)
+      [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/LUT.sv:35]
+    11: VRO4/yellow/subLUT1/i_0/I0 (LUT1)
+      : VRO4/yellow/subLUT1/i2
+      : VRO4/yellow/i2
+      : VRO4/mid12_inferred__0/out
+      : VRO4/mid12_inferred__0/in0
+      : VRO4/mid12_inferred/out
+      : VRO4/mid12_inferred/in0
+      : VRO4/nuclear/outlatch
+    12: VRO4/nuclear/i_0/O (LUT3)
+      [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/Submarine.sv:39]
+    13: VRO4/nuclear/i_0/I1 (LUT3)
+      : VRO4/nuclear/mid1_inferred__0/out
+      : VRO4/nuclear/mid1_inferred__0/in0
+      : VRO4/nuclear/mid1_inferred/out
+      : VRO4/nuclear/mid1_inferred/in0
+      : VRO4/nuclear/subLUT1/out
+    14: VRO4/nuclear/subLUT1/i_2/O (LUT3)
+      [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/LUT.sv:36]
+    15: VRO4/nuclear/subLUT1/i_2/I2 (LUT3)
+      : VRO4/nuclear/subLUT1/internal2_inferred__0/out
+      : VRO4/nuclear/subLUT1/internal2_inferred__0/in0
+      : VRO4/nuclear/subLUT1/internal2_inferred/out
+      : VRO4/nuclear/subLUT1/internal2_inferred/in0
+    16: VRO4/nuclear/subLUT1/i_0/O (LUT1)
+      [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/LUT.sv:35]
+    17: VRO4/nuclear/subLUT1/i_0/I0 (LUT1)
+      : VRO4/nuclear/subLUT1/i2
+      : VRO4/nuclear/i2
+      : VRO4/mid02_inferred__0/out
+      : VRO4/mid02_inferred__0/in0
+      : VRO4/mid02_inferred/out
+      : VRO4/mid02_inferred/in0
+      : VRO4/skibidi/outlatch
+    18: VRO4/skibidi/i_0/O (LUT3)
+      [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/slicer.sv:39]
+    19: VRO4/skibidi/i_0/I1 (LUT3)
+      : VRO4/skibidi/mid1_inferred__0/out
+      : VRO4/skibidi/mid1_inferred__0/in0
+      : VRO4/skibidi/mid1_inferred/out
+      : VRO4/skibidi/mid1_inferred/in0
+      : VRO4/skibidi/subspLUT1/out
+    20: VRO4/skibidi/subspLUT1/i_2/O (LUT2)
+      [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/SpecialLUT.sv:22]
+    21: VRO4/skibidi/subspLUT1/i_2/I1 (LUT2)
+      : VRO4/skibidi/subspLUT1/mid_inferred__0/out
+      : VRO4/skibidi/subspLUT1/mid_inferred__0/in0
+      : VRO4/skibidi/subspLUT1/mid_inferred/out
+      : VRO4/skibidi/subspLUT1/mid_inferred/in0
+    22: VRO4/skibidi/subspLUT1/i_3/O (LUT3)
+      [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/SpecialLUT.sv:38]
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/LUT.sv:22]
+Inferred a: "set_disable_timing -from I2 -to O VRO4/skibidi/subspLUT1/i_3"
+Found timing loop:
+     0: VRO4/yellow/out_inferredi_2/O (LUT2)
+      [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/Submarine.sv:39]
+     1: VRO4/yellow/out_inferredi_2/I1 (LUT2)
+     2: VRO4/yellow/out_inferredi_0/O (LUT2)
+      [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/Submarine.sv:39]
+     3: VRO4/yellow/out_inferredi_0/I1 (LUT2)
+      : VRO4/yellow/mid1_inferred__0/out
+      : VRO4/yellow/mid1_inferred__0/in0
+      : VRO4/yellow/mid1_inferred/out
+      : VRO4/yellow/mid1_inferred/in0
+      : VRO4/yellow/subLUT1/out
+     4: VRO4/yellow/subLUT1/i_2/O (LUT3)
+      [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/LUT.sv:36]
+     5: VRO4/yellow/subLUT1/i_2/I2 (LUT3)
+      : VRO4/yellow/subLUT1/internal2_inferred__0/out
+      : VRO4/yellow/subLUT1/internal2_inferred__0/in0
+      : VRO4/yellow/subLUT1/internal2_inferred/out
+      : VRO4/yellow/subLUT1/internal2_inferred/in0
+     6: VRO4/yellow/subLUT1/i_0/O (LUT1)
+      [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/LUT.sv:35]
+     7: VRO4/yellow/subLUT1/i_0/I0 (LUT1)
+      : VRO4/yellow/subLUT1/i2
+      : VRO4/yellow/i2
+      : VRO4/mid12_inferred__0/out
+      : VRO4/mid12_inferred__0/in0
+      : VRO4/mid12_inferred/out
+      : VRO4/mid12_inferred/in0
+      : VRO4/nuclear/outlatch
+     8: VRO4/nuclear/i_0/O (LUT3)
+      [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/Submarine.sv:39]
+     9: VRO4/nuclear/i_0/I1 (LUT3)
+      : VRO4/nuclear/mid1_inferred__0/out
+      : VRO4/nuclear/mid1_inferred__0/in0
+      : VRO4/nuclear/mid1_inferred/out
+      : VRO4/nuclear/mid1_inferred/in0
+      : VRO4/nuclear/subLUT1/out
+    10: VRO4/nuclear/subLUT1/i_2/O (LUT3)
+      [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/LUT.sv:36]
+    11: VRO4/nuclear/subLUT1/i_2/I2 (LUT3)
+      : VRO4/nuclear/subLUT1/internal2_inferred__0/out
+      : VRO4/nuclear/subLUT1/internal2_inferred__0/in0
+      : VRO4/nuclear/subLUT1/internal2_inferred/out
+      : VRO4/nuclear/subLUT1/internal2_inferred/in0
+    12: VRO4/nuclear/subLUT1/i_0/O (LUT1)
+      [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/LUT.sv:35]
+    13: VRO4/nuclear/subLUT1/i_0/I0 (LUT1)
+      : VRO4/nuclear/subLUT1/i2
+      : VRO4/nuclear/i2
+      : VRO4/mid02_inferred__0/out
+      : VRO4/mid02_inferred__0/in0
+      : VRO4/mid02_inferred/out
+      : VRO4/mid02_inferred/in0
+      : VRO4/skibidi/outlatch
+    14: VRO4/skibidi/i_0/O (LUT3)
+      [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/slicer.sv:39]
+    15: VRO4/skibidi/i_0/I0 (LUT3)
+      : VRO4/skibidi/mid2_inferred__0/out
+      : VRO4/skibidi/mid2_inferred__0/in0
+      : VRO4/skibidi/mid2_inferred/out
+      : VRO4/skibidi/mid2_inferred/in0
+      : VRO4/skibidi/subspLUT2/out
+    16: VRO4/skibidi/subspLUT2/i_2/O (LUT2)
+      [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/SpecialLUT.sv:22]
+    17: VRO4/skibidi/subspLUT2/i_2/I1 (LUT2)
+      : VRO4/skibidi/subspLUT2/mid_inferred__0/out
+      : VRO4/skibidi/subspLUT2/mid_inferred__0/in0
+      : VRO4/skibidi/subspLUT2/mid_inferred/out
+      : VRO4/skibidi/subspLUT2/mid_inferred/in0
+    18: VRO4/skibidi/subspLUT2/i_3/O (LUT3)
+      [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/SpecialLUT.sv:38]
+    19: VRO4/skibidi/subspLUT2/i_3/I2 (LUT3)
+      : VRO4/skibidi/subspLUT2/internal2_inferred__0/out
+      : VRO4/skibidi/subspLUT2/internal2_inferred__0/in0
+      : VRO4/skibidi/subspLUT2/internal2_inferred/out
+      : VRO4/skibidi/subspLUT2/internal2_inferred/in0
+    20: VRO4/skibidi/subspLUT2/i_0/O (LUT1)
+      [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/SpecialLUT.sv:37]
+    21: VRO4/skibidi/subspLUT2/i_0/I0 (LUT1)
+      : VRO4/skibidi/subspLUT2/i2
+      : VRO4/skibidi/i2
+      : VRO4/mid22_inferred__0/out
+      : VRO4/mid22_inferred__0/in0
+      : VRO4/mid22_inferred/out
+      : VRO4/mid22_inferred/in0
+      : VRO4/yellow/outlatch
+    22: VRO4/yellow/out_inferredi_2/O (LUT2)
+      [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/Submarine.sv:39]
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/LUT.sv:22]
+Inferred a: "set_disable_timing -from I1 -to O VRO4/yellow/out_inferredi_2"
+Found timing loop:
+     0: VRO4/yellow/out_inferredi_2/O (LUT2)
+      [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/Submarine.sv:39]
+     1: VRO4/yellow/out_inferredi_2/O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/Submarine.sv:23]
+Found timing loop:
+     0: VRO5/skibidi/subspLUT1/i_3/O (LUT3)
+      [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/SpecialLUT.sv:38]
+     1: VRO5/skibidi/subspLUT1/i_3/I2 (LUT3)
+      : VRO5/skibidi/subspLUT1/internal2_inferred__0/out
+      : VRO5/skibidi/subspLUT1/internal2_inferred__0/in0
+      : VRO5/skibidi/subspLUT1/internal2_inferred/out
+      : VRO5/skibidi/subspLUT1/internal2_inferred/in0
+     2: VRO5/skibidi/subspLUT1/i_0/O (LUT1)
+      [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/SpecialLUT.sv:37]
+     3: VRO5/skibidi/subspLUT1/i_0/I0 (LUT1)
+      : VRO5/skibidi/subspLUT1/i2
+      : VRO5/skibidi/i2
+      : VRO5/mid22_inferred__0/out
+      : VRO5/mid22_inferred__0/in0
+      : VRO5/mid22_inferred/out
+      : VRO5/mid22_inferred/in0
+      : VRO5/yellow/outlatch
+     4: VRO5/yellow/out_inferredi_2/O (LUT2)
+      [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/Submarine.sv:39]
+     5: VRO5/yellow/out_inferredi_2/I1 (LUT2)
+     6: VRO5/yellow/out_inferredi_0/O (LUT2)
+      [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/Submarine.sv:39]
+     7: VRO5/yellow/out_inferredi_0/I1 (LUT2)
+      : VRO5/yellow/mid1_inferred__0/out
+      : VRO5/yellow/mid1_inferred__0/in0
+      : VRO5/yellow/mid1_inferred/out
+      : VRO5/yellow/mid1_inferred/in0
+      : VRO5/yellow/subLUT1/out
+     8: VRO5/yellow/subLUT1/i_2/O (LUT3)
+      [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/LUT.sv:36]
+     9: VRO5/yellow/subLUT1/i_2/I2 (LUT3)
+      : VRO5/yellow/subLUT1/internal2_inferred__0/out
+      : VRO5/yellow/subLUT1/internal2_inferred__0/in0
+      : VRO5/yellow/subLUT1/internal2_inferred/out
+      : VRO5/yellow/subLUT1/internal2_inferred/in0
+    10: VRO5/yellow/subLUT1/i_0/O (LUT1)
+      [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/LUT.sv:35]
+    11: VRO5/yellow/subLUT1/i_0/I0 (LUT1)
+      : VRO5/yellow/subLUT1/i2
+      : VRO5/yellow/i2
+      : VRO5/mid12_inferred__0/out
+      : VRO5/mid12_inferred__0/in0
+      : VRO5/mid12_inferred/out
+      : VRO5/mid12_inferred/in0
+      : VRO5/nuclear/outlatch
+    12: VRO5/nuclear/i_0/O (LUT3)
+      [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/Submarine.sv:39]
+    13: VRO5/nuclear/i_0/I1 (LUT3)
+      : VRO5/nuclear/mid1_inferred__0/out
+      : VRO5/nuclear/mid1_inferred__0/in0
+      : VRO5/nuclear/mid1_inferred/out
+      : VRO5/nuclear/mid1_inferred/in0
+      : VRO5/nuclear/subLUT1/out
+    14: VRO5/nuclear/subLUT1/i_2/O (LUT3)
+      [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/LUT.sv:36]
+    15: VRO5/nuclear/subLUT1/i_2/I2 (LUT3)
+      : VRO5/nuclear/subLUT1/internal2_inferred__0/out
+      : VRO5/nuclear/subLUT1/internal2_inferred__0/in0
+      : VRO5/nuclear/subLUT1/internal2_inferred/out
+      : VRO5/nuclear/subLUT1/internal2_inferred/in0
+    16: VRO5/nuclear/subLUT1/i_0/O (LUT1)
+      [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/LUT.sv:35]
+    17: VRO5/nuclear/subLUT1/i_0/I0 (LUT1)
+      : VRO5/nuclear/subLUT1/i2
+      : VRO5/nuclear/i2
+      : VRO5/mid02_inferred__0/out
+      : VRO5/mid02_inferred__0/in0
+      : VRO5/mid02_inferred/out
+      : VRO5/mid02_inferred/in0
+      : VRO5/skibidi/outlatch
+    18: VRO5/skibidi/i_0/O (LUT3)
+      [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/slicer.sv:39]
+    19: VRO5/skibidi/i_0/I1 (LUT3)
+      : VRO5/skibidi/mid1_inferred__0/out
+      : VRO5/skibidi/mid1_inferred__0/in0
+      : VRO5/skibidi/mid1_inferred/out
+      : VRO5/skibidi/mid1_inferred/in0
+      : VRO5/skibidi/subspLUT1/out
+    20: VRO5/skibidi/subspLUT1/i_2/O (LUT2)
+      [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/SpecialLUT.sv:22]
+    21: VRO5/skibidi/subspLUT1/i_2/I1 (LUT2)
+      : VRO5/skibidi/subspLUT1/mid_inferred__0/out
+      : VRO5/skibidi/subspLUT1/mid_inferred__0/in0
+      : VRO5/skibidi/subspLUT1/mid_inferred/out
+      : VRO5/skibidi/subspLUT1/mid_inferred/in0
+    22: VRO5/skibidi/subspLUT1/i_3/O (LUT3)
+      [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/SpecialLUT.sv:38]
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/LUT.sv:22]
+Inferred a: "set_disable_timing -from I2 -to O VRO5/skibidi/subspLUT1/i_3"
+Found timing loop:
+     0: VRO5/yellow/out_inferredi_2/O (LUT2)
+      [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/Submarine.sv:39]
+     1: VRO5/yellow/out_inferredi_2/I1 (LUT2)
+     2: VRO5/yellow/out_inferredi_0/O (LUT2)
+      [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/Submarine.sv:39]
+     3: VRO5/yellow/out_inferredi_0/I1 (LUT2)
+      : VRO5/yellow/mid1_inferred__0/out
+      : VRO5/yellow/mid1_inferred__0/in0
+      : VRO5/yellow/mid1_inferred/out
+      : VRO5/yellow/mid1_inferred/in0
+      : VRO5/yellow/subLUT1/out
+     4: VRO5/yellow/subLUT1/i_2/O (LUT3)
+      [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/LUT.sv:36]
+     5: VRO5/yellow/subLUT1/i_2/I2 (LUT3)
+      : VRO5/yellow/subLUT1/internal2_inferred__0/out
+      : VRO5/yellow/subLUT1/internal2_inferred__0/in0
+      : VRO5/yellow/subLUT1/internal2_inferred/out
+      : VRO5/yellow/subLUT1/internal2_inferred/in0
+     6: VRO5/yellow/subLUT1/i_0/O (LUT1)
+      [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/LUT.sv:35]
+     7: VRO5/yellow/subLUT1/i_0/I0 (LUT1)
+      : VRO5/yellow/subLUT1/i2
+      : VRO5/yellow/i2
+      : VRO5/mid12_inferred__0/out
+      : VRO5/mid12_inferred__0/in0
+      : VRO5/mid12_inferred/out
+      : VRO5/mid12_inferred/in0
+      : VRO5/nuclear/outlatch
+     8: VRO5/nuclear/i_0/O (LUT3)
+      [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/Submarine.sv:39]
+     9: VRO5/nuclear/i_0/I1 (LUT3)
+      : VRO5/nuclear/mid1_inferred__0/out
+      : VRO5/nuclear/mid1_inferred__0/in0
+      : VRO5/nuclear/mid1_inferred/out
+      : VRO5/nuclear/mid1_inferred/in0
+      : VRO5/nuclear/subLUT1/out
+    10: VRO5/nuclear/subLUT1/i_2/O (LUT3)
+      [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/LUT.sv:36]
+    11: VRO5/nuclear/subLUT1/i_2/I2 (LUT3)
+      : VRO5/nuclear/subLUT1/internal2_inferred__0/out
+      : VRO5/nuclear/subLUT1/internal2_inferred__0/in0
+      : VRO5/nuclear/subLUT1/internal2_inferred/out
+      : VRO5/nuclear/subLUT1/internal2_inferred/in0
+    12: VRO5/nuclear/subLUT1/i_0/O (LUT1)
+      [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/LUT.sv:35]
+    13: VRO5/nuclear/subLUT1/i_0/I0 (LUT1)
+      : VRO5/nuclear/subLUT1/i2
+      : VRO5/nuclear/i2
+      : VRO5/mid02_inferred__0/out
+      : VRO5/mid02_inferred__0/in0
+      : VRO5/mid02_inferred/out
+      : VRO5/mid02_inferred/in0
+      : VRO5/skibidi/outlatch
+    14: VRO5/skibidi/i_0/O (LUT3)
+      [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/slicer.sv:39]
+    15: VRO5/skibidi/i_0/I0 (LUT3)
+      : VRO5/skibidi/mid2_inferred__0/out
+      : VRO5/skibidi/mid2_inferred__0/in0
+      : VRO5/skibidi/mid2_inferred/out
+      : VRO5/skibidi/mid2_inferred/in0
+      : VRO5/skibidi/subspLUT2/out
+    16: VRO5/skibidi/subspLUT2/i_2/O (LUT2)
+      [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/SpecialLUT.sv:22]
+    17: VRO5/skibidi/subspLUT2/i_2/I1 (LUT2)
+      : VRO5/skibidi/subspLUT2/mid_inferred__0/out
+      : VRO5/skibidi/subspLUT2/mid_inferred__0/in0
+      : VRO5/skibidi/subspLUT2/mid_inferred/out
+      : VRO5/skibidi/subspLUT2/mid_inferred/in0
+    18: VRO5/skibidi/subspLUT2/i_3/O (LUT3)
+      [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/SpecialLUT.sv:38]
+    19: VRO5/skibidi/subspLUT2/i_3/I2 (LUT3)
+      : VRO5/skibidi/subspLUT2/internal2_inferred__0/out
+      : VRO5/skibidi/subspLUT2/internal2_inferred__0/in0
+      : VRO5/skibidi/subspLUT2/internal2_inferred/out
+      : VRO5/skibidi/subspLUT2/internal2_inferred/in0
+    20: VRO5/skibidi/subspLUT2/i_0/O (LUT1)
+      [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/SpecialLUT.sv:37]
+    21: VRO5/skibidi/subspLUT2/i_0/I0 (LUT1)
+      : VRO5/skibidi/subspLUT2/i2
+      : VRO5/skibidi/i2
+      : VRO5/mid22_inferred__0/out
+      : VRO5/mid22_inferred__0/in0
+      : VRO5/mid22_inferred/out
+      : VRO5/mid22_inferred/in0
+      : VRO5/yellow/outlatch
+    22: VRO5/yellow/out_inferredi_2/O (LUT2)
+      [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/Submarine.sv:39]
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/LUT.sv:22]
+Inferred a: "set_disable_timing -from I1 -to O VRO5/yellow/out_inferredi_2"
+Found timing loop:
+     0: VRO5/yellow/out_inferredi_2/O (LUT2)
+      [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/Submarine.sv:39]
+     1: VRO5/yellow/out_inferredi_2/O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/Submarine.sv:23]
+Found timing loop:
+     0: VRO6/skibidi/subspLUT1/i_3/O (LUT3)
+      [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/SpecialLUT.sv:38]
+     1: VRO6/skibidi/subspLUT1/i_3/I2 (LUT3)
+      : VRO6/skibidi/subspLUT1/internal2_inferred__0/out
+      : VRO6/skibidi/subspLUT1/internal2_inferred__0/in0
+      : VRO6/skibidi/subspLUT1/internal2_inferred/out
+      : VRO6/skibidi/subspLUT1/internal2_inferred/in0
+     2: VRO6/skibidi/subspLUT1/i_0/O (LUT1)
+      [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/SpecialLUT.sv:37]
+     3: VRO6/skibidi/subspLUT1/i_0/I0 (LUT1)
+      : VRO6/skibidi/subspLUT1/i2
+      : VRO6/skibidi/i2
+      : VRO6/mid22_inferred__0/out
+      : VRO6/mid22_inferred__0/in0
+      : VRO6/mid22_inferred/out
+      : VRO6/mid22_inferred/in0
+      : VRO6/yellow/outlatch
+     4: VRO6/yellow/out_inferredi_2/O (LUT2)
+      [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/Submarine.sv:39]
+     5: VRO6/yellow/out_inferredi_2/I1 (LUT2)
+     6: VRO6/yellow/out_inferredi_0/O (LUT2)
+      [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/Submarine.sv:39]
+     7: VRO6/yellow/out_inferredi_0/I1 (LUT2)
+      : VRO6/yellow/mid1_inferred__0/out
+      : VRO6/yellow/mid1_inferred__0/in0
+      : VRO6/yellow/mid1_inferred/out
+      : VRO6/yellow/mid1_inferred/in0
+      : VRO6/yellow/subLUT1/out
+     8: VRO6/yellow/subLUT1/i_2/O (LUT3)
+      [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/LUT.sv:36]
+     9: VRO6/yellow/subLUT1/i_2/I2 (LUT3)
+      : VRO6/yellow/subLUT1/internal2_inferred__0/out
+      : VRO6/yellow/subLUT1/internal2_inferred__0/in0
+      : VRO6/yellow/subLUT1/internal2_inferred/out
+      : VRO6/yellow/subLUT1/internal2_inferred/in0
+    10: VRO6/yellow/subLUT1/i_0/O (LUT1)
+      [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/LUT.sv:35]
+    11: VRO6/yellow/subLUT1/i_0/I0 (LUT1)
+      : VRO6/yellow/subLUT1/i2
+      : VRO6/yellow/i2
+      : VRO6/mid12_inferred__0/out
+      : VRO6/mid12_inferred__0/in0
+      : VRO6/mid12_inferred/out
+      : VRO6/mid12_inferred/in0
+      : VRO6/nuclear/outlatch
+    12: VRO6/nuclear/i_0/O (LUT3)
+      [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/Submarine.sv:39]
+    13: VRO6/nuclear/i_0/I1 (LUT3)
+      : VRO6/nuclear/mid1_inferred__0/out
+      : VRO6/nuclear/mid1_inferred__0/in0
+      : VRO6/nuclear/mid1_inferred/out
+      : VRO6/nuclear/mid1_inferred/in0
+      : VRO6/nuclear/subLUT1/out
+    14: VRO6/nuclear/subLUT1/i_2/O (LUT3)
+      [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/LUT.sv:36]
+    15: VRO6/nuclear/subLUT1/i_2/I2 (LUT3)
+      : VRO6/nuclear/subLUT1/internal2_inferred__0/out
+      : VRO6/nuclear/subLUT1/internal2_inferred__0/in0
+      : VRO6/nuclear/subLUT1/internal2_inferred/out
+      : VRO6/nuclear/subLUT1/internal2_inferred/in0
+    16: VRO6/nuclear/subLUT1/i_0/O (LUT1)
+      [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/LUT.sv:35]
+    17: VRO6/nuclear/subLUT1/i_0/I0 (LUT1)
+      : VRO6/nuclear/subLUT1/i2
+      : VRO6/nuclear/i2
+      : VRO6/mid02_inferred__0/out
+      : VRO6/mid02_inferred__0/in0
+      : VRO6/mid02_inferred/out
+      : VRO6/mid02_inferred/in0
+      : VRO6/skibidi/outlatch
+    18: VRO6/skibidi/i_0/O (LUT3)
+      [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/slicer.sv:39]
+    19: VRO6/skibidi/i_0/I1 (LUT3)
+      : VRO6/skibidi/mid1_inferred__0/out
+      : VRO6/skibidi/mid1_inferred__0/in0
+      : VRO6/skibidi/mid1_inferred/out
+      : VRO6/skibidi/mid1_inferred/in0
+      : VRO6/skibidi/subspLUT1/out
+    20: VRO6/skibidi/subspLUT1/i_2/O (LUT2)
+      [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/SpecialLUT.sv:22]
+    21: VRO6/skibidi/subspLUT1/i_2/I1 (LUT2)
+      : VRO6/skibidi/subspLUT1/mid_inferred__0/out
+      : VRO6/skibidi/subspLUT1/mid_inferred__0/in0
+      : VRO6/skibidi/subspLUT1/mid_inferred/out
+      : VRO6/skibidi/subspLUT1/mid_inferred/in0
+    22: VRO6/skibidi/subspLUT1/i_3/O (LUT3)
+      [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/SpecialLUT.sv:38]
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/LUT.sv:22]
+Inferred a: "set_disable_timing -from I2 -to O VRO6/skibidi/subspLUT1/i_3"
+Found timing loop:
+     0: VRO6/yellow/out_inferredi_2/O (LUT2)
+      [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/Submarine.sv:39]
+     1: VRO6/yellow/out_inferredi_2/I1 (LUT2)
+     2: VRO6/yellow/out_inferredi_0/O (LUT2)
+      [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/Submarine.sv:39]
+     3: VRO6/yellow/out_inferredi_0/I1 (LUT2)
+      : VRO6/yellow/mid1_inferred__0/out
+      : VRO6/yellow/mid1_inferred__0/in0
+      : VRO6/yellow/mid1_inferred/out
+      : VRO6/yellow/mid1_inferred/in0
+      : VRO6/yellow/subLUT1/out
+     4: VRO6/yellow/subLUT1/i_2/O (LUT3)
+      [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/LUT.sv:36]
+     5: VRO6/yellow/subLUT1/i_2/I2 (LUT3)
+      : VRO6/yellow/subLUT1/internal2_inferred__0/out
+      : VRO6/yellow/subLUT1/internal2_inferred__0/in0
+      : VRO6/yellow/subLUT1/internal2_inferred/out
+      : VRO6/yellow/subLUT1/internal2_inferred/in0
+     6: VRO6/yellow/subLUT1/i_0/O (LUT1)
+      [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/LUT.sv:35]
+     7: VRO6/yellow/subLUT1/i_0/I0 (LUT1)
+      : VRO6/yellow/subLUT1/i2
+      : VRO6/yellow/i2
+      : VRO6/mid12_inferred__0/out
+      : VRO6/mid12_inferred__0/in0
+      : VRO6/mid12_inferred/out
+      : VRO6/mid12_inferred/in0
+      : VRO6/nuclear/outlatch
+     8: VRO6/nuclear/i_0/O (LUT3)
+      [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/Submarine.sv:39]
+     9: VRO6/nuclear/i_0/I1 (LUT3)
+      : VRO6/nuclear/mid1_inferred__0/out
+      : VRO6/nuclear/mid1_inferred__0/in0
+      : VRO6/nuclear/mid1_inferred/out
+      : VRO6/nuclear/mid1_inferred/in0
+      : VRO6/nuclear/subLUT1/out
+    10: VRO6/nuclear/subLUT1/i_2/O (LUT3)
+      [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/LUT.sv:36]
+    11: VRO6/nuclear/subLUT1/i_2/I2 (LUT3)
+      : VRO6/nuclear/subLUT1/internal2_inferred__0/out
+      : VRO6/nuclear/subLUT1/internal2_inferred__0/in0
+      : VRO6/nuclear/subLUT1/internal2_inferred/out
+      : VRO6/nuclear/subLUT1/internal2_inferred/in0
+    12: VRO6/nuclear/subLUT1/i_0/O (LUT1)
+      [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/LUT.sv:35]
+    13: VRO6/nuclear/subLUT1/i_0/I0 (LUT1)
+      : VRO6/nuclear/subLUT1/i2
+      : VRO6/nuclear/i2
+      : VRO6/mid02_inferred__0/out
+      : VRO6/mid02_inferred__0/in0
+      : VRO6/mid02_inferred/out
+      : VRO6/mid02_inferred/in0
+      : VRO6/skibidi/outlatch
+    14: VRO6/skibidi/i_0/O (LUT3)
+      [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/slicer.sv:39]
+    15: VRO6/skibidi/i_0/I0 (LUT3)
+      : VRO6/skibidi/mid2_inferred__0/out
+      : VRO6/skibidi/mid2_inferred__0/in0
+      : VRO6/skibidi/mid2_inferred/out
+      : VRO6/skibidi/mid2_inferred/in0
+      : VRO6/skibidi/subspLUT2/out
+    16: VRO6/skibidi/subspLUT2/i_2/O (LUT2)
+      [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/SpecialLUT.sv:22]
+    17: VRO6/skibidi/subspLUT2/i_2/I1 (LUT2)
+      : VRO6/skibidi/subspLUT2/mid_inferred__0/out
+      : VRO6/skibidi/subspLUT2/mid_inferred__0/in0
+      : VRO6/skibidi/subspLUT2/mid_inferred/out
+      : VRO6/skibidi/subspLUT2/mid_inferred/in0
+    18: VRO6/skibidi/subspLUT2/i_3/O (LUT3)
+      [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/SpecialLUT.sv:38]
+    19: VRO6/skibidi/subspLUT2/i_3/I2 (LUT3)
+      : VRO6/skibidi/subspLUT2/internal2_inferred__0/out
+      : VRO6/skibidi/subspLUT2/internal2_inferred__0/in0
+      : VRO6/skibidi/subspLUT2/internal2_inferred/out
+      : VRO6/skibidi/subspLUT2/internal2_inferred/in0
+    20: VRO6/skibidi/subspLUT2/i_0/O (LUT1)
+      [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/SpecialLUT.sv:37]
+    21: VRO6/skibidi/subspLUT2/i_0/I0 (LUT1)
+      : VRO6/skibidi/subspLUT2/i2
+      : VRO6/skibidi/i2
+      : VRO6/mid22_inferred__0/out
+      : VRO6/mid22_inferred__0/in0
+      : VRO6/mid22_inferred/out
+      : VRO6/mid22_inferred/in0
+      : VRO6/yellow/outlatch
+    22: VRO6/yellow/out_inferredi_2/O (LUT2)
+      [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/Submarine.sv:39]
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/LUT.sv:22]
+Inferred a: "set_disable_timing -from I1 -to O VRO6/yellow/out_inferredi_2"
+Found timing loop:
+     0: VRO6/yellow/out_inferredi_2/O (LUT2)
+      [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/Submarine.sv:39]
+     1: VRO6/yellow/out_inferredi_2/O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/Submarine.sv:23]
+Found timing loop:
+     0: VRO7/skibidi/subspLUT1/i_3/O (LUT3)
+      [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/SpecialLUT.sv:38]
+     1: VRO7/skibidi/subspLUT1/i_3/I2 (LUT3)
+      : VRO7/skibidi/subspLUT1/internal2_inferred__0/out
+      : VRO7/skibidi/subspLUT1/internal2_inferred__0/in0
+      : VRO7/skibidi/subspLUT1/internal2_inferred/out
+      : VRO7/skibidi/subspLUT1/internal2_inferred/in0
+     2: VRO7/skibidi/subspLUT1/i_0/O (LUT1)
+      [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/SpecialLUT.sv:37]
+     3: VRO7/skibidi/subspLUT1/i_0/I0 (LUT1)
+      : VRO7/skibidi/subspLUT1/i2
+      : VRO7/skibidi/i2
+      : VRO7/mid22_inferred__0/out
+      : VRO7/mid22_inferred__0/in0
+      : VRO7/mid22_inferred/out
+      : VRO7/mid22_inferred/in0
+      : VRO7/yellow/outlatch
+     4: VRO7/yellow/out_inferredi_2/O (LUT2)
+      [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/Submarine.sv:39]
+     5: VRO7/yellow/out_inferredi_2/I1 (LUT2)
+     6: VRO7/yellow/out_inferredi_0/O (LUT2)
+      [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/Submarine.sv:39]
+     7: VRO7/yellow/out_inferredi_0/I1 (LUT2)
+      : VRO7/yellow/mid1_inferred__0/out
+      : VRO7/yellow/mid1_inferred__0/in0
+      : VRO7/yellow/mid1_inferred/out
+      : VRO7/yellow/mid1_inferred/in0
+      : VRO7/yellow/subLUT1/out
+     8: VRO7/yellow/subLUT1/i_2/O (LUT3)
+      [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/LUT.sv:36]
+     9: VRO7/yellow/subLUT1/i_2/I2 (LUT3)
+      : VRO7/yellow/subLUT1/internal2_inferred__0/out
+      : VRO7/yellow/subLUT1/internal2_inferred__0/in0
+      : VRO7/yellow/subLUT1/internal2_inferred/out
+      : VRO7/yellow/subLUT1/internal2_inferred/in0
+    10: VRO7/yellow/subLUT1/i_0/O (LUT1)
+      [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/LUT.sv:35]
+    11: VRO7/yellow/subLUT1/i_0/I0 (LUT1)
+      : VRO7/yellow/subLUT1/i2
+      : VRO7/yellow/i2
+      : VRO7/mid12_inferred__0/out
+      : VRO7/mid12_inferred__0/in0
+      : VRO7/mid12_inferred/out
+      : VRO7/mid12_inferred/in0
+      : VRO7/nuclear/outlatch
+    12: VRO7/nuclear/i_0/O (LUT3)
+      [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/Submarine.sv:39]
+    13: VRO7/nuclear/i_0/I1 (LUT3)
+      : VRO7/nuclear/mid1_inferred__0/out
+      : VRO7/nuclear/mid1_inferred__0/in0
+      : VRO7/nuclear/mid1_inferred/out
+      : VRO7/nuclear/mid1_inferred/in0
+      : VRO7/nuclear/subLUT1/out
+    14: VRO7/nuclear/subLUT1/i_2/O (LUT3)
+      [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/LUT.sv:36]
+    15: VRO7/nuclear/subLUT1/i_2/I2 (LUT3)
+      : VRO7/nuclear/subLUT1/internal2_inferred__0/out
+      : VRO7/nuclear/subLUT1/internal2_inferred__0/in0
+      : VRO7/nuclear/subLUT1/internal2_inferred/out
+      : VRO7/nuclear/subLUT1/internal2_inferred/in0
+    16: VRO7/nuclear/subLUT1/i_0/O (LUT1)
+      [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/LUT.sv:35]
+    17: VRO7/nuclear/subLUT1/i_0/I0 (LUT1)
+      : VRO7/nuclear/subLUT1/i2
+      : VRO7/nuclear/i2
+      : VRO7/mid02_inferred__0/out
+      : VRO7/mid02_inferred__0/in0
+      : VRO7/mid02_inferred/out
+      : VRO7/mid02_inferred/in0
+      : VRO7/skibidi/outlatch
+    18: VRO7/skibidi/i_0/O (LUT3)
+      [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/slicer.sv:39]
+    19: VRO7/skibidi/i_0/I1 (LUT3)
+      : VRO7/skibidi/mid1_inferred__0/out
+      : VRO7/skibidi/mid1_inferred__0/in0
+      : VRO7/skibidi/mid1_inferred/out
+      : VRO7/skibidi/mid1_inferred/in0
+      : VRO7/skibidi/subspLUT1/out
+    20: VRO7/skibidi/subspLUT1/i_2/O (LUT2)
+      [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/SpecialLUT.sv:22]
+    21: VRO7/skibidi/subspLUT1/i_2/I1 (LUT2)
+      : VRO7/skibidi/subspLUT1/mid_inferred__0/out
+      : VRO7/skibidi/subspLUT1/mid_inferred__0/in0
+      : VRO7/skibidi/subspLUT1/mid_inferred/out
+      : VRO7/skibidi/subspLUT1/mid_inferred/in0
+    22: VRO7/skibidi/subspLUT1/i_3/O (LUT3)
+      [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/SpecialLUT.sv:38]
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/LUT.sv:22]
+Inferred a: "set_disable_timing -from I2 -to O VRO7/skibidi/subspLUT1/i_3"
+Found timing loop:
+     0: VRO7/yellow/out_inferredi_2/O (LUT2)
+      [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/Submarine.sv:39]
+     1: VRO7/yellow/out_inferredi_2/I1 (LUT2)
+     2: VRO7/yellow/out_inferredi_0/O (LUT2)
+      [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/Submarine.sv:39]
+     3: VRO7/yellow/out_inferredi_0/I1 (LUT2)
+      : VRO7/yellow/mid1_inferred__0/out
+      : VRO7/yellow/mid1_inferred__0/in0
+      : VRO7/yellow/mid1_inferred/out
+      : VRO7/yellow/mid1_inferred/in0
+      : VRO7/yellow/subLUT1/out
+     4: VRO7/yellow/subLUT1/i_2/O (LUT3)
+      [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/LUT.sv:36]
+     5: VRO7/yellow/subLUT1/i_2/I2 (LUT3)
+      : VRO7/yellow/subLUT1/internal2_inferred__0/out
+      : VRO7/yellow/subLUT1/internal2_inferred__0/in0
+      : VRO7/yellow/subLUT1/internal2_inferred/out
+      : VRO7/yellow/subLUT1/internal2_inferred/in0
+     6: VRO7/yellow/subLUT1/i_0/O (LUT1)
+      [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/LUT.sv:35]
+     7: VRO7/yellow/subLUT1/i_0/I0 (LUT1)
+      : VRO7/yellow/subLUT1/i2
+      : VRO7/yellow/i2
+      : VRO7/mid12_inferred__0/out
+      : VRO7/mid12_inferred__0/in0
+      : VRO7/mid12_inferred/out
+      : VRO7/mid12_inferred/in0
+      : VRO7/nuclear/outlatch
+     8: VRO7/nuclear/i_0/O (LUT3)
+      [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/Submarine.sv:39]
+     9: VRO7/nuclear/i_0/I1 (LUT3)
+      : VRO7/nuclear/mid1_inferred__0/out
+      : VRO7/nuclear/mid1_inferred__0/in0
+      : VRO7/nuclear/mid1_inferred/out
+      : VRO7/nuclear/mid1_inferred/in0
+      : VRO7/nuclear/subLUT1/out
+    10: VRO7/nuclear/subLUT1/i_2/O (LUT3)
+      [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/LUT.sv:36]
+    11: VRO7/nuclear/subLUT1/i_2/I2 (LUT3)
+      : VRO7/nuclear/subLUT1/internal2_inferred__0/out
+      : VRO7/nuclear/subLUT1/internal2_inferred__0/in0
+      : VRO7/nuclear/subLUT1/internal2_inferred/out
+      : VRO7/nuclear/subLUT1/internal2_inferred/in0
+    12: VRO7/nuclear/subLUT1/i_0/O (LUT1)
+      [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/LUT.sv:35]
+    13: VRO7/nuclear/subLUT1/i_0/I0 (LUT1)
+      : VRO7/nuclear/subLUT1/i2
+      : VRO7/nuclear/i2
+      : VRO7/mid02_inferred__0/out
+      : VRO7/mid02_inferred__0/in0
+      : VRO7/mid02_inferred/out
+      : VRO7/mid02_inferred/in0
+      : VRO7/skibidi/outlatch
+    14: VRO7/skibidi/i_0/O (LUT3)
+      [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/slicer.sv:39]
+    15: VRO7/skibidi/i_0/I0 (LUT3)
+      : VRO7/skibidi/mid2_inferred__0/out
+      : VRO7/skibidi/mid2_inferred__0/in0
+      : VRO7/skibidi/mid2_inferred/out
+      : VRO7/skibidi/mid2_inferred/in0
+      : VRO7/skibidi/subspLUT2/out
+    16: VRO7/skibidi/subspLUT2/i_2/O (LUT2)
+      [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/SpecialLUT.sv:22]
+    17: VRO7/skibidi/subspLUT2/i_2/I1 (LUT2)
+      : VRO7/skibidi/subspLUT2/mid_inferred__0/out
+      : VRO7/skibidi/subspLUT2/mid_inferred__0/in0
+      : VRO7/skibidi/subspLUT2/mid_inferred/out
+      : VRO7/skibidi/subspLUT2/mid_inferred/in0
+    18: VRO7/skibidi/subspLUT2/i_3/O (LUT3)
+      [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/SpecialLUT.sv:38]
+    19: VRO7/skibidi/subspLUT2/i_3/I2 (LUT3)
+      : VRO7/skibidi/subspLUT2/internal2_inferred__0/out
+      : VRO7/skibidi/subspLUT2/internal2_inferred__0/in0
+      : VRO7/skibidi/subspLUT2/internal2_inferred/out
+      : VRO7/skibidi/subspLUT2/internal2_inferred/in0
+    20: VRO7/skibidi/subspLUT2/i_0/O (LUT1)
+      [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/SpecialLUT.sv:37]
+    21: VRO7/skibidi/subspLUT2/i_0/I0 (LUT1)
+      : VRO7/skibidi/subspLUT2/i2
+      : VRO7/skibidi/i2
+      : VRO7/mid22_inferred__0/out
+      : VRO7/mid22_inferred__0/in0
+      : VRO7/mid22_inferred/out
+      : VRO7/mid22_inferred/in0
+      : VRO7/yellow/outlatch
+    22: VRO7/yellow/out_inferredi_2/O (LUT2)
+      [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/Submarine.sv:39]
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/LUT.sv:22]
+Inferred a: "set_disable_timing -from I1 -to O VRO7/yellow/out_inferredi_2"
+Found timing loop:
+     0: VRO7/yellow/out_inferredi_2/O (LUT2)
+      [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/Submarine.sv:39]
+     1: VRO7/yellow/out_inferredi_2/O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/Submarine.sv:23]
+Found timing loop:
+     0: VRO8/skibidi/subspLUT1/i_3/O (LUT3)
+      [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/SpecialLUT.sv:38]
+     1: VRO8/skibidi/subspLUT1/i_3/I2 (LUT3)
+      : VRO8/skibidi/subspLUT1/internal2_inferred__0/out
+      : VRO8/skibidi/subspLUT1/internal2_inferred__0/in0
+      : VRO8/skibidi/subspLUT1/internal2_inferred/out
+      : VRO8/skibidi/subspLUT1/internal2_inferred/in0
+     2: VRO8/skibidi/subspLUT1/i_0/O (LUT1)
+      [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/SpecialLUT.sv:37]
+     3: VRO8/skibidi/subspLUT1/i_0/I0 (LUT1)
+      : VRO8/skibidi/subspLUT1/i2
+      : VRO8/skibidi/i2
+      : VRO8/mid22_inferred__0/out
+      : VRO8/mid22_inferred__0/in0
+      : VRO8/mid22_inferred/out
+      : VRO8/mid22_inferred/in0
+      : VRO8/yellow/outlatch
+     4: VRO8/yellow/out_inferredi_2/O (LUT2)
+      [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/Submarine.sv:39]
+     5: VRO8/yellow/out_inferredi_2/I1 (LUT2)
+     6: VRO8/yellow/out_inferredi_0/O (LUT2)
+      [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/Submarine.sv:39]
+     7: VRO8/yellow/out_inferredi_0/I1 (LUT2)
+      : VRO8/yellow/mid1_inferred__0/out
+      : VRO8/yellow/mid1_inferred__0/in0
+      : VRO8/yellow/mid1_inferred/out
+      : VRO8/yellow/mid1_inferred/in0
+      : VRO8/yellow/subLUT1/out
+     8: VRO8/yellow/subLUT1/i_2/O (LUT3)
+      [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/LUT.sv:36]
+     9: VRO8/yellow/subLUT1/i_2/I2 (LUT3)
+      : VRO8/yellow/subLUT1/internal2_inferred__0/out
+      : VRO8/yellow/subLUT1/internal2_inferred__0/in0
+      : VRO8/yellow/subLUT1/internal2_inferred/out
+      : VRO8/yellow/subLUT1/internal2_inferred/in0
+    10: VRO8/yellow/subLUT1/i_0/O (LUT1)
+      [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/LUT.sv:35]
+    11: VRO8/yellow/subLUT1/i_0/I0 (LUT1)
+      : VRO8/yellow/subLUT1/i2
+      : VRO8/yellow/i2
+      : VRO8/mid12_inferred__0/out
+      : VRO8/mid12_inferred__0/in0
+      : VRO8/mid12_inferred/out
+      : VRO8/mid12_inferred/in0
+      : VRO8/nuclear/outlatch
+    12: VRO8/nuclear/i_0/O (LUT3)
+      [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/Submarine.sv:39]
+    13: VRO8/nuclear/i_0/I1 (LUT3)
+      : VRO8/nuclear/mid1_inferred__0/out
+      : VRO8/nuclear/mid1_inferred__0/in0
+      : VRO8/nuclear/mid1_inferred/out
+      : VRO8/nuclear/mid1_inferred/in0
+      : VRO8/nuclear/subLUT1/out
+    14: VRO8/nuclear/subLUT1/i_2/O (LUT3)
+      [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/LUT.sv:36]
+    15: VRO8/nuclear/subLUT1/i_2/I2 (LUT3)
+      : VRO8/nuclear/subLUT1/internal2_inferred__0/out
+      : VRO8/nuclear/subLUT1/internal2_inferred__0/in0
+      : VRO8/nuclear/subLUT1/internal2_inferred/out
+      : VRO8/nuclear/subLUT1/internal2_inferred/in0
+    16: VRO8/nuclear/subLUT1/i_0/O (LUT1)
+      [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/LUT.sv:35]
+    17: VRO8/nuclear/subLUT1/i_0/I0 (LUT1)
+      : VRO8/nuclear/subLUT1/i2
+      : VRO8/nuclear/i2
+      : VRO8/mid02_inferred__0/out
+      : VRO8/mid02_inferred__0/in0
+      : VRO8/mid02_inferred/out
+      : VRO8/mid02_inferred/in0
+      : VRO8/skibidi/outlatch
+    18: VRO8/skibidi/i_0/O (LUT3)
+      [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/slicer.sv:39]
+    19: VRO8/skibidi/i_0/I1 (LUT3)
+      : VRO8/skibidi/mid1_inferred__0/out
+      : VRO8/skibidi/mid1_inferred__0/in0
+      : VRO8/skibidi/mid1_inferred/out
+      : VRO8/skibidi/mid1_inferred/in0
+      : VRO8/skibidi/subspLUT1/out
+    20: VRO8/skibidi/subspLUT1/i_2/O (LUT2)
+      [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/SpecialLUT.sv:22]
+    21: VRO8/skibidi/subspLUT1/i_2/I1 (LUT2)
+      : VRO8/skibidi/subspLUT1/mid_inferred__0/out
+      : VRO8/skibidi/subspLUT1/mid_inferred__0/in0
+      : VRO8/skibidi/subspLUT1/mid_inferred/out
+      : VRO8/skibidi/subspLUT1/mid_inferred/in0
+    22: VRO8/skibidi/subspLUT1/i_3/O (LUT3)
+      [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/SpecialLUT.sv:38]
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/LUT.sv:22]
+Inferred a: "set_disable_timing -from I2 -to O VRO8/skibidi/subspLUT1/i_3"
+Found timing loop:
+     0: VRO8/yellow/out_inferredi_2/O (LUT2)
+      [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/Submarine.sv:39]
+     1: VRO8/yellow/out_inferredi_2/I1 (LUT2)
+     2: VRO8/yellow/out_inferredi_0/O (LUT2)
+      [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/Submarine.sv:39]
+     3: VRO8/yellow/out_inferredi_0/I1 (LUT2)
+      : VRO8/yellow/mid1_inferred__0/out
+      : VRO8/yellow/mid1_inferred__0/in0
+      : VRO8/yellow/mid1_inferred/out
+      : VRO8/yellow/mid1_inferred/in0
+      : VRO8/yellow/subLUT1/out
+     4: VRO8/yellow/subLUT1/i_2/O (LUT3)
+      [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/LUT.sv:36]
+     5: VRO8/yellow/subLUT1/i_2/I2 (LUT3)
+      : VRO8/yellow/subLUT1/internal2_inferred__0/out
+      : VRO8/yellow/subLUT1/internal2_inferred__0/in0
+      : VRO8/yellow/subLUT1/internal2_inferred/out
+      : VRO8/yellow/subLUT1/internal2_inferred/in0
+     6: VRO8/yellow/subLUT1/i_0/O (LUT1)
+      [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/LUT.sv:35]
+     7: VRO8/yellow/subLUT1/i_0/I0 (LUT1)
+      : VRO8/yellow/subLUT1/i2
+      : VRO8/yellow/i2
+      : VRO8/mid12_inferred__0/out
+      : VRO8/mid12_inferred__0/in0
+      : VRO8/mid12_inferred/out
+      : VRO8/mid12_inferred/in0
+      : VRO8/nuclear/outlatch
+     8: VRO8/nuclear/i_0/O (LUT3)
+      [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/Submarine.sv:39]
+     9: VRO8/nuclear/i_0/I1 (LUT3)
+      : VRO8/nuclear/mid1_inferred__0/out
+      : VRO8/nuclear/mid1_inferred__0/in0
+      : VRO8/nuclear/mid1_inferred/out
+      : VRO8/nuclear/mid1_inferred/in0
+      : VRO8/nuclear/subLUT1/out
+    10: VRO8/nuclear/subLUT1/i_2/O (LUT3)
+      [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/LUT.sv:36]
+    11: VRO8/nuclear/subLUT1/i_2/I2 (LUT3)
+      : VRO8/nuclear/subLUT1/internal2_inferred__0/out
+      : VRO8/nuclear/subLUT1/internal2_inferred__0/in0
+      : VRO8/nuclear/subLUT1/internal2_inferred/out
+      : VRO8/nuclear/subLUT1/internal2_inferred/in0
+    12: VRO8/nuclear/subLUT1/i_0/O (LUT1)
+      [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/LUT.sv:35]
+    13: VRO8/nuclear/subLUT1/i_0/I0 (LUT1)
+      : VRO8/nuclear/subLUT1/i2
+      : VRO8/nuclear/i2
+      : VRO8/mid02_inferred__0/out
+      : VRO8/mid02_inferred__0/in0
+      : VRO8/mid02_inferred/out
+      : VRO8/mid02_inferred/in0
+      : VRO8/skibidi/outlatch
+    14: VRO8/skibidi/i_0/O (LUT3)
+      [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/slicer.sv:39]
+    15: VRO8/skibidi/i_0/I0 (LUT3)
+      : VRO8/skibidi/mid2_inferred__0/out
+      : VRO8/skibidi/mid2_inferred__0/in0
+      : VRO8/skibidi/mid2_inferred/out
+      : VRO8/skibidi/mid2_inferred/in0
+      : VRO8/skibidi/subspLUT2/out
+    16: VRO8/skibidi/subspLUT2/i_2/O (LUT2)
+      [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/SpecialLUT.sv:22]
+    17: VRO8/skibidi/subspLUT2/i_2/I1 (LUT2)
+      : VRO8/skibidi/subspLUT2/mid_inferred__0/out
+      : VRO8/skibidi/subspLUT2/mid_inferred__0/in0
+      : VRO8/skibidi/subspLUT2/mid_inferred/out
+      : VRO8/skibidi/subspLUT2/mid_inferred/in0
+    18: VRO8/skibidi/subspLUT2/i_3/O (LUT3)
+      [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/SpecialLUT.sv:38]
+    19: VRO8/skibidi/subspLUT2/i_3/I2 (LUT3)
+      : VRO8/skibidi/subspLUT2/internal2_inferred__0/out
+      : VRO8/skibidi/subspLUT2/internal2_inferred__0/in0
+      : VRO8/skibidi/subspLUT2/internal2_inferred/out
+      : VRO8/skibidi/subspLUT2/internal2_inferred/in0
+    20: VRO8/skibidi/subspLUT2/i_0/O (LUT1)
+      [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/SpecialLUT.sv:37]
+    21: VRO8/skibidi/subspLUT2/i_0/I0 (LUT1)
+      : VRO8/skibidi/subspLUT2/i2
+      : VRO8/skibidi/i2
+      : VRO8/mid22_inferred__0/out
+      : VRO8/mid22_inferred__0/in0
+      : VRO8/mid22_inferred/out
+      : VRO8/mid22_inferred/in0
+      : VRO8/yellow/outlatch
+    22: VRO8/yellow/out_inferredi_2/O (LUT2)
+      [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/Submarine.sv:39]
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/LUT.sv:22]
+Inferred a: "set_disable_timing -from I1 -to O VRO8/yellow/out_inferredi_2"
+Found timing loop:
+     0: VRO8/yellow/out_inferredi_2/O (LUT2)
+      [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/Submarine.sv:39]
+     1: VRO8/yellow/out_inferredi_2/O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/Submarine.sv:23]
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:56 ; elapsed = 00:01:01 . Memory (MB): peak = 1459.137 ; gain = 174.691
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3295] tying undriven pin STD_cntr:LD to constant 0
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/Counter.sv:14]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.srcs/sources_1/new/PUFFD1DD4.sv:87]
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:03 ; elapsed = 00:01:07 . Memory (MB): peak = 1459.137 ; gain = 174.691
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:03 ; elapsed = 00:01:07 . Memory (MB): peak = 1459.137 ; gain = 174.691
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:04 ; elapsed = 00:01:08 . Memory (MB): peak = 1459.137 ; gain = 174.691
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:04 ; elapsed = 00:01:08 . Memory (MB): peak = 1459.137 ; gain = 174.691
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:04 ; elapsed = 00:01:09 . Memory (MB): peak = 1459.137 ; gain = 174.691
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:04 ; elapsed = 00:01:09 . Memory (MB): peak = 1459.137 ; gain = 174.691
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |   146|
+|3     |LUT1   |   109|
+|4     |LUT2   |   461|
+|5     |LUT3   |   492|
+|6     |LUT4   |   392|
+|7     |LUT5   |   203|
+|8     |LUT6   |  2033|
+|9     |MUXF7  |   832|
+|10    |MUXF8  |   256|
+|11    |FDCE   |   240|
+|12    |FDPE   |   137|
+|13    |FDRE   |  2151|
+|14    |FDSE   |   257|
+|15    |LD     |    10|
+|16    |IBUF   |    12|
+|17    |OBUF   |    22|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:04 ; elapsed = 00:01:09 . Memory (MB): peak = 1459.137 ; gain = 174.691
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 27 critical warnings and 7 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:50 ; elapsed = 00:01:06 . Memory (MB): peak = 1459.137 ; gain = 132.637
+Synthesis Optimization Complete : Time (s): cpu = 00:01:05 ; elapsed = 00:01:09 . Memory (MB): peak = 1459.137 ; gain = 174.691
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.078 . Memory (MB): peak = 1459.137 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 1244 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'PUFFD1DD4' is not ideal for floorplanning, since the cellview 'sha256' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1459.137 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 10 instances were transformed.
+  LD => LDCE: 10 instances
+
+Synth Design complete, checksum: 8b475f64
+INFO: [Common 17-83] Releasing license: Synthesis
+62 Infos, 25 Warnings, 32 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:15 ; elapsed = 00:01:24 . Memory (MB): peak = 1459.137 ; gain = 174.691
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+INFO: [Common 17-1381] The checkpoint 'C:/Users/USER/VIVADOProjects/PUFFPUFFPUFF/PUFFPUFFPUFF.runs/synth_1/PUFFD1DD4.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file PUFFD1DD4_utilization_synth.rpt -pb PUFFD1DD4_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Oct 30 17:37:13 2024...

@@ -1,0 +1,23 @@
+# compile verilog/system verilog design source files
+sv xil_defaultlib  \
+"../../../../../../Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/ALU.sv" \
+"../../../../../../Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/BAG.sv" \
+"../../../../../../Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/BCG.sv" \
+"../../../../../../Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/CU_DCDR.sv" \
+"../../../../../OTTERPROGRMAMGINGE/OTTERPROGRMAMGINGE.srcs/sources_1/new/Forward.sv" \
+"../../../../../../Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/FourMux.sv" \
+"../../../../../../Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/ImmediateGenerator.sv" \
+"../../../../../../Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/OTTER.sv" \
+"../../../../../../Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/PC.sv" \
+"../../../../../../Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/PC_MUX.sv" \
+"../../../../../../Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/PC_REG.sv" \
+"../../../../../../Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/REG_FILE.sv" \
+"../../../../../../Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/TwoMux.sv" \
+"../../../../../../Downloads/OTTER_Diego_Curiel/OTTER_Diego_Curiel/otter_memory_v1_07.sv" \
+"../../../../333HELL.srcs/sim_1/new/otter_tb.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
