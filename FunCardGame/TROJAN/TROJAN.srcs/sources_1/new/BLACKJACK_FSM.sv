@@ -75,8 +75,8 @@ module BLACKJACK_FSM(
         end else begin
             PS <= NS;
 
-            if (PS == STALL && NS != STALL) begin
-                staller <= 0; // Reset staller when leaving the STALL state
+            if (NS == STALL && PS != STALL) begin
+                staller <= 0; // Reset staller when entering the STALL state
             end else begin
                 staller <= (staller == 32'hFFFFFFFF) ? 0 : staller + 1;
             end
