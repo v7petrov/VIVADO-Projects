@@ -19,8 +19,9 @@ module BLACKJACK_FSM(
     parameter BLACKJACK = 21;
 
     // RNG for card generation        Initialize player array j in case
-    logic [3:0] p1ayer_cards [10:0] = {7, 3, 5, 2, 4, 0, 0, 0, 0, 0, 0};
+    reg [3:0] p1ayer_cards [10:0] = {6, 9, 6, 2, 4, 3, 4, 1, 6, 9, 6};
     logic [3:0] player_card, player_card2, dealer_card;
+    logic bj;
     rnGODs #(.START_VAL(5)) rand_user_inc(
         .clock(clk),
         .val_limit(9),
@@ -80,8 +81,8 @@ module BLACKJACK_FSM(
                 staller <= (staller == 32'hFFFFFFFF) ? 0 : staller + 1;
             end
 
-            if (PS == (USER && stand_edge)) sclk <= sclk + 1;
-            if (PS == HIT)sclk <= 2'b00;
+            if ((PS == USER) && stand_edge) sclk <= sclk + 1;
+            if ((PS == HIT))sclk <= 2'b00;
         end
     end
 
@@ -159,13 +160,15 @@ module BLACKJACK_FSM(
                     card_num <= 2;
                     card_num2 <= 1;
                     if(sclk == 2'b11) begin
+                    bj = 1;
                     player_cards[0] <= p1ayer_cards[0];
                     player_cards[1] <= p1ayer_cards[1];
                     dealer_cards[0] <= dealer_card + 1;
-                    user_total <= p1ayer_cards[1] + p1ayer_cards[1];
+                    user_total <= p1ayer_cards[0] + p1ayer_cards[1];
                     dealer_total <= dealer_card + 1;
                     end
                     else begin 
+                    bj = 0;
                     player_cards[0] <= player_card + 1;
                     player_cards[1] <= player_card2 + 1;
                     dealer_cards[0] <= dealer_card + 1;
@@ -188,10 +191,12 @@ module BLACKJACK_FSM(
                 end
                 HIT: begin
                     if (user_total > BLACKJACK) begin
+                        bj <= 0;
                         lose <= 1;
                         win <= 0;
                         player_money <= player_money - bet_amnt;
                     end else if (user_total == BLACKJACK) begin
+                        bj <= 0;
                         win <= 1;
                         lose <= 0;
                         player_money <= player_money + bet_amnt;

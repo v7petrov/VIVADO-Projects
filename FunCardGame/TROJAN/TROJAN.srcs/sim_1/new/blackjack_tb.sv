@@ -95,6 +95,22 @@ module blackjack_tb();
     stand = 1;
     #10
     stand = 0;
+    #100
+    stand = 1;
+    #10
+    stand = 0;
+    #100
+    stand = 1;
+    #10
+    stand = 0;
+    #100
+    stand = 1;
+    #10
+    stand = 0;
+    #100
+    stand = 1;
+    #10
+    stand = 0;                
     #1000
     reset = 1;
     

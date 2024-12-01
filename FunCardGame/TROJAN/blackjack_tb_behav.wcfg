@@ -12,8 +12,8 @@
    </db_ref_list>
    <zoom_setting>
       <ZoomStartTime time="0.000 ns"></ZoomStartTime>
-      <ZoomEndTime time="1,368.739 ns"></ZoomEndTime>
-      <Cursor1Time time="637.275 ns"></Cursor1Time>
+      <ZoomEndTime time="1,366.001 ns"></ZoomEndTime>
+      <Cursor1Time time="252.000 ns"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="73"></NameColumnWidth>
@@ -28,13 +28,18 @@
       <obj_property name="ElementShortName">hit</obj_property>
       <obj_property name="ObjectShortName">hit</obj_property>
    </wvobject>
+   <wvobject fp_name="/blackjack_tb/poopypants/bj/hit_edge" type="logic">
+      <obj_property name="ElementShortName">hit_edge</obj_property>
+      <obj_property name="ObjectShortName">hit_edge</obj_property>
+   </wvobject>
+   <wvobject fp_name="/blackjack_tb/poopypants/bj/stand_edge" type="logic">
+      <obj_property name="ElementShortName">stand_edge</obj_property>
+      <obj_property name="ObjectShortName">stand_edge</obj_property>
+   </wvobject>
    <wvobject fp_name="/blackjack_tb/poopypants/bj/sclk" type="array">
       <obj_property name="ElementShortName">sclk[1:0]</obj_property>
       <obj_property name="ObjectShortName">sclk[1:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/blackjack_tb/stand" type="logic">
-      <obj_property name="ElementShortName">stand</obj_property>
-      <obj_property name="ObjectShortName">stand</obj_property>
+      <obj_property name="isExpanded"></obj_property>
    </wvobject>
    <wvobject fp_name="/blackjack_tb/poopypants/bj/bet_amnt" type="array">
       <obj_property name="ElementShortName">bet_amnt[13:0]</obj_property>
@@ -55,10 +60,6 @@
    <wvobject fp_name="/blackjack_tb/poopypants/bj/win" type="logic">
       <obj_property name="ElementShortName">win</obj_property>
       <obj_property name="ObjectShortName">win</obj_property>
-   </wvobject>
-   <wvobject fp_name="/blackjack_tb/poopypants/bj/c1k" type="array">
-      <obj_property name="ElementShortName">c1k[10:0][3:0]</obj_property>
-      <obj_property name="ObjectShortName">c1k[10:0][3:0]</obj_property>
    </wvobject>
    <wvobject fp_name="/blackjack_tb/poopypants/bj/lose" type="logic">
       <obj_property name="ElementShortName">lose</obj_property>
