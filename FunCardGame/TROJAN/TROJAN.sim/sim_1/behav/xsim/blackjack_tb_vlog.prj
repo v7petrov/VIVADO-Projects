@@ -1,0 +1,14 @@
+# compile verilog/system verilog design source files
+sv xil_defaultlib  \
+"../../../../TROJAN.srcs/sources_1/new/BLACKJACK_FSM.sv" \
+"../../../../TROJAN.srcs/sources_1/new/BOX_handler.sv" \
+"../../../../TROJAN.srcs/sources_1/new/CARD_Handler.sv" \
+"../../../../TROJAN.srcs/sources_1/new/blackjack_pixl.sv" \
+"../../../../TROJAN.srcs/sources_1/new/rnGODs.sv" \
+"../../../../TROJAN.srcs/sim_1/new/blackjack_tb.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

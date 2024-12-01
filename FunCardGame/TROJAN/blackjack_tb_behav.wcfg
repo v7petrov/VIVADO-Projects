@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="blackjack_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="blackjack_tb" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0.000 ns"></ZoomStartTime>
+      <ZoomEndTime time="1,368.739 ns"></ZoomEndTime>
+      <Cursor1Time time="637.275 ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="73"></NameColumnWidth>
+      <ValueColumnWidth column_width="72"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="14" />
+   <wvobject fp_name="/blackjack_tb/start" type="logic">
+      <obj_property name="ElementShortName">start</obj_property>
+      <obj_property name="ObjectShortName">start</obj_property>
+   </wvobject>
+   <wvobject fp_name="/blackjack_tb/hit" type="logic">
+      <obj_property name="ElementShortName">hit</obj_property>
+      <obj_property name="ObjectShortName">hit</obj_property>
+   </wvobject>
+   <wvobject fp_name="/blackjack_tb/poopypants/bj/sclk" type="array">
+      <obj_property name="ElementShortName">sclk[1:0]</obj_property>
+      <obj_property name="ObjectShortName">sclk[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/blackjack_tb/stand" type="logic">
+      <obj_property name="ElementShortName">stand</obj_property>
+      <obj_property name="ObjectShortName">stand</obj_property>
+   </wvobject>
+   <wvobject fp_name="/blackjack_tb/poopypants/bj/bet_amnt" type="array">
+      <obj_property name="ElementShortName">bet_amnt[13:0]</obj_property>
+      <obj_property name="ObjectShortName">bet_amnt[13:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/blackjack_tb/poopypants/player_money" type="array">
+      <obj_property name="ElementShortName">player_money[13:0]</obj_property>
+      <obj_property name="ObjectShortName">player_money[13:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/blackjack_tb/poopypants/bj/card_num" type="array">
+      <obj_property name="ElementShortName">card_num[3:0]</obj_property>
+      <obj_property name="ObjectShortName">card_num[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/blackjack_tb/poopypants/bj/player_money" type="array">
+      <obj_property name="ElementShortName">player_money[13:0]</obj_property>
+      <obj_property name="ObjectShortName">player_money[13:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/blackjack_tb/poopypants/bj/win" type="logic">
+      <obj_property name="ElementShortName">win</obj_property>
+      <obj_property name="ObjectShortName">win</obj_property>
+   </wvobject>
+   <wvobject fp_name="/blackjack_tb/poopypants/bj/c1k" type="array">
+      <obj_property name="ElementShortName">c1k[10:0][3:0]</obj_property>
+      <obj_property name="ObjectShortName">c1k[10:0][3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/blackjack_tb/poopypants/bj/lose" type="logic">
+      <obj_property name="ElementShortName">lose</obj_property>
+      <obj_property name="ObjectShortName">lose</obj_property>
+   </wvobject>
+   <wvobject fp_name="/blackjack_tb/poopypants/bj/PS" type="array">
+      <obj_property name="ElementShortName">PS[2:0]</obj_property>
+      <obj_property name="ObjectShortName">PS[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/blackjack_tb/poopypants/bj/NS" type="array">
+      <obj_property name="ElementShortName">NS[2:0]</obj_property>
+      <obj_property name="ObjectShortName">NS[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/blackjack_tb/poopypants/bj/rand_user_inc/rnd" type="array">
+      <obj_property name="ElementShortName">rnd[4:0]</obj_property>
+      <obj_property name="ObjectShortName">rnd[4:0]</obj_property>
+   </wvobject>
+</wave_config>

@@ -1,0 +1,39 @@
+Vivado Simulator v2022.1
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2022.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot blackjack_tb_behav xil_defaultlib.blackjack_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 2 for port 'sclk' [C:/Users/USER/Documents/GitHub/VIVADO-Projects/FunCardGame/TROJAN/TROJAN.srcs/sources_1/new/blackjack_pixl.sv:153]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 5 for port 'val_limit' [C:/Users/USER/Documents/GitHub/VIVADO-Projects/FunCardGame/TROJAN/TROJAN.srcs/sources_1/new/BLACKJACK_FSM.sv:47]
+WARNING: [VRFC 10-3091] actual bit length 4 differs from formal bit length 5 for port 'rnd' [C:/Users/USER/Documents/GitHub/VIVADO-Projects/FunCardGame/TROJAN/TROJAN.srcs/sources_1/new/BLACKJACK_FSM.sv:48]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 5 for port 'val_limit' [C:/Users/USER/Documents/GitHub/VIVADO-Projects/FunCardGame/TROJAN/TROJAN.srcs/sources_1/new/BLACKJACK_FSM.sv:52]
+WARNING: [VRFC 10-3091] actual bit length 4 differs from formal bit length 5 for port 'rnd' [C:/Users/USER/Documents/GitHub/VIVADO-Projects/FunCardGame/TROJAN/TROJAN.srcs/sources_1/new/BLACKJACK_FSM.sv:53]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 5 for port 'val_limit' [C:/Users/USER/Documents/GitHub/VIVADO-Projects/FunCardGame/TROJAN/TROJAN.srcs/sources_1/new/BLACKJACK_FSM.sv:57]
+WARNING: [VRFC 10-3091] actual bit length 4 differs from formal bit length 5 for port 'rnd' [C:/Users/USER/Documents/GitHub/VIVADO-Projects/FunCardGame/TROJAN/TROJAN.srcs/sources_1/new/BLACKJACK_FSM.sv:58]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 10 for port 'BOX_T' [C:/Users/USER/Documents/GitHub/VIVADO-Projects/FunCardGame/TROJAN/TROJAN.srcs/sources_1/new/blackjack_pixl.sv:166]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 10 for port 'BOX_L' [C:/Users/USER/Documents/GitHub/VIVADO-Projects/FunCardGame/TROJAN/TROJAN.srcs/sources_1/new/blackjack_pixl.sv:167]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 10 for port 'BOX_T' [C:/Users/USER/Documents/GitHub/VIVADO-Projects/FunCardGame/TROJAN/TROJAN.srcs/sources_1/new/blackjack_pixl.sv:174]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 10 for port 'BOX_L' [C:/Users/USER/Documents/GitHub/VIVADO-Projects/FunCardGame/TROJAN/TROJAN.srcs/sources_1/new/blackjack_pixl.sv:175]
+WARNING: [VRFC 10-5021] port 'refresh_ticks' is not connected on this instance [C:/Users/USER/Documents/GitHub/VIVADO-Projects/FunCardGame/TROJAN/TROJAN.srcs/sim_1/new/blackjack_tb.sv:27]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.rnGODs
+Compiling module xil_defaultlib.BLACKJACK_FSM
+Compiling module xil_defaultlib.ROM_Ace
+Compiling module xil_defaultlib.ROM_Two
+Compiling module xil_defaultlib.ROM_Three
+Compiling module xil_defaultlib.ROM_Four
+Compiling module xil_defaultlib.ROM_Five
+Compiling module xil_defaultlib.ROM_Six
+Compiling module xil_defaultlib.ROM_Seven
+Compiling module xil_defaultlib.ROM_Eight
+Compiling module xil_defaultlib.ROM_Nine
+Compiling module xil_defaultlib.ROM_Ten
+Compiling module xil_defaultlib.BOX_handler
+Compiling module xil_defaultlib.blackjack_pixl_default
+Compiling module xil_defaultlib.blackjack_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot blackjack_tb_behav

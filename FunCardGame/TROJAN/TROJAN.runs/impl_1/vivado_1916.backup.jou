@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Thu Nov 28 21:30:56 2024
+# Process ID: 1916
+# Current directory: C:/Users/USER/Documents/GitHub/VIVADO-Projects/FunCardGame/TROJAN/TROJAN.runs/impl_1
+# Command line: vivado.exe -log BLACKJACK.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source BLACKJACK.tcl -notrace
+# Log file: C:/Users/USER/Documents/GitHub/VIVADO-Projects/FunCardGame/TROJAN/TROJAN.runs/impl_1/BLACKJACK.vdi
+# Journal file: C:/Users/USER/Documents/GitHub/VIVADO-Projects/FunCardGame/TROJAN/TROJAN.runs/impl_1\vivado.jou
+# Running On: DESKTOP-RJ15DL8, OS: Windows, CPU Frequency: 2400 MHz, CPU Physical cores: 4, Host memory: 17009 MB
+#-----------------------------------------------------------
+source BLACKJACK.tcl -notrace

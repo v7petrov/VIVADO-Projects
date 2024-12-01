@@ -1,0 +1,14 @@
+0.7
+2020.2
+Apr 18 2022
+16:05:34
+C:/Users/USER/Documents/GitHub/VIVADO-Projects/FunCardGame/TROJAN/TROJAN.sim/sim_1/behav/xsim/glbl.v,1649976174,verilog,,,,glbl,,uvm,,,,,,
+C:/Users/USER/Documents/GitHub/VIVADO-Projects/FunCardGame/TROJAN/TROJAN.srcs/sim_1/new/blackjack_tb.sv,1732839786,systemVerilog,,,,blackjack_tb,,uvm,,,,,,
+C:/Users/USER/Documents/GitHub/VIVADO-Projects/FunCardGame/TROJAN/TROJAN.srcs/sources_1/new/BLACKJACK.sv,1732771472,systemVerilog,,,,BLACKJACK,,uvm,,,,,,
+C:/Users/USER/Documents/GitHub/VIVADO-Projects/FunCardGame/TROJAN/TROJAN.srcs/sources_1/new/BLACKJACK_FSM.sv,1733027805,systemVerilog,,C:/Users/USER/Documents/GitHub/VIVADO-Projects/FunCardGame/TROJAN/TROJAN.srcs/sources_1/new/BOX_handler.sv,,BLACKJACK_FSM,,uvm,,,,,,
+C:/Users/USER/Documents/GitHub/VIVADO-Projects/FunCardGame/TROJAN/TROJAN.srcs/sources_1/new/BOX_handler.sv,1733022339,systemVerilog,,C:/Users/USER/Documents/GitHub/VIVADO-Projects/FunCardGame/TROJAN/TROJAN.srcs/sources_1/new/CARD_Handler.sv,,BOX_handler,,uvm,,,,,,
+C:/Users/USER/Documents/GitHub/VIVADO-Projects/FunCardGame/TROJAN/TROJAN.srcs/sources_1/new/CARD_Handler.sv,1733027293,systemVerilog,,C:/Users/USER/Documents/GitHub/VIVADO-Projects/FunCardGame/TROJAN/TROJAN.srcs/sources_1/new/blackjack_pixl.sv,,ROM_Ace;ROM_Eight;ROM_Five;ROM_Four;ROM_Nine;ROM_Seven;ROM_Six;ROM_Ten;ROM_Three;ROM_Two,,uvm,,,,,,
+C:/Users/USER/Documents/GitHub/VIVADO-Projects/FunCardGame/TROJAN/TROJAN.srcs/sources_1/new/blackjack_pixl.sv,1732857382,systemVerilog,,C:/Users/USER/Documents/GitHub/VIVADO-Projects/FunCardGame/TROJAN/TROJAN.srcs/sources_1/new/rnGODs.sv,,blackjack_pixl,,uvm,,,,,,
+C:/Users/USER/Documents/GitHub/VIVADO-Projects/FunCardGame/TROJAN/TROJAN.srcs/sources_1/new/debouncer.sv,1732747324,systemVerilog,,C:/Users/USER/Documents/GitHub/VIVADO-Projects/FunCardGame/TROJAN/TROJAN.srcs/sources_1/new/rnGODs.sv,,clock_div;debounce;debouncer;dff;oneshot,,uvm,,,,,,
+C:/Users/USER/Documents/GitHub/VIVADO-Projects/FunCardGame/TROJAN/TROJAN.srcs/sources_1/new/rnGODs.sv,1732860965,systemVerilog,,C:/Users/USER/Documents/GitHub/VIVADO-Projects/FunCardGame/TROJAN/TROJAN.srcs/sim_1/new/blackjack_tb.sv,,rnGODs,,uvm,,,,,,
+C:/Users/USER/Documents/GitHub/VIVADO-Projects/FunCardGame/TROJAN/TROJAN.srcs/sources_1/new/vga_controller.sv,1732734957,systemVerilog,,C:/Users/USER/Documents/GitHub/VIVADO-Projects/FunCardGame/TROJAN/TROJAN.srcs/sources_1/new/BLACKJACK.sv,,vga_controller,,uvm,,,,,,
