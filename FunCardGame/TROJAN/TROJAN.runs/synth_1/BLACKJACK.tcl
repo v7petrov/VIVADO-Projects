@@ -92,6 +92,7 @@ read_verilog -library xil_defaultlib -sv {
   C:/Users/USER/Documents/GitHub/VIVADO-Projects/FunCardGame/TROJAN/TROJAN.srcs/sources_1/new/CARD_Handler.sv
   C:/Users/USER/Documents/GitHub/VIVADO-Projects/FunCardGame/TROJAN/TROJAN.srcs/sources_1/new/blackjack_pixl.sv
   C:/Users/USER/Documents/GitHub/VIVADO-Projects/FunCardGame/TROJAN/TROJAN.srcs/sources_1/new/debouncer.sv
+  C:/Users/USER/Documents/GitHub/VIVADO-Projects/FunCardGame/TROJAN/TROJAN.srcs/sources_1/new/rnGOD.sv
   C:/Users/USER/Documents/GitHub/VIVADO-Projects/FunCardGame/TROJAN/TROJAN.srcs/sources_1/new/rnGODs.sv
   C:/Users/USER/Documents/GitHub/VIVADO-Projects/FunCardGame/TROJAN/TROJAN.srcs/sources_1/new/vga_controller.sv
   C:/Users/USER/Documents/GitHub/VIVADO-Projects/FunCardGame/TROJAN/TROJAN.srcs/sources_1/new/BLACKJACK.sv

@@ -17,7 +17,8 @@ module BOX_handler(
     // Signals for ROM
     logic [6:0] rom_addr;  // Address for the row of the card
     wire [44:0] rom_data_ace, rom_data_two, rom_data_three, rom_data_four, rom_data_five,
-                rom_data_six, rom_data_seven, rom_data_eight, rom_data_nine, rom_data_ten;
+                rom_data_six, rom_data_seven, rom_data_eight, rom_data_nine, rom_data_ten,
+                rom_data_jack, rom_data_queen, rom_data_king;
 
     // ROM instances
     ROM_Ace ace_rom (.rom_addr(rom_addr), .rom_data(rom_data_ace));
@@ -30,6 +31,9 @@ module BOX_handler(
     ROM_Eight eight_rom (.rom_addr(rom_addr), .rom_data(rom_data_eight));
     ROM_Nine nine_rom (.rom_addr(rom_addr), .rom_data(rom_data_nine));
     ROM_Ten ten_rom (.rom_addr(rom_addr), .rom_data(rom_data_ten));
+    ROM_Jack jack_rom (.rom_addr(rom_addr), .rom_data(rom_data_jack));
+    ROM_Queen Queen_rom (.rom_addr(rom_addr), .rom_data(rom_data_queen));
+    ROM_King King_rom (.rom_addr(rom_addr), .rom_data(rom_data_king));
 
     integer i;
     always @(*) begin
@@ -82,6 +86,18 @@ module BOX_handler(
                 end else if (cards[i] == 4'b1010) begin
                                 // Use ROM for Ten
                                 if (rom_data_ten[CARD_WIDTH - 1 - (x - card_x_pos)]) rgb = 12'b111111000000; // Red for '1'
+                                else rgb = 12'b111111111111; // White for '0'
+                end else if (cards[i] == 4'b1011) begin
+                                // Use ROM for Jack
+                                if (rom_data_jack[CARD_WIDTH - 1 - (x - card_x_pos)]) rgb = 12'b111111000000; // Red for '1'
+                                else rgb = 12'b111111111111; // White for '0'
+                end else if (cards[i] == 4'b1100) begin
+                                // Use ROM for Queen
+                                if (rom_data_queen[CARD_WIDTH - 1 - (x - card_x_pos)]) rgb = 12'b111111000000; // Red for '1'
+                                else rgb = 12'b111111111111; // White for '0'
+                end else if (cards[i] == 4'b1101) begin
+                                // Use ROM for King
+                                if (rom_data_king[CARD_WIDTH - 1 - (x - card_x_pos)]) rgb = 12'b111111000000; // Red for '1'
                                 else rgb = 12'b111111111111; // White for '0'
                 end else begin
                     // Default card colors for other types (Face cards if I do them)

@@ -44,6 +44,7 @@ module BLACKJACK(
     // game score
     logic [13:0] money, bet;
     
+    logic [4:0] user;
     
     debouncer signal_pulses(
         .clk(clk),
@@ -78,6 +79,7 @@ module BLACKJACK(
         .stand(w_stand),
         .player_money(money),
         .bet_amnt(bet)
+   //     .user(user)
     );
     
     univ_sseg my_univ_sseg (

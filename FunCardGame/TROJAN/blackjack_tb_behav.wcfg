@@ -11,15 +11,15 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="0.000 ns"></ZoomStartTime>
-      <ZoomEndTime time="1,366.001 ns"></ZoomEndTime>
-      <Cursor1Time time="252.000 ns"></Cursor1Time>
+      <ZoomStartTime time="800.000 ns"></ZoomStartTime>
+      <ZoomEndTime time="1,483.001 ns"></ZoomEndTime>
+      <Cursor1Time time="1,000.000 ns"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="73"></NameColumnWidth>
       <ValueColumnWidth column_width="72"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="14" />
+   <WVObjectSize size="12" />
    <wvobject fp_name="/blackjack_tb/start" type="logic">
       <obj_property name="ElementShortName">start</obj_property>
       <obj_property name="ObjectShortName">start</obj_property>
@@ -56,14 +56,6 @@
    <wvobject fp_name="/blackjack_tb/poopypants/bj/player_money" type="array">
       <obj_property name="ElementShortName">player_money[13:0]</obj_property>
       <obj_property name="ObjectShortName">player_money[13:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/blackjack_tb/poopypants/bj/win" type="logic">
-      <obj_property name="ElementShortName">win</obj_property>
-      <obj_property name="ObjectShortName">win</obj_property>
-   </wvobject>
-   <wvobject fp_name="/blackjack_tb/poopypants/bj/lose" type="logic">
-      <obj_property name="ElementShortName">lose</obj_property>
-      <obj_property name="ObjectShortName">lose</obj_property>
    </wvobject>
    <wvobject fp_name="/blackjack_tb/poopypants/bj/PS" type="array">
       <obj_property name="ElementShortName">PS[2:0]</obj_property>

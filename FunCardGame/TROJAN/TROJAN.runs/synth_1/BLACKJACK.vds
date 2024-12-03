@@ -2,8 +2,8 @@
 # Vivado v2022.1 (64-bit)
 # SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
 # IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
-# Start of session at: Sat Nov 30 22:59:03 2024
-# Process ID: 21224
+# Start of session at: Mon Dec  2 23:00:46 2024
+# Process ID: 22476
 # Current directory: C:/Users/USER/Documents/GitHub/VIVADO-Projects/FunCardGame/TROJAN/TROJAN.runs/synth_1
 # Command line: vivado.exe -log BLACKJACK.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source BLACKJACK.tcl
 # Log file: C:/Users/USER/Documents/GitHub/VIVADO-Projects/FunCardGame/TROJAN/TROJAN.runs/synth_1/BLACKJACK.vds
@@ -23,9 +23,9 @@ INFO: [Designutils 20-5440] No compile time benefit to using incremental synthes
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 17004
+INFO: [Synth 8-7075] Helper process launched with PID 4076
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1285.410 ; gain = 0.000
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1286.352 ; gain = 0.000
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'BLACKJACK' [C:/Users/USER/Documents/GitHub/VIVADO-Projects/FunCardGame/TROJAN/TROJAN.srcs/sources_1/new/BLACKJACK.sv:23]
 INFO: [Synth 8-6157] synthesizing module 'debouncer' [C:/Users/USER/Documents/GitHub/VIVADO-Projects/FunCardGame/TROJAN/TROJAN.srcs/sources_1/new/debouncer.sv:4]
@@ -44,24 +44,23 @@ INFO: [Synth 8-6155] done synthesizing module 'debouncer' (0#1) [C:/Users/USER/D
 INFO: [Synth 8-6157] synthesizing module 'vga_controller' [C:/Users/USER/Documents/GitHub/VIVADO-Projects/FunCardGame/TROJAN/TROJAN.srcs/sources_1/new/vga_controller.sv:21]
 INFO: [Synth 8-6155] done synthesizing module 'vga_controller' (0#1) [C:/Users/USER/Documents/GitHub/VIVADO-Projects/FunCardGame/TROJAN/TROJAN.srcs/sources_1/new/vga_controller.sv:21]
 INFO: [Synth 8-6157] synthesizing module 'blackjack_pixl' [C:/Users/USER/Documents/GitHub/VIVADO-Projects/FunCardGame/TROJAN/TROJAN.srcs/sources_1/new/blackjack_pixl.sv:23]
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/USER/Documents/GitHub/VIVADO-Projects/FunCardGame/TROJAN/TROJAN.srcs/sources_1/new/blackjack_pixl.sv:118]
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/USER/Documents/GitHub/VIVADO-Projects/FunCardGame/TROJAN/TROJAN.srcs/sources_1/new/blackjack_pixl.sv:134]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/USER/Documents/GitHub/VIVADO-Projects/FunCardGame/TROJAN/TROJAN.srcs/sources_1/new/blackjack_pixl.sv:136]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/USER/Documents/GitHub/VIVADO-Projects/FunCardGame/TROJAN/TROJAN.srcs/sources_1/new/blackjack_pixl.sv:152]
 INFO: [Synth 8-6157] synthesizing module 'BLACKJACK_FSM' [C:/Users/USER/Documents/GitHub/VIVADO-Projects/FunCardGame/TROJAN/TROJAN.srcs/sources_1/new/BLACKJACK_FSM.sv:1]
-INFO: [Synth 8-6157] synthesizing module 'rnGODs' [C:/Users/USER/Documents/GitHub/VIVADO-Projects/FunCardGame/TROJAN/TROJAN.srcs/sources_1/new/rnGODs.sv:2]
-	Parameter START_VAL bound to: 5 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'rnGODs' (0#1) [C:/Users/USER/Documents/GitHub/VIVADO-Projects/FunCardGame/TROJAN/TROJAN.srcs/sources_1/new/rnGODs.sv:2]
-WARNING: [Synth 8-689] width (4) of port connection 'rnd' does not match port width (5) of module 'rnGODs' [C:/Users/USER/Documents/GitHub/VIVADO-Projects/FunCardGame/TROJAN/TROJAN.srcs/sources_1/new/BLACKJACK_FSM.sv:28]
-INFO: [Synth 8-6157] synthesizing module 'rnGODs__parameterized0' [C:/Users/USER/Documents/GitHub/VIVADO-Projects/FunCardGame/TROJAN/TROJAN.srcs/sources_1/new/rnGODs.sv:2]
-	Parameter START_VAL bound to: 1 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'rnGODs__parameterized0' (0#1) [C:/Users/USER/Documents/GitHub/VIVADO-Projects/FunCardGame/TROJAN/TROJAN.srcs/sources_1/new/rnGODs.sv:2]
-WARNING: [Synth 8-689] width (4) of port connection 'rnd' does not match port width (5) of module 'rnGODs__parameterized0' [C:/Users/USER/Documents/GitHub/VIVADO-Projects/FunCardGame/TROJAN/TROJAN.srcs/sources_1/new/BLACKJACK_FSM.sv:33]
-INFO: [Synth 8-6157] synthesizing module 'rnGODs__parameterized1' [C:/Users/USER/Documents/GitHub/VIVADO-Projects/FunCardGame/TROJAN/TROJAN.srcs/sources_1/new/rnGODs.sv:2]
+INFO: [Synth 8-6157] synthesizing module 'rnGODs' [C:/Users/USER/Documents/GitHub/VIVADO-Projects/FunCardGame/TROJAN/TROJAN.srcs/sources_1/new/rnGOD.sv:2]
 	Parameter START_VAL bound to: 9 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'rnGODs__parameterized1' (0#1) [C:/Users/USER/Documents/GitHub/VIVADO-Projects/FunCardGame/TROJAN/TROJAN.srcs/sources_1/new/rnGODs.sv:2]
-WARNING: [Synth 8-689] width (4) of port connection 'rnd' does not match port width (5) of module 'rnGODs__parameterized1' [C:/Users/USER/Documents/GitHub/VIVADO-Projects/FunCardGame/TROJAN/TROJAN.srcs/sources_1/new/BLACKJACK_FSM.sv:38]
+INFO: [Synth 8-6155] done synthesizing module 'rnGODs' (0#1) [C:/Users/USER/Documents/GitHub/VIVADO-Projects/FunCardGame/TROJAN/TROJAN.srcs/sources_1/new/rnGOD.sv:2]
+WARNING: [Synth 8-689] width (4) of port connection 'rnd' does not match port width (5) of module 'rnGODs' [C:/Users/USER/Documents/GitHub/VIVADO-Projects/FunCardGame/TROJAN/TROJAN.srcs/sources_1/new/BLACKJACK_FSM.sv:39]
+INFO: [Synth 8-6157] synthesizing module 'improved_rng' [C:/Users/USER/Documents/GitHub/VIVADO-Projects/FunCardGame/TROJAN/TROJAN.srcs/sources_1/new/rnGODs.sv:1]
+	Parameter SEED bound to: 3 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'improved_rng' (0#1) [C:/Users/USER/Documents/GitHub/VIVADO-Projects/FunCardGame/TROJAN/TROJAN.srcs/sources_1/new/rnGODs.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'improved_rng__parameterized0' [C:/Users/USER/Documents/GitHub/VIVADO-Projects/FunCardGame/TROJAN/TROJAN.srcs/sources_1/new/rnGODs.sv:1]
+	Parameter SEED bound to: 9 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'improved_rng__parameterized0' (0#1) [C:/Users/USER/Documents/GitHub/VIVADO-Projects/FunCardGame/TROJAN/TROJAN.srcs/sources_1/new/rnGODs.sv:1]
+INFO: [Synth 8-226] default block is never used [C:/Users/USER/Documents/GitHub/VIVADO-Projects/FunCardGame/TROJAN/TROJAN.srcs/sources_1/new/BLACKJACK_FSM.sv:114]
 INFO: [Synth 8-6155] done synthesizing module 'BLACKJACK_FSM' (0#1) [C:/Users/USER/Documents/GitHub/VIVADO-Projects/FunCardGame/TROJAN/TROJAN.srcs/sources_1/new/BLACKJACK_FSM.sv:1]
-WARNING: [Synth 8-689] width (1) of port connection 'sclk' does not match port width (2) of module 'BLACKJACK_FSM' [C:/Users/USER/Documents/GitHub/VIVADO-Projects/FunCardGame/TROJAN/TROJAN.srcs/sources_1/new/blackjack_pixl.sv:153]
-WARNING: [Synth 8-6104] Input port 'refresh_ticks' has an internal driver [C:/Users/USER/Documents/GitHub/VIVADO-Projects/FunCardGame/TROJAN/TROJAN.srcs/sources_1/new/blackjack_pixl.sv:153]
+WARNING: [Synth 8-689] width (1) of port connection 'sclk' does not match port width (3) of module 'BLACKJACK_FSM' [C:/Users/USER/Documents/GitHub/VIVADO-Projects/FunCardGame/TROJAN/TROJAN.srcs/sources_1/new/blackjack_pixl.sv:171]
+WARNING: [Synth 8-6104] Input port 'refresh_ticks' has an internal driver [C:/Users/USER/Documents/GitHub/VIVADO-Projects/FunCardGame/TROJAN/TROJAN.srcs/sources_1/new/blackjack_pixl.sv:171]
 INFO: [Synth 8-6157] synthesizing module 'BOX_handler' [C:/Users/USER/Documents/GitHub/VIVADO-Projects/FunCardGame/TROJAN/TROJAN.srcs/sources_1/new/BOX_handler.sv:1]
 INFO: [Synth 8-6157] synthesizing module 'ROM_Ace' [C:/Users/USER/Documents/GitHub/VIVADO-Projects/FunCardGame/TROJAN/TROJAN.srcs/sources_1/new/CARD_Handler.sv:67]
 INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/USER/Documents/GitHub/VIVADO-Projects/FunCardGame/TROJAN/TROJAN.srcs/sources_1/new/CARD_Handler.sv:74]
@@ -93,18 +92,27 @@ INFO: [Synth 8-6155] done synthesizing module 'ROM_Nine' (0#1) [C:/Users/USER/Do
 INFO: [Synth 8-6157] synthesizing module 'ROM_Ten' [C:/Users/USER/Documents/GitHub/VIVADO-Projects/FunCardGame/TROJAN/TROJAN.srcs/sources_1/new/CARD_Handler.sv:995]
 INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/USER/Documents/GitHub/VIVADO-Projects/FunCardGame/TROJAN/TROJAN.srcs/sources_1/new/CARD_Handler.sv:1003]
 INFO: [Synth 8-6155] done synthesizing module 'ROM_Ten' (0#1) [C:/Users/USER/Documents/GitHub/VIVADO-Projects/FunCardGame/TROJAN/TROJAN.srcs/sources_1/new/CARD_Handler.sv:995]
+INFO: [Synth 8-6157] synthesizing module 'ROM_Jack' [C:/Users/USER/Documents/GitHub/VIVADO-Projects/FunCardGame/TROJAN/TROJAN.srcs/sources_1/new/CARD_Handler.sv:1099]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/USER/Documents/GitHub/VIVADO-Projects/FunCardGame/TROJAN/TROJAN.srcs/sources_1/new/CARD_Handler.sv:1106]
+INFO: [Synth 8-6155] done synthesizing module 'ROM_Jack' (0#1) [C:/Users/USER/Documents/GitHub/VIVADO-Projects/FunCardGame/TROJAN/TROJAN.srcs/sources_1/new/CARD_Handler.sv:1099]
+INFO: [Synth 8-6157] synthesizing module 'ROM_Queen' [C:/Users/USER/Documents/GitHub/VIVADO-Projects/FunCardGame/TROJAN/TROJAN.srcs/sources_1/new/CARD_Handler.sv:1202]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/USER/Documents/GitHub/VIVADO-Projects/FunCardGame/TROJAN/TROJAN.srcs/sources_1/new/CARD_Handler.sv:1209]
+INFO: [Synth 8-6155] done synthesizing module 'ROM_Queen' (0#1) [C:/Users/USER/Documents/GitHub/VIVADO-Projects/FunCardGame/TROJAN/TROJAN.srcs/sources_1/new/CARD_Handler.sv:1202]
+INFO: [Synth 8-6157] synthesizing module 'ROM_King' [C:/Users/USER/Documents/GitHub/VIVADO-Projects/FunCardGame/TROJAN/TROJAN.srcs/sources_1/new/CARD_Handler.sv:1305]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/USER/Documents/GitHub/VIVADO-Projects/FunCardGame/TROJAN/TROJAN.srcs/sources_1/new/CARD_Handler.sv:1312]
+INFO: [Synth 8-6155] done synthesizing module 'ROM_King' (0#1) [C:/Users/USER/Documents/GitHub/VIVADO-Projects/FunCardGame/TROJAN/TROJAN.srcs/sources_1/new/CARD_Handler.sv:1305]
 INFO: [Synth 8-6155] done synthesizing module 'BOX_handler' (0#1) [C:/Users/USER/Documents/GitHub/VIVADO-Projects/FunCardGame/TROJAN/TROJAN.srcs/sources_1/new/BOX_handler.sv:1]
-WARNING: [Synth 8-689] width (32) of port connection 'BOX_T' does not match port width (10) of module 'BOX_handler' [C:/Users/USER/Documents/GitHub/VIVADO-Projects/FunCardGame/TROJAN/TROJAN.srcs/sources_1/new/blackjack_pixl.sv:166]
-WARNING: [Synth 8-689] width (32) of port connection 'BOX_B' does not match port width (10) of module 'BOX_handler' [C:/Users/USER/Documents/GitHub/VIVADO-Projects/FunCardGame/TROJAN/TROJAN.srcs/sources_1/new/blackjack_pixl.sv:166]
-WARNING: [Synth 8-689] width (32) of port connection 'BOX_L' does not match port width (10) of module 'BOX_handler' [C:/Users/USER/Documents/GitHub/VIVADO-Projects/FunCardGame/TROJAN/TROJAN.srcs/sources_1/new/blackjack_pixl.sv:167]
-WARNING: [Synth 8-689] width (32) of port connection 'BOX_R' does not match port width (10) of module 'BOX_handler' [C:/Users/USER/Documents/GitHub/VIVADO-Projects/FunCardGame/TROJAN/TROJAN.srcs/sources_1/new/blackjack_pixl.sv:167]
-WARNING: [Synth 8-689] width (32) of port connection 'BOX_T' does not match port width (10) of module 'BOX_handler' [C:/Users/USER/Documents/GitHub/VIVADO-Projects/FunCardGame/TROJAN/TROJAN.srcs/sources_1/new/blackjack_pixl.sv:174]
-WARNING: [Synth 8-689] width (32) of port connection 'BOX_B' does not match port width (10) of module 'BOX_handler' [C:/Users/USER/Documents/GitHub/VIVADO-Projects/FunCardGame/TROJAN/TROJAN.srcs/sources_1/new/blackjack_pixl.sv:174]
-WARNING: [Synth 8-689] width (32) of port connection 'BOX_L' does not match port width (10) of module 'BOX_handler' [C:/Users/USER/Documents/GitHub/VIVADO-Projects/FunCardGame/TROJAN/TROJAN.srcs/sources_1/new/blackjack_pixl.sv:175]
-WARNING: [Synth 8-689] width (32) of port connection 'BOX_R' does not match port width (10) of module 'BOX_handler' [C:/Users/USER/Documents/GitHub/VIVADO-Projects/FunCardGame/TROJAN/TROJAN.srcs/sources_1/new/blackjack_pixl.sv:175]
+WARNING: [Synth 8-689] width (32) of port connection 'BOX_T' does not match port width (10) of module 'BOX_handler' [C:/Users/USER/Documents/GitHub/VIVADO-Projects/FunCardGame/TROJAN/TROJAN.srcs/sources_1/new/blackjack_pixl.sv:185]
+WARNING: [Synth 8-689] width (32) of port connection 'BOX_B' does not match port width (10) of module 'BOX_handler' [C:/Users/USER/Documents/GitHub/VIVADO-Projects/FunCardGame/TROJAN/TROJAN.srcs/sources_1/new/blackjack_pixl.sv:185]
+WARNING: [Synth 8-689] width (32) of port connection 'BOX_L' does not match port width (10) of module 'BOX_handler' [C:/Users/USER/Documents/GitHub/VIVADO-Projects/FunCardGame/TROJAN/TROJAN.srcs/sources_1/new/blackjack_pixl.sv:186]
+WARNING: [Synth 8-689] width (32) of port connection 'BOX_R' does not match port width (10) of module 'BOX_handler' [C:/Users/USER/Documents/GitHub/VIVADO-Projects/FunCardGame/TROJAN/TROJAN.srcs/sources_1/new/blackjack_pixl.sv:186]
+WARNING: [Synth 8-689] width (32) of port connection 'BOX_T' does not match port width (10) of module 'BOX_handler' [C:/Users/USER/Documents/GitHub/VIVADO-Projects/FunCardGame/TROJAN/TROJAN.srcs/sources_1/new/blackjack_pixl.sv:193]
+WARNING: [Synth 8-689] width (32) of port connection 'BOX_B' does not match port width (10) of module 'BOX_handler' [C:/Users/USER/Documents/GitHub/VIVADO-Projects/FunCardGame/TROJAN/TROJAN.srcs/sources_1/new/blackjack_pixl.sv:193]
+WARNING: [Synth 8-689] width (32) of port connection 'BOX_L' does not match port width (10) of module 'BOX_handler' [C:/Users/USER/Documents/GitHub/VIVADO-Projects/FunCardGame/TROJAN/TROJAN.srcs/sources_1/new/blackjack_pixl.sv:194]
+WARNING: [Synth 8-689] width (32) of port connection 'BOX_R' does not match port width (10) of module 'BOX_handler' [C:/Users/USER/Documents/GitHub/VIVADO-Projects/FunCardGame/TROJAN/TROJAN.srcs/sources_1/new/blackjack_pixl.sv:194]
 INFO: [Synth 8-6155] done synthesizing module 'blackjack_pixl' (0#1) [C:/Users/USER/Documents/GitHub/VIVADO-Projects/FunCardGame/TROJAN/TROJAN.srcs/sources_1/new/blackjack_pixl.sv:23]
-WARNING: [Synth 8-7071] port 'refresh_ticks' of module 'blackjack_pixl' is unconnected for instance 'blckjack_pixl' [C:/Users/USER/Documents/GitHub/VIVADO-Projects/FunCardGame/TROJAN/TROJAN.srcs/sources_1/new/BLACKJACK.sv:69]
-WARNING: [Synth 8-7023] instance 'blckjack_pixl' of module 'blackjack_pixl' has 12 connections declared, but only 11 given [C:/Users/USER/Documents/GitHub/VIVADO-Projects/FunCardGame/TROJAN/TROJAN.srcs/sources_1/new/BLACKJACK.sv:69]
+WARNING: [Synth 8-7071] port 'refresh_ticks' of module 'blackjack_pixl' is unconnected for instance 'blckjack_pixl' [C:/Users/USER/Documents/GitHub/VIVADO-Projects/FunCardGame/TROJAN/TROJAN.srcs/sources_1/new/BLACKJACK.sv:70]
+WARNING: [Synth 8-7023] instance 'blckjack_pixl' of module 'blackjack_pixl' has 12 connections declared, but only 11 given [C:/Users/USER/Documents/GitHub/VIVADO-Projects/FunCardGame/TROJAN/TROJAN.srcs/sources_1/new/BLACKJACK.sv:70]
 INFO: [Synth 8-6157] synthesizing module 'univ_sseg' [C:/Users/USER/Documents/GitHub/VIVADO-Projects/FunCardGame/TROJAN/TROJAN.srcs/sources_1/new/univ_sseg.v:82]
 INFO: [Synth 8-6157] synthesizing module 'cnt_convert_14b' [C:/Users/USER/Documents/GitHub/VIVADO-Projects/FunCardGame/TROJAN/TROJAN.srcs/sources_1/new/univ_sseg.v:275]
 INFO: [Synth 8-226] default block is never used [C:/Users/USER/Documents/GitHub/VIVADO-Projects/FunCardGame/TROJAN/TROJAN.srcs/sources_1/new/univ_sseg.v:294]
@@ -121,30 +129,30 @@ INFO: [Synth 8-226] default block is never used [C:/Users/USER/Documents/GitHub/
 INFO: [Synth 8-226] default block is never used [C:/Users/USER/Documents/GitHub/VIVADO-Projects/FunCardGame/TROJAN/TROJAN.srcs/sources_1/new/univ_sseg.v:193]
 INFO: [Synth 8-6155] done synthesizing module 'univ_sseg' (0#1) [C:/Users/USER/Documents/GitHub/VIVADO-Projects/FunCardGame/TROJAN/TROJAN.srcs/sources_1/new/univ_sseg.v:82]
 INFO: [Synth 8-6155] done synthesizing module 'BLACKJACK' (0#1) [C:/Users/USER/Documents/GitHub/VIVADO-Projects/FunCardGame/TROJAN/TROJAN.srcs/sources_1/new/BLACKJACK.sv:23]
-WARNING: [Synth 8-6014] Unused sequential element bj_reg was removed.  [C:/Users/USER/Documents/GitHub/VIVADO-Projects/FunCardGame/TROJAN/TROJAN.srcs/sources_1/new/BLACKJACK_FSM.sv:163]
-WARNING: [Synth 8-7137] Register staller_reg in module BLACKJACK_FSM has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/USER/Documents/GitHub/VIVADO-Projects/FunCardGame/TROJAN/TROJAN.srcs/sources_1/new/BLACKJACK_FSM.sv:79]
-WARNING: [Synth 8-7137] Register player_cards_reg[10] in module BLACKJACK_FSM has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/USER/Documents/GitHub/VIVADO-Projects/FunCardGame/TROJAN/TROJAN.srcs/sources_1/new/BLACKJACK_FSM.sv:164]
-WARNING: [Synth 8-7137] Register player_cards_reg[9] in module BLACKJACK_FSM has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/USER/Documents/GitHub/VIVADO-Projects/FunCardGame/TROJAN/TROJAN.srcs/sources_1/new/BLACKJACK_FSM.sv:164]
-WARNING: [Synth 8-7137] Register player_cards_reg[8] in module BLACKJACK_FSM has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/USER/Documents/GitHub/VIVADO-Projects/FunCardGame/TROJAN/TROJAN.srcs/sources_1/new/BLACKJACK_FSM.sv:164]
-WARNING: [Synth 8-7137] Register player_cards_reg[7] in module BLACKJACK_FSM has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/USER/Documents/GitHub/VIVADO-Projects/FunCardGame/TROJAN/TROJAN.srcs/sources_1/new/BLACKJACK_FSM.sv:164]
-WARNING: [Synth 8-7137] Register player_cards_reg[6] in module BLACKJACK_FSM has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/USER/Documents/GitHub/VIVADO-Projects/FunCardGame/TROJAN/TROJAN.srcs/sources_1/new/BLACKJACK_FSM.sv:164]
-WARNING: [Synth 8-7137] Register player_cards_reg[5] in module BLACKJACK_FSM has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/USER/Documents/GitHub/VIVADO-Projects/FunCardGame/TROJAN/TROJAN.srcs/sources_1/new/BLACKJACK_FSM.sv:164]
-WARNING: [Synth 8-7137] Register player_cards_reg[4] in module BLACKJACK_FSM has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/USER/Documents/GitHub/VIVADO-Projects/FunCardGame/TROJAN/TROJAN.srcs/sources_1/new/BLACKJACK_FSM.sv:164]
-WARNING: [Synth 8-7137] Register player_cards_reg[3] in module BLACKJACK_FSM has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/USER/Documents/GitHub/VIVADO-Projects/FunCardGame/TROJAN/TROJAN.srcs/sources_1/new/BLACKJACK_FSM.sv:164]
-WARNING: [Synth 8-7137] Register player_cards_reg[2] in module BLACKJACK_FSM has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/USER/Documents/GitHub/VIVADO-Projects/FunCardGame/TROJAN/TROJAN.srcs/sources_1/new/BLACKJACK_FSM.sv:164]
-WARNING: [Synth 8-7137] Register player_cards_reg[1] in module BLACKJACK_FSM has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/USER/Documents/GitHub/VIVADO-Projects/FunCardGame/TROJAN/TROJAN.srcs/sources_1/new/BLACKJACK_FSM.sv:164]
-WARNING: [Synth 8-7137] Register player_cards_reg[0] in module BLACKJACK_FSM has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/USER/Documents/GitHub/VIVADO-Projects/FunCardGame/TROJAN/TROJAN.srcs/sources_1/new/BLACKJACK_FSM.sv:164]
-WARNING: [Synth 8-7137] Register dealer_cards_reg[10] in module BLACKJACK_FSM has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/USER/Documents/GitHub/VIVADO-Projects/FunCardGame/TROJAN/TROJAN.srcs/sources_1/new/BLACKJACK_FSM.sv:166]
-WARNING: [Synth 8-7137] Register dealer_cards_reg[9] in module BLACKJACK_FSM has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/USER/Documents/GitHub/VIVADO-Projects/FunCardGame/TROJAN/TROJAN.srcs/sources_1/new/BLACKJACK_FSM.sv:166]
-WARNING: [Synth 8-7137] Register dealer_cards_reg[8] in module BLACKJACK_FSM has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/USER/Documents/GitHub/VIVADO-Projects/FunCardGame/TROJAN/TROJAN.srcs/sources_1/new/BLACKJACK_FSM.sv:166]
-WARNING: [Synth 8-7137] Register dealer_cards_reg[7] in module BLACKJACK_FSM has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/USER/Documents/GitHub/VIVADO-Projects/FunCardGame/TROJAN/TROJAN.srcs/sources_1/new/BLACKJACK_FSM.sv:166]
-WARNING: [Synth 8-7137] Register dealer_cards_reg[6] in module BLACKJACK_FSM has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/USER/Documents/GitHub/VIVADO-Projects/FunCardGame/TROJAN/TROJAN.srcs/sources_1/new/BLACKJACK_FSM.sv:166]
-WARNING: [Synth 8-7137] Register dealer_cards_reg[5] in module BLACKJACK_FSM has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/USER/Documents/GitHub/VIVADO-Projects/FunCardGame/TROJAN/TROJAN.srcs/sources_1/new/BLACKJACK_FSM.sv:166]
-WARNING: [Synth 8-7137] Register dealer_cards_reg[4] in module BLACKJACK_FSM has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/USER/Documents/GitHub/VIVADO-Projects/FunCardGame/TROJAN/TROJAN.srcs/sources_1/new/BLACKJACK_FSM.sv:166]
-WARNING: [Synth 8-7137] Register dealer_cards_reg[3] in module BLACKJACK_FSM has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/USER/Documents/GitHub/VIVADO-Projects/FunCardGame/TROJAN/TROJAN.srcs/sources_1/new/BLACKJACK_FSM.sv:166]
-WARNING: [Synth 8-7137] Register dealer_cards_reg[2] in module BLACKJACK_FSM has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/USER/Documents/GitHub/VIVADO-Projects/FunCardGame/TROJAN/TROJAN.srcs/sources_1/new/BLACKJACK_FSM.sv:166]
-WARNING: [Synth 8-7137] Register dealer_cards_reg[1] in module BLACKJACK_FSM has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/USER/Documents/GitHub/VIVADO-Projects/FunCardGame/TROJAN/TROJAN.srcs/sources_1/new/BLACKJACK_FSM.sv:166]
-WARNING: [Synth 8-7137] Register dealer_cards_reg[0] in module BLACKJACK_FSM has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/USER/Documents/GitHub/VIVADO-Projects/FunCardGame/TROJAN/TROJAN.srcs/sources_1/new/BLACKJACK_FSM.sv:166]
+WARNING: [Synth 8-6014] Unused sequential element bj_reg was removed.  [C:/Users/USER/Documents/GitHub/VIVADO-Projects/FunCardGame/TROJAN/TROJAN.srcs/sources_1/new/BLACKJACK_FSM.sv:192]
+WARNING: [Synth 8-7137] Register staller_reg in module BLACKJACK_FSM has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/USER/Documents/GitHub/VIVADO-Projects/FunCardGame/TROJAN/TROJAN.srcs/sources_1/new/BLACKJACK_FSM.sv:101]
+WARNING: [Synth 8-7137] Register player_cards_reg[10] in module BLACKJACK_FSM has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/USER/Documents/GitHub/VIVADO-Projects/FunCardGame/TROJAN/TROJAN.srcs/sources_1/new/BLACKJACK_FSM.sv:193]
+WARNING: [Synth 8-7137] Register player_cards_reg[9] in module BLACKJACK_FSM has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/USER/Documents/GitHub/VIVADO-Projects/FunCardGame/TROJAN/TROJAN.srcs/sources_1/new/BLACKJACK_FSM.sv:193]
+WARNING: [Synth 8-7137] Register player_cards_reg[8] in module BLACKJACK_FSM has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/USER/Documents/GitHub/VIVADO-Projects/FunCardGame/TROJAN/TROJAN.srcs/sources_1/new/BLACKJACK_FSM.sv:193]
+WARNING: [Synth 8-7137] Register player_cards_reg[7] in module BLACKJACK_FSM has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/USER/Documents/GitHub/VIVADO-Projects/FunCardGame/TROJAN/TROJAN.srcs/sources_1/new/BLACKJACK_FSM.sv:193]
+WARNING: [Synth 8-7137] Register player_cards_reg[6] in module BLACKJACK_FSM has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/USER/Documents/GitHub/VIVADO-Projects/FunCardGame/TROJAN/TROJAN.srcs/sources_1/new/BLACKJACK_FSM.sv:193]
+WARNING: [Synth 8-7137] Register player_cards_reg[5] in module BLACKJACK_FSM has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/USER/Documents/GitHub/VIVADO-Projects/FunCardGame/TROJAN/TROJAN.srcs/sources_1/new/BLACKJACK_FSM.sv:193]
+WARNING: [Synth 8-7137] Register player_cards_reg[4] in module BLACKJACK_FSM has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/USER/Documents/GitHub/VIVADO-Projects/FunCardGame/TROJAN/TROJAN.srcs/sources_1/new/BLACKJACK_FSM.sv:193]
+WARNING: [Synth 8-7137] Register player_cards_reg[3] in module BLACKJACK_FSM has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/USER/Documents/GitHub/VIVADO-Projects/FunCardGame/TROJAN/TROJAN.srcs/sources_1/new/BLACKJACK_FSM.sv:193]
+WARNING: [Synth 8-7137] Register player_cards_reg[2] in module BLACKJACK_FSM has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/USER/Documents/GitHub/VIVADO-Projects/FunCardGame/TROJAN/TROJAN.srcs/sources_1/new/BLACKJACK_FSM.sv:193]
+WARNING: [Synth 8-7137] Register player_cards_reg[1] in module BLACKJACK_FSM has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/USER/Documents/GitHub/VIVADO-Projects/FunCardGame/TROJAN/TROJAN.srcs/sources_1/new/BLACKJACK_FSM.sv:193]
+WARNING: [Synth 8-7137] Register player_cards_reg[0] in module BLACKJACK_FSM has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/USER/Documents/GitHub/VIVADO-Projects/FunCardGame/TROJAN/TROJAN.srcs/sources_1/new/BLACKJACK_FSM.sv:193]
+WARNING: [Synth 8-7137] Register dealer_cards_reg[10] in module BLACKJACK_FSM has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/USER/Documents/GitHub/VIVADO-Projects/FunCardGame/TROJAN/TROJAN.srcs/sources_1/new/BLACKJACK_FSM.sv:195]
+WARNING: [Synth 8-7137] Register dealer_cards_reg[9] in module BLACKJACK_FSM has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/USER/Documents/GitHub/VIVADO-Projects/FunCardGame/TROJAN/TROJAN.srcs/sources_1/new/BLACKJACK_FSM.sv:195]
+WARNING: [Synth 8-7137] Register dealer_cards_reg[8] in module BLACKJACK_FSM has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/USER/Documents/GitHub/VIVADO-Projects/FunCardGame/TROJAN/TROJAN.srcs/sources_1/new/BLACKJACK_FSM.sv:195]
+WARNING: [Synth 8-7137] Register dealer_cards_reg[7] in module BLACKJACK_FSM has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/USER/Documents/GitHub/VIVADO-Projects/FunCardGame/TROJAN/TROJAN.srcs/sources_1/new/BLACKJACK_FSM.sv:195]
+WARNING: [Synth 8-7137] Register dealer_cards_reg[6] in module BLACKJACK_FSM has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/USER/Documents/GitHub/VIVADO-Projects/FunCardGame/TROJAN/TROJAN.srcs/sources_1/new/BLACKJACK_FSM.sv:195]
+WARNING: [Synth 8-7137] Register dealer_cards_reg[5] in module BLACKJACK_FSM has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/USER/Documents/GitHub/VIVADO-Projects/FunCardGame/TROJAN/TROJAN.srcs/sources_1/new/BLACKJACK_FSM.sv:195]
+WARNING: [Synth 8-7137] Register dealer_cards_reg[4] in module BLACKJACK_FSM has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/USER/Documents/GitHub/VIVADO-Projects/FunCardGame/TROJAN/TROJAN.srcs/sources_1/new/BLACKJACK_FSM.sv:195]
+WARNING: [Synth 8-7137] Register dealer_cards_reg[3] in module BLACKJACK_FSM has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/USER/Documents/GitHub/VIVADO-Projects/FunCardGame/TROJAN/TROJAN.srcs/sources_1/new/BLACKJACK_FSM.sv:195]
+WARNING: [Synth 8-7137] Register dealer_cards_reg[2] in module BLACKJACK_FSM has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/USER/Documents/GitHub/VIVADO-Projects/FunCardGame/TROJAN/TROJAN.srcs/sources_1/new/BLACKJACK_FSM.sv:195]
+WARNING: [Synth 8-7137] Register dealer_cards_reg[1] in module BLACKJACK_FSM has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/USER/Documents/GitHub/VIVADO-Projects/FunCardGame/TROJAN/TROJAN.srcs/sources_1/new/BLACKJACK_FSM.sv:195]
+WARNING: [Synth 8-7137] Register dealer_cards_reg[0] in module BLACKJACK_FSM has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/USER/Documents/GitHub/VIVADO-Projects/FunCardGame/TROJAN/TROJAN.srcs/sources_1/new/BLACKJACK_FSM.sv:195]
 WARNING: [Synth 8-3848] Net draw_card in module/entity BLACKJACK_FSM does not have driver. [C:/Users/USER/Documents/GitHub/VIVADO-Projects/FunCardGame/TROJAN/TROJAN.srcs/sources_1/new/BLACKJACK_FSM.sv:6]
 WARNING: [Synth 8-3848] Net draw_card2 in module/entity BLACKJACK_FSM does not have driver. [C:/Users/USER/Documents/GitHub/VIVADO-Projects/FunCardGame/TROJAN/TROJAN.srcs/sources_1/new/BLACKJACK_FSM.sv:8]
 WARNING: [Synth 8-3936] Found unconnected internal register 'cnt_new_w_reg' and it is trimmed from '8' to '4' bits. [C:/Users/USER/Documents/GitHub/VIVADO-Projects/FunCardGame/TROJAN/TROJAN.srcs/sources_1/new/univ_sseg.v:391]
@@ -182,18 +190,18 @@ WARNING: [Synth 8-7129] Port draw_card2[1] in module BLACKJACK_FSM is either unc
 WARNING: [Synth 8-7129] Port draw_card2[0] in module BLACKJACK_FSM is either unconnected or has no load
 WARNING: [Synth 8-7129] Port clk in module dff is either unconnected or has no load
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1285.410 ; gain = 0.000
+Finished RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1286.352 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1285.410 ; gain = 0.000
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1286.352 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1285.410 ; gain = 0.000
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1286.352 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.069 . Memory (MB): peak = 1285.410 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.094 . Memory (MB): peak = 1286.352 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
@@ -204,28 +212,28 @@ INFO: [Project 1-236] Implementation specific constraints were found while readi
 Resolution: To avoid this warning, move constraints listed in [.Xil/BLACKJACK_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1338.684 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1344.770 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 1338.684 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 1344.770 ; gain = 0.000
 INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 1338.684 ; gain = 53.273
+Finished Constraint Validation : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1344.770 ; gain = 58.418
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35ticpg236-1L
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 1338.684 ; gain = 53.273
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1344.770 ; gain = 58.418
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1338.684 ; gain = 53.273
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1344.770 ; gain = 58.418
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'PS_reg' in module 'BLACKJACK_FSM'
 ---------------------------------------------------------------------------------------------------
@@ -234,10 +242,11 @@ INFO: [Synth 8-802] inferred FSM for state register 'PS_reg' in module 'BLACKJAC
                     IDLE |                              000 |                              000
                     PLAY |                              001 |                              001
                     SHOW |                              010 |                              010
-                    USER |                              011 |                              011
-                     HIT |                              100 |                              100
-                    DEAL |                              101 |                              101
-                   STALL |                              110 |                              110
+               SHOW_CALC |                              011 |                              011
+                    USER |                              100 |                              100
+                     HIT |                              101 |                              101
+                    DEAL |                              110 |                              110
+                   STALL |                              111 |                              111
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'PS_reg' using encoding 'sequential' in module 'BLACKJACK_FSM'
 WARNING: [Synth 8-327] inferring latch for variable 'rom_data_reg' [C:/Users/USER/Documents/GitHub/VIVADO-Projects/FunCardGame/TROJAN/TROJAN.srcs/sources_1/new/CARD_Handler.sv:75]
@@ -250,11 +259,14 @@ WARNING: [Synth 8-327] inferring latch for variable 'rom_data_reg' [C:/Users/USE
 WARNING: [Synth 8-327] inferring latch for variable 'rom_data_reg' [C:/Users/USER/Documents/GitHub/VIVADO-Projects/FunCardGame/TROJAN/TROJAN.srcs/sources_1/new/CARD_Handler.sv:797]
 WARNING: [Synth 8-327] inferring latch for variable 'rom_data_reg' [C:/Users/USER/Documents/GitHub/VIVADO-Projects/FunCardGame/TROJAN/TROJAN.srcs/sources_1/new/CARD_Handler.sv:900]
 WARNING: [Synth 8-327] inferring latch for variable 'rom_data_reg' [C:/Users/USER/Documents/GitHub/VIVADO-Projects/FunCardGame/TROJAN/TROJAN.srcs/sources_1/new/CARD_Handler.sv:1004]
-WARNING: [Synth 8-327] inferring latch for variable 'rom_addr_reg' [C:/Users/USER/Documents/GitHub/VIVADO-Projects/FunCardGame/TROJAN/TROJAN.srcs/sources_1/new/BOX_handler.sv:23]
-WARNING: [Synth 8-327] inferring latch for variable 'draw_card2_reg' [C:/Users/USER/Documents/GitHub/VIVADO-Projects/FunCardGame/TROJAN/TROJAN.srcs/sources_1/new/blackjack_pixl.sv:135]
-WARNING: [Synth 8-327] inferring latch for variable 'draw_card_reg' [C:/Users/USER/Documents/GitHub/VIVADO-Projects/FunCardGame/TROJAN/TROJAN.srcs/sources_1/new/blackjack_pixl.sv:119]
+WARNING: [Synth 8-327] inferring latch for variable 'rom_data_reg' [C:/Users/USER/Documents/GitHub/VIVADO-Projects/FunCardGame/TROJAN/TROJAN.srcs/sources_1/new/CARD_Handler.sv:1107]
+WARNING: [Synth 8-327] inferring latch for variable 'rom_data_reg' [C:/Users/USER/Documents/GitHub/VIVADO-Projects/FunCardGame/TROJAN/TROJAN.srcs/sources_1/new/CARD_Handler.sv:1210]
+WARNING: [Synth 8-327] inferring latch for variable 'rom_data_reg' [C:/Users/USER/Documents/GitHub/VIVADO-Projects/FunCardGame/TROJAN/TROJAN.srcs/sources_1/new/CARD_Handler.sv:1313]
+WARNING: [Synth 8-327] inferring latch for variable 'rom_addr_reg' [C:/Users/USER/Documents/GitHub/VIVADO-Projects/FunCardGame/TROJAN/TROJAN.srcs/sources_1/new/BOX_handler.sv:24]
+WARNING: [Synth 8-327] inferring latch for variable 'draw_card2_reg' [C:/Users/USER/Documents/GitHub/VIVADO-Projects/FunCardGame/TROJAN/TROJAN.srcs/sources_1/new/blackjack_pixl.sv:153]
+WARNING: [Synth 8-327] inferring latch for variable 'draw_card_reg' [C:/Users/USER/Documents/GitHub/VIVADO-Projects/FunCardGame/TROJAN/TROJAN.srcs/sources_1/new/blackjack_pixl.sv:137]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1338.684 ; gain = 53.273
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 1344.770 ; gain = 58.418
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -262,52 +274,60 @@ Start RTL Component Statistics
 Detailed RTL Component Info : 
 +---Adders : 
 	   2 Input   32 Bit       Adders := 1     
-	   2 Input   14 Bit       Adders := 20    
 	   3 Input   14 Bit       Adders := 21    
+	   2 Input   14 Bit       Adders := 20    
 	   3 Input   13 Bit       Adders := 2     
 	   2 Input   11 Bit       Adders := 20    
 	   2 Input   10 Bit       Adders := 2     
+	   3 Input    9 Bit       Adders := 3     
+	   2 Input    9 Bit       Adders := 1     
 	   3 Input    7 Bit       Adders := 2     
-	   3 Input    6 Bit       Adders := 22    
-	   3 Input    5 Bit       Adders := 3     
+	   3 Input    6 Bit       Adders := 23    
 	   2 Input    5 Bit       Adders := 1     
 	   2 Input    4 Bit       Adders := 22    
-	   2 Input    2 Bit       Adders := 3     
+	   2 Input    3 Bit       Adders := 1     
+	   2 Input    2 Bit       Adders := 2     
 +---XORs : 
-	   3 Input      1 Bit         XORs := 3     
+	   4 Input      4 Bit         XORs := 2     
+	   3 Input      1 Bit         XORs := 1     
+	   4 Input      1 Bit         XORs := 2     
 +---Registers : 
 	               32 Bit    Registers := 1     
+	               16 Bit    Registers := 2     
 	               14 Bit    Registers := 2     
 	               10 Bit    Registers := 4     
-	                5 Bit    Registers := 8     
+	                9 Bit    Registers := 2     
+	                5 Bit    Registers := 2     
 	                4 Bit    Registers := 27    
-	                2 Bit    Registers := 3     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 2     
 	                1 Bit    Registers := 19    
 +---Muxes : 
-	  92 Input   45 Bit        Muxes := 20    
+	  92 Input   45 Bit        Muxes := 24    
 	   2 Input   32 Bit        Muxes := 2     
 	  18 Input   16 Bit        Muxes := 1     
 	   2 Input   16 Bit        Muxes := 1     
-	   2 Input   14 Bit        Muxes := 2     
-	   7 Input   14 Bit        Muxes := 2     
+	   2 Input   14 Bit        Muxes := 3     
+	   8 Input   14 Bit        Muxes := 2     
 	   4 Input   14 Bit        Muxes := 1     
-	   2 Input   12 Bit        Muxes := 221   
+	   2 Input   12 Bit        Muxes := 287   
 	   4 Input   12 Bit        Muxes := 1     
+	   2 Input    9 Bit        Muxes := 2     
+	   8 Input    9 Bit        Muxes := 2     
 	   2 Input    8 Bit        Muxes := 2     
-	   2 Input    5 Bit        Muxes := 5     
-	   7 Input    5 Bit        Muxes := 3     
-	   2 Input    4 Bit        Muxes := 7     
+	   2 Input    6 Bit        Muxes := 1     
+	   2 Input    5 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 9     
 	  11 Input    4 Bit        Muxes := 1     
-	   7 Input    4 Bit        Muxes := 4     
-	   8 Input    4 Bit        Muxes := 1     
+	   8 Input    4 Bit        Muxes := 5     
 	   4 Input    4 Bit        Muxes := 5     
-	   2 Input    3 Bit        Muxes := 13    
-	   7 Input    3 Bit        Muxes := 3     
-	   2 Input    2 Bit        Muxes := 2     
-	   2 Input    1 Bit        Muxes := 33    
-	   7 Input    1 Bit        Muxes := 29    
-	  92 Input    1 Bit        Muxes := 20    
+	   2 Input    3 Bit        Muxes := 15    
+	   8 Input    3 Bit        Muxes := 2     
+	  92 Input    1 Bit        Muxes := 26    
 	  11 Input    1 Bit        Muxes := 2     
+	   2 Input    1 Bit        Muxes := 40    
+	   3 Input    1 Bit        Muxes := 1     
+	   8 Input    1 Bit        Muxes := 33    
 	  13 Input    1 Bit        Muxes := 2     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
@@ -325,40 +345,29 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
-WARNING: [Synth 8-3936] Found unconnected internal register 'rand_user_inc/rnd_reg' and it is trimmed from '5' to '4' bits. [C:/Users/USER/Documents/GitHub/VIVADO-Projects/FunCardGame/TROJAN/TROJAN.srcs/sources_1/new/rnGODs.sv:25]
-WARNING: [Synth 8-3936] Found unconnected internal register 'rand_user_inc2/rnd_reg' and it is trimmed from '5' to '4' bits. [C:/Users/USER/Documents/GitHub/VIVADO-Projects/FunCardGame/TROJAN/TROJAN.srcs/sources_1/new/rnGODs.sv:25]
-WARNING: [Synth 8-3936] Found unconnected internal register 'rand_dealer_inc/rnd_reg' and it is trimmed from '5' to '4' bits. [C:/Users/USER/Documents/GitHub/VIVADO-Projects/FunCardGame/TROJAN/TROJAN.srcs/sources_1/new/rnGODs.sv:25]
-WARNING: [Synth 8-7129] Port BOX_R[9] in module BOX_handler is either unconnected or has no load
-WARNING: [Synth 8-7129] Port BOX_R[8] in module BOX_handler is either unconnected or has no load
-WARNING: [Synth 8-7129] Port BOX_R[7] in module BOX_handler is either unconnected or has no load
-WARNING: [Synth 8-7129] Port BOX_R[6] in module BOX_handler is either unconnected or has no load
-WARNING: [Synth 8-7129] Port BOX_R[5] in module BOX_handler is either unconnected or has no load
-WARNING: [Synth 8-7129] Port BOX_R[4] in module BOX_handler is either unconnected or has no load
-WARNING: [Synth 8-7129] Port BOX_R[3] in module BOX_handler is either unconnected or has no load
-WARNING: [Synth 8-7129] Port BOX_R[2] in module BOX_handler is either unconnected or has no load
-WARNING: [Synth 8-7129] Port BOX_R[1] in module BOX_handler is either unconnected or has no load
-WARNING: [Synth 8-7129] Port BOX_R[0] in module BOX_handler is either unconnected or has no load
+WARNING: [Synth 8-3936] Found unconnected internal register 'bj/rand_dealer_inc/rnd_reg' and it is trimmed from '5' to '4' bits. [C:/Users/USER/Documents/GitHub/VIVADO-Projects/FunCardGame/TROJAN/TROJAN.srcs/sources_1/new/rnGOD.sv:25]
+WARNING: [Synth 8-3332] Sequential element (rom_data_reg[0]) is unused and will be removed from module ROM_Queen.
 WARNING: [Synth 8-3332] Sequential element (ace_rom/rom_data_reg[0]) is unused and will be removed from module BOX_handler.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:37 ; elapsed = 00:01:38 . Memory (MB): peak = 1396.262 ; gain = 110.852
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:26 ; elapsed = 00:01:29 . Memory (MB): peak = 1417.094 ; gain = 130.742
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:44 ; elapsed = 00:01:46 . Memory (MB): peak = 1396.262 ; gain = 110.852
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:33 ; elapsed = 00:01:35 . Memory (MB): peak = 1417.094 ; gain = 130.742
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:02:14 ; elapsed = 00:02:16 . Memory (MB): peak = 1448.250 ; gain = 162.840
+Finished Timing Optimization : Time (s): cpu = 00:01:35 ; elapsed = 00:01:37 . Memory (MB): peak = 1417.094 ; gain = 130.742
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:02:16 ; elapsed = 00:02:18 . Memory (MB): peak = 1458.340 ; gain = 172.930
+Finished Technology Mapping : Time (s): cpu = 00:01:38 ; elapsed = 00:01:41 . Memory (MB): peak = 1417.094 ; gain = 130.742
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -376,37 +385,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:02:22 ; elapsed = 00:02:24 . Memory (MB): peak = 1458.340 ; gain = 172.930
+Finished IO Insertion : Time (s): cpu = 00:01:45 ; elapsed = 00:01:47 . Memory (MB): peak = 1417.094 ; gain = 130.742
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:02:22 ; elapsed = 00:02:24 . Memory (MB): peak = 1458.340 ; gain = 172.930
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:45 ; elapsed = 00:01:47 . Memory (MB): peak = 1417.094 ; gain = 130.742
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:02:22 ; elapsed = 00:02:25 . Memory (MB): peak = 1458.340 ; gain = 172.930
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:45 ; elapsed = 00:01:47 . Memory (MB): peak = 1417.094 ; gain = 130.742
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:02:22 ; elapsed = 00:02:25 . Memory (MB): peak = 1458.340 ; gain = 172.930
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:45 ; elapsed = 00:01:48 . Memory (MB): peak = 1417.094 ; gain = 130.742
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:02:22 ; elapsed = 00:02:25 . Memory (MB): peak = 1458.340 ; gain = 172.930
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:45 ; elapsed = 00:01:48 . Memory (MB): peak = 1417.094 ; gain = 130.742
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:02:22 ; elapsed = 00:02:25 . Memory (MB): peak = 1458.340 ; gain = 172.930
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:45 ; elapsed = 00:01:48 . Memory (MB): peak = 1417.094 ; gain = 130.742
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -422,45 +431,45 @@ Report Cell Usage:
 +------+-------+------+
 |      |Cell   |Count |
 +------+-------+------+
-|1     |BUFG   |     3|
-|2     |CARRY4 |   251|
-|3     |LUT1   |   334|
-|4     |LUT2   |   501|
-|5     |LUT3   |   336|
-|6     |LUT4   |   217|
-|7     |LUT5   |   843|
-|8     |LUT6   |  1746|
-|9     |MUXF7  |   474|
-|10    |MUXF8  |   164|
-|11    |FDCE   |    94|
-|12    |FDPE   |     5|
-|13    |FDRE   |   187|
-|14    |LD     |   396|
+|1     |BUFG   |     5|
+|2     |CARRY4 |   269|
+|3     |LUT1   |   338|
+|4     |LUT2   |   438|
+|5     |LUT3   |   498|
+|6     |LUT4   |   219|
+|7     |LUT5   |  1029|
+|8     |LUT6   |  2550|
+|9     |MUXF7  |   814|
+|10    |MUXF8  |   210|
+|11    |FDCE   |   138|
+|12    |FDPE   |    11|
+|13    |FDRE   |   161|
+|14    |LD     |   634|
 |15    |IBUF   |     5|
 |16    |OBUF   |    42|
 +------+-------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:02:22 ; elapsed = 00:02:25 . Memory (MB): peak = 1458.340 ; gain = 172.930
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:45 ; elapsed = 00:01:48 . Memory (MB): peak = 1417.094 ; gain = 130.742
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 28 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:02:11 ; elapsed = 00:02:22 . Memory (MB): peak = 1458.340 ; gain = 119.656
-Synthesis Optimization Complete : Time (s): cpu = 00:02:23 ; elapsed = 00:02:25 . Memory (MB): peak = 1458.340 ; gain = 172.930
+Synthesis finished with 0 errors, 0 critical warnings and 20 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:34 ; elapsed = 00:01:45 . Memory (MB): peak = 1417.094 ; gain = 72.324
+Synthesis Optimization Complete : Time (s): cpu = 00:01:46 ; elapsed = 00:01:48 . Memory (MB): peak = 1417.094 ; gain = 130.742
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.153 . Memory (MB): peak = 1461.180 ; gain = 0.000
-INFO: [Netlist 29-17] Analyzing 1285 Unisim elements for replacement
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.193 . Memory (MB): peak = 1417.094 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 1927 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1470.832 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1417.094 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 396 instances were transformed.
-  LD => LDCE: 396 instances
+  A total of 634 instances were transformed.
+  LD => LDCE: 634 instances
 
-Synth Design complete, checksum: dcecdb18
+Synth Design complete, checksum: 7b1e7213
 INFO: [Common 17-83] Releasing license: Synthesis
-96 Infos, 106 Warnings, 0 Critical Warnings and 0 Errors encountered.
+106 Infos, 96 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:02:28 ; elapsed = 00:02:32 . Memory (MB): peak = 1470.832 ; gain = 185.422
+synth_design: Time (s): cpu = 00:01:52 ; elapsed = 00:01:55 . Memory (MB): peak = 1417.094 ; gain = 130.742
 INFO: [Common 17-1381] The checkpoint 'C:/Users/USER/Documents/GitHub/VIVADO-Projects/FunCardGame/TROJAN/TROJAN.runs/synth_1/BLACKJACK.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file BLACKJACK_utilization_synth.rpt -pb BLACKJACK_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Sat Nov 30 23:01:44 2024...
+INFO: [Common 17-206] Exiting Vivado at Mon Dec  2 23:02:50 2024...

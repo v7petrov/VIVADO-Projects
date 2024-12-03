@@ -1,6 +1,6 @@
 module BLACKJACK_FSM(
     input clk, 
-    output logic [1:0] sclk,                  // Clock for auxiliary counting
+    output logic [2:0] sclk,                  // Clock for auxiliary counting
     input hit, stand, start, reset,
     output logic [3:0] card_num,       // Number of player cards
     output logic [10:0] draw_card,    // Cards to draw (player)
@@ -11,6 +11,7 @@ module BLACKJACK_FSM(
     output logic [13:0] player_money, // Player's money
     output logic [13:0] bet_amnt,     // Current bet amount
     output logic win, lose            // Win/Lose flags
+//    output logic [4:0] user
 );
 
     // Parameters
@@ -19,30 +20,49 @@ module BLACKJACK_FSM(
     parameter BLACKJACK = 21;
 
     // RNG for card generation        Initialize player array j in case
-    reg [3:0] p1ayer_cards [10:0] = {6, 9, 6, 2, 4, 3, 4, 1, 6, 9, 6};
+    reg [3:0] p1ayer_cards [10:0] = {3, 1, 5, 2, 4, 3, 4, 1, 6, 9, 6};
     logic [3:0] player_card, player_card2, dealer_card;
     logic bj;
-    rnGODs #(.START_VAL(5)) rand_user_inc(
-        .clock(clk),
-        .val_limit(9),
-        .rnd(player_card)
-    );
-    rnGODs #(.START_VAL(1)) rand_user_inc2(
-        .clock(clk),
-        .val_limit(9),
-        .rnd(player_card2)
-    );
+//    rnGODs #(.START_VAL(5)) rand_user_inc(
+//        .clock(clk),
+//        .val_limit(12),
+//        .rnd(player_card)
+//    );
+//    rnGODs #(.START_VAL(1)) rand_user_inc2(
+//        .clock(clk),
+//        .val_limit(12),
+//        .rnd(player_card2)
+//    );
     rnGODs #(.START_VAL(9)) rand_dealer_inc(
         .clock(clk),
         .val_limit(9),
         .rnd(dealer_card)
     );
+      
+      improved_rng #(.SEED(3)) uno(
+          .clock(clk),
+          .reset(reset),
+          .rnd_out(player_card)
+      );
+
+      improved_rng #(.SEED(9)) dos(
+          .clock(clk),
+          .reset(reset),
+          .rnd_out(player_card2)
+      );
+
+//      improved_rng #(.SEED(5)) tres(
+//          .clock(clk),
+//          .reset(reset),
+//          .rnd_out(dealer_card)
+//      );
 
     // Game states
     typedef enum logic [2:0] {
         IDLE,
         PLAY,
         SHOW,
+        SHOW_CALC,
         USER,
         HIT,
         DEAL,
@@ -53,7 +73,9 @@ module BLACKJACK_FSM(
 
     // Game logic variables
     logic [31:0] staller;
-    logic [4:0] user_total, dealer_total;
+    logic [8:0] user_total, dealer_total;
+    logic aced;
+    logic instabj;
 
     // Edge detection for hit, stand, start
     logic hit_reg, stand_reg, start_reg;
@@ -99,6 +121,9 @@ module BLACKJACK_FSM(
                     NS = SHOW;
             end
             SHOW: begin
+                NS = SHOW_CALC;
+            end
+            SHOW_CALC: begin
                 NS = USER;
             end
             USER: begin
@@ -151,30 +176,56 @@ module BLACKJACK_FSM(
                     lose <= 0;
                 end
                 PLAY: begin
-                    if (hit_edge && bet_amnt < player_money)
+                    if (bet_amnt > player_money)
+                        bet_amnt <= player_money;
+                    else if (hit_edge && bet_amnt < player_money)
                         bet_amnt <= bet_amnt + BET_UNIT;
                     else if (stand_edge && bet_amnt > BET_UNIT)
                         bet_amnt <= bet_amnt - BET_UNIT;
                 end
                 SHOW: begin
+                    win = 0;
+                    lose = 0;
                     card_num <= 2;
                     card_num2 <= 1;
                     if(sclk == 2'b11) begin
-                    bj = 1;
-                    player_cards[0] <= p1ayer_cards[0];
-                    player_cards[1] <= p1ayer_cards[1];
-                    dealer_cards[0] <= dealer_card + 1;
-                    user_total <= p1ayer_cards[0] + p1ayer_cards[1];
-                    dealer_total <= dealer_card + 1;
+                        bj = 1;
+                        player_cards[0] <= p1ayer_cards[0];
+                        player_cards[1] <= p1ayer_cards[1];
+                        dealer_cards[0] <= dealer_card + 1;
+                        user_total <= p1ayer_cards[0] + p1ayer_cards[1];
+                        dealer_total <= dealer_card + 1;
                     end
                     else begin 
-                    bj = 0;
-                    player_cards[0] <= player_card + 1;
-                    player_cards[1] <= player_card2 + 1;
-                    dealer_cards[0] <= dealer_card + 1;
-                    user_total <= player_card + player_card2 + 2;
-                    dealer_total <= dealer_card + 1;
+                        bj = 0;
+                        player_cards[0] <= player_card + 1;
+                        player_cards[1] <= player_card2 + 1;
+                        dealer_cards[0] <= dealer_card + 1;
+                        user_total <= player_card + player_card2 + 2;
+                        dealer_total <= dealer_card + 1;
                     end
+                end
+                SHOW_CALC: begin
+                    win = 0;
+                    if(player_cards[0] > 10) begin
+                        user_total <= user_total - player_cards[0] % 10;
+                    end
+                    if(player_cards[1] > 10) begin
+                            user_total <= user_total - player_cards[1] % 10;
+                    end
+//                    if((player_cards[0] == 1 ^^ player_cards[1] == 1) && 
+//                    (player_cards[0] > 10 ^^ player_cards[1] > 10)) begin
+//                           instabj = 1;
+//                           win = 1;
+//                           lose = 0;
+//                    end
+//                    if(player_cards[0] == 1 || player_cards[1] == 1) begin
+//                            aced = 1;
+//                            user_total <= user_total + 10;
+//                    end
+//                    else begin
+//                        aced = 0;
+//                    end
                 end
                 USER: begin
                     if (hit_edge) begin
@@ -190,6 +241,10 @@ module BLACKJACK_FSM(
                     end
                 end
                 HIT: begin
+//                    if (user_total > BLACKJACK && aced) begin
+//                        user_total <= user_total - 10;
+//                        aced = 0;
+//                    end
                     if (user_total > BLACKJACK) begin
                         bj <= 0;
                         lose <= 1;
@@ -224,4 +279,5 @@ module BLACKJACK_FSM(
             endcase
         end
     end
+  //  assign user = user_total;
 endmodule
